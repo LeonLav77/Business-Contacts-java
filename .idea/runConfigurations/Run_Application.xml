@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run Application" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="production.bussines_contacts.Application" />
+    <module name="Bussines_contacts" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

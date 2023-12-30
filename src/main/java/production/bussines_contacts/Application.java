@@ -1,0 +1,40 @@
+package production.bussines_contacts;
+
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import production.bussines_contacts.models.User;
+
+import java.io.IOException;
+
+public class Application extends javafx.application.Application {
+    private static Stage mainStage;
+    private static User loggedInUser;
+
+    @Override
+    public void start(Stage stage) throws IOException {
+        mainStage = stage;
+        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("views/login.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        stage.setTitle("Hello!");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static Stage getMainStage(){
+        return mainStage;
+    }
+
+    public static User getLoggedInUser() {
+        return loggedInUser;
+    }
+
+    public static void setLoggedInUser(User user) {
+        loggedInUser = user;
+    }
+
+
+    public static void main(String[] args) {
+        launch();
+    }
+}
