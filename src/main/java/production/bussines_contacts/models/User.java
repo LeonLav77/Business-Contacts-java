@@ -1,8 +1,9 @@
 package production.bussines_contacts.models;
 
 import production.bussines_contacts.enums.Role;
+import production.bussines_contacts.interfaces.Editable;
 
-public abstract class User {
+public abstract class User implements Editable {
     public static final String STORAGE_FILE_NAME = "dat/users.txt";
     protected Long id;
     protected String name;
@@ -40,4 +41,5 @@ public abstract class User {
 
     // You can also include abstract methods that must be implemented by subclasses
     public abstract Role getRole();
+    public abstract boolean isAdmin();
 }

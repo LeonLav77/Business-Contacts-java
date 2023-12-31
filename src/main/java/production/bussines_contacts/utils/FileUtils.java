@@ -24,7 +24,7 @@ public class FileUtils {
                 Long id = Long.parseLong(parts[0]);
                 String name = parts[1];
                 String password = new String(Base64.getDecoder().decode(parts[2]));
-                Role role = (Integer.parseInt(parts[3]) == 0) ? Role.VIEWER : Role.ADMIN;
+                Role role = (Integer.parseInt(parts[3]) == 1) ? Role.VIEWER : Role.ADMIN;
 
                 User user = (role == Role.ADMIN) ? new Admin(id, name, password) : new Viewer(id, name, password);
                 users.add(user);
@@ -39,7 +39,7 @@ public class FileUtils {
     public static boolean insertUser(User user) {
         String filePath = User.STORAGE_FILE_NAME;
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
-            int roleIndicator = (user instanceof Admin) ? 1 : 0; // Check if the user is an instance of Admin
+            Long roleIndicator = (user instanceof Admin) ? Role.ADMIN.getId() : Role.VIEWER.getId(); // Check if the user is an instance of Admin
             String userData = user.getId() + " - " + user.getName() + " - " +
                     Base64.getEncoder().encodeToString(user.getPassword().getBytes()) + " - " +
                     roleIndicator;
@@ -68,5 +68,46 @@ public class FileUtils {
             logger.severe("Error reading from file to get next user ID: " + e.getMessage());
         }
         return highestId + 1;
+    }
+
+    public static boolean updateUser(User updatedUser) {
+        String filePath = User.STORAGE_FILE_NAME;
+        List<User> users = readUsersFromFile(); // Step 1: Read all users
+        boolean userFound = false;
+
+        // Step 2: Find and update the user
+        for (int i = 0; i < users.size(); i++) {
+            if (users.get(i).getId().equals(updatedUser.getId())) {
+                users.set(i, updatedUser);
+                userFound = true;
+                break;
+            }
+        }
+
+        if (!userFound) {
+            logger.warning("User with ID " + updatedUser.getId() + " not found.");
+            return false;
+        }
+
+        // Step 3: Write all users back to the file
+        return writeUsersToFile(users);
+    }
+
+    private static boolean writeUsersToFile(List<User> users) {
+        String filePath = User.STORAGE_FILE_NAME;
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, false))) {
+            for (User user : users) {
+                Long roleIndicator = (user instanceof Admin) ? Role.ADMIN.getId() : Role.VIEWER.getId();
+                String userData = user.getId() + " - " + user.getName() + " - " +
+                        Base64.getEncoder().encodeToString(user.getPassword().getBytes()) + " - " +
+                        roleIndicator;
+                writer.write(userData);
+                writer.newLine();
+            }
+            return true;
+        } catch (IOException e) {
+            logger.severe("Error writing users to file: " + e.getMessage());
+            return false;
+        }
     }
 }

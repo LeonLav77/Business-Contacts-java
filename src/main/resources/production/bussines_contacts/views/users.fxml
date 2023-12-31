@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="production.bussines_contacts.controllers.UsersController">
+    <GridPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <TableView fx:id="usersTableView" prefHeight="421.0" prefWidth="600.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <columns>
+                <TableColumn fx:id="editColumn" prefWidth="50.0" text="Edit" />
+                <TableColumn fx:id="userIDTableColumn" text="User ID" />
+                <TableColumn fx:id="userNameTableColumn" prefWidth="115.20001220703125" text="Username" />
+                <TableColumn fx:id="userRoleTableColumn" prefWidth="108.0" text="Role" />
+                <!-- Add more columns as needed -->
+            </columns>
+        </TableView>
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints maxHeight="133.6000093460083" minHeight="10.0" prefHeight="127.1999849319458" />
+         <RowConstraints maxHeight="384.7999959945679" minHeight="266.3999906539917" prefHeight="272.8000150680542" />
+      </rowConstraints>
+    </GridPane>
+    <fx:include source="menu.fxml" />
+</AnchorPane>

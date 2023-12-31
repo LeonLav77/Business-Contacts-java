@@ -12,6 +12,15 @@ public enum Role {
         this.roleName = roleName;
     }
 
+    public static Role fromRoleName(String roleName) {
+        for (Role role : Role.values()) {
+            if (role.getRoleName().equalsIgnoreCase(roleName)) {
+                return role;
+            }
+        }
+        throw new IllegalArgumentException("No role with name: " + roleName);
+    }
+
     public Long getId() {
         return id;
     }

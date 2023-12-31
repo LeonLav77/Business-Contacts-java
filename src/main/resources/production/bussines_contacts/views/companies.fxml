@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="production.bussines_contacts.controllers.CompaniesController">
+    <GridPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <TableView fx:id="companiesTableView" editable="true" prefHeight="400.0" prefWidth="600.0" GridPane.rowIndex="1">
+            <columns>
+                <TableColumn fx:id="editColumn" prefWidth="50.0" text="Edit" />
+                <TableColumn fx:id="companyIdColumn" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="companyNameColumn" prefWidth="150.0" text="Name" />
+                <TableColumn fx:id="industryColumn" prefWidth="100.0" text="Industry" />
+                <TableColumn fx:id="headquartersColumn" prefWidth="125.0" text="Headquarters" />
+                <TableColumn fx:id="websiteColumn" prefWidth="100.0" text="Website" />
+                <TableColumn fx:id="createdColumn" prefWidth="100.0" text="Created At" />
+                <!-- Add more columns if needed -->
+            </columns>
+        </TableView>
+        <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+         <RowConstraints maxHeight="179.4" minHeight="10.0" prefHeight="121.00000610351563" />
+            <RowConstraints maxHeight="380.20001220703125" minHeight="220.99999999999997" prefHeight="279.3999938964844" />
+            <RowConstraints />
+        </rowConstraints>
+    </GridPane>
+    <fx:include source="menu.fxml" />
+</AnchorPane>

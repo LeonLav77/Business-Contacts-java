@@ -1,22 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 
 <AnchorPane prefHeight="28.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="production.bussines_contacts.controllers.MenuController">
-    <MenuBar>
-        <menus>
-            <Menu mnemonicParsing="false" text="Items">
-                <items>
-                    <MenuItem mnemonicParsing="false" onAction="#showUsersScreen" text="Pretraga" />
-                </items>
+    <HBox prefHeight="28.0" prefWidth="600.0" spacing="10">
+        <MenuBar HBox.hgrow="ALWAYS">
+            <menus>
+                <!-- Existing Menus -->
+                <Menu mnemonicParsing="false" text="Companies">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showCompaniesScreen" text="Pretraga" />
+                    </items>
+                </Menu>
+            <Menu mnemonicParsing="false" text="Contacts">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showContactsScreen" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#showCompaniesScreen" text="Dodaj" />
+               </items>
             </Menu>
-        </menus>
-        <cursor>
-            <Cursor fx:constant="DEFAULT" />
-        </cursor>
-    </MenuBar>
+                <Menu fx:id="usersMenu" mnemonicParsing="false" text="Users">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showUsersScreen" text="Pretraga" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button onAction="#logout" text="Logout" HBox.hgrow="NEVER" />
+    </HBox>
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
 </AnchorPane>
