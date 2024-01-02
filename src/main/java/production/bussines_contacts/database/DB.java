@@ -24,11 +24,7 @@ public class DB {
     public static ArrayList<Company> fetchCompanies() {
         try {
             Dao<Company, Long> companyDao = DaoManager.createDao(getConnectionSource(), Company.class);
-            //Company newCompany = new Company(null, "Example Company", "Tech", "Silicon Valley", new Date(), "www.example.com");
-            //companyDao.create(newCompany);
-
             companyDao.queryForAll().forEach(System.out::println);
-            // convert to list
 
             return new ArrayList<>(companyDao.queryForAll());
         } catch (Exception e) {
@@ -51,6 +47,17 @@ public class DB {
     public static void deleteCompany(Company company) {
         try {
             Dao<Company, Long> companyDao = DaoManager.createDao(getConnectionSource(), Company.class);
+            Dao<Contact, Long> contactDao = DaoManager.createDao(getConnectionSource(), Contact.class);
+
+            // Retrieve all contacts associated with the company
+            List<Contact> contacts = contactDao.queryForEq("company_id", company.getId());
+
+            // Delete all retrieved contacts
+            for (Contact contact : contacts) {
+                contactDao.delete(contact);
+                System.out.println("Contact deleted: " + contact.getName());
+            }
+
             companyDao.delete(company);
             System.out.println("Company deleted: " + company.getName());
         } catch (SQLException e) {

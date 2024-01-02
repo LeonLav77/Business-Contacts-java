@@ -3,11 +3,15 @@ package production.bussines_contacts.models;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 import production.bussines_contacts.controllers.MenuController;
+import production.bussines_contacts.database.DB;
+import production.bussines_contacts.interfaces.Deletable;
 import production.bussines_contacts.interfaces.Editable;
 
 import java.util.Date;
+import java.util.function.Predicate;
+
 @DatabaseTable(tableName = "companies")
-public class Company implements Editable {
+public class Company implements Editable, Deletable {
     @DatabaseField(generatedId = true)
     private Long id;
 
@@ -88,7 +92,16 @@ public class Company implements Editable {
 
     @Override
     public void edit() {
-//        MenuController.editUser(this);
+        MenuController.editCompany(this);
+    }
 
+    public void delete(){
+        System.out.println("Deleting company: " + this.getName() + " with id: " + this.getId());
+        DB.deleteCompany(this);
+    }
+
+    @Override
+    public String toString() {
+        return this.getName(); // Where getName() returns the company's name
     }
 }

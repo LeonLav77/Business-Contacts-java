@@ -2,13 +2,16 @@ package production.bussines_contacts.models;
 
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
+import production.bussines_contacts.controllers.MenuController;
+import production.bussines_contacts.database.DB;
 import production.bussines_contacts.enums.Importance;
+import production.bussines_contacts.interfaces.Deletable;
 import production.bussines_contacts.interfaces.Editable;
 
 import java.util.Date;
 
 @DatabaseTable(tableName = "contacts")
-public class Contact implements Editable {
+public class Contact implements Editable, Deletable {
     @DatabaseField(generatedId = true)
     private Long id;
 
@@ -114,8 +117,12 @@ public class Contact implements Editable {
         this.custom_note = custom_note;
     }
 
-    public void edit(){
-        System.out.println("Editing contact");
+    @Override
+    public void edit() {
+        MenuController.editContact(this);
+    }
+    public void delete(){
+        DB.deleteContact(this);
     }
 
 

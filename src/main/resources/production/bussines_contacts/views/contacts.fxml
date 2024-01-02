@@ -1,30 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="production.bussines_contacts.controllers.ContactsController">
+
     <GridPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <TableView fx:id="contactsTableView" editable="true" prefHeight="400.0" prefWidth="600.0" GridPane.rowIndex="1">
+        <TableView fx:id="contactsTableView" editable="true" prefHeight="400.0" prefWidth="600.0" GridPane.columnSpan="3" GridPane.rowIndex="1">
+
             <columns>
                 <TableColumn fx:id="editColumn" prefWidth="50.0" text="Edit" />
-                <TableColumn fx:id="contactIdColumn" prefWidth="75.0" text="ID" />
-                <TableColumn fx:id="contactNameColumn" prefWidth="150.0" text="Name" />
-                <TableColumn fx:id="departmentColumn" prefWidth="100.0" text="Department" />
-                <TableColumn fx:id="companyColumn" prefWidth="125.0" text="Company" />
-                <TableColumn fx:id="phoneNumberColumn" prefWidth="100.0" text="Phone Number" />
-                <TableColumn fx:id="importanceColumn" prefWidth="100.0" text="Importance" />
-                <TableColumn fx:id="createdColumn" prefWidth="100.0" text="Created At" />
+                <TableColumn fx:id="contactIdColumn" prefWidth="49.5999755859375" text="ID" />
+                <TableColumn fx:id="contactNameColumn" prefWidth="116.0" text="Name" />
+                <TableColumn fx:id="departmentColumn" prefWidth="85.60003662109375" text="Department" />
+                <TableColumn fx:id="companyColumn" prefWidth="112.00006103515625" text="Company" />
+                <TableColumn fx:id="phoneNumberColumn" minWidth="0.0" prefWidth="105.5999755859375" text="Phone Number" />
+                <TableColumn fx:id="importanceColumn" prefWidth="79.199951171875" text="Importance" />
+                <TableColumn fx:id="createdColumn" prefWidth="208.0001220703125" text="Created At" />
                 <TableColumn fx:id="customNoteColumn" prefWidth="100.0" text="Custom Note" />
+                <TableColumn fx:id="deleteColumn" prefWidth="100.0" text="Delete" />
+
                 <!-- Add more columns if needed -->
             </columns>
         </TableView>
+       <CheckBox fx:id="groupByCompanyCheckBox" text="Group by Company" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" />
+       <TextField fx:id="searchTextField" promptText="Search..." GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+         <GridPane.margin>
+            <Insets left="200.0" right="200.0" top="50.0" />
+         </GridPane.margin>
+      </TextField>
         <columnConstraints>
             <ColumnConstraints />
+         <ColumnConstraints maxWidth="482.4000244140625" minWidth="10.0" prefWidth="279.7999633789062" />
+         <ColumnConstraints maxWidth="493.5999755859375" minWidth="10.0" prefWidth="319.8000366210937" />
             <ColumnConstraints />
         </columnConstraints>
         <rowConstraints>

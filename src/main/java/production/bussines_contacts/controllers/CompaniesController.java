@@ -7,13 +7,18 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.converter.DefaultStringConverter;
 import production.bussines_contacts.database.DB;
 import production.bussines_contacts.models.Company;
+import production.bussines_contacts.models.Contact;
+import production.bussines_contacts.partials.DeletableCell;
 import production.bussines_contacts.partials.EditableCell;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Predicate;
 
 public class CompaniesController {
 
@@ -33,6 +38,10 @@ public class CompaniesController {
     private TableColumn<Company, String> websiteColumn;
     @FXML
     private TableColumn<Company, String> createdColumn;
+    @FXML
+    private TextField searchTextField;
+    @FXML
+    private TableColumn<Company, Void> deleteColumn;
 
     @FXML
     public void initialize() {
@@ -45,7 +54,13 @@ public class CompaniesController {
 
         this.setupEditColumn();
         this.setupEditableColumns();
+        this.setupDeleteColumn();
         this.showAndFilterCompanies();
+        searchTextField.textProperty().addListener((observable, oldValue, newValue) -> showAndFilterCompanies());
+    }
+
+    private void setupDeleteColumn(){
+        deleteColumn.setCellFactory(param -> new DeletableCell<>());
     }
 
     private void setupEditColumn() {
@@ -89,8 +104,33 @@ public class CompaniesController {
         showAndFilterCompanies();
     }
 
+    public static Predicate<Company> matches(String searchText) {
+        return company -> {
+            String searchLower = searchText.toLowerCase();
+            if (company.getName().toLowerCase().contains(searchLower)) {
+                return true;
+            }
+            if (company.getIndustry().toLowerCase().contains(searchLower)) {
+                return true;
+            }
+            if (company.getHeadquarters().toLowerCase().contains(searchLower)) {
+                return true;
+            }
+            if (company.getWebsite().toLowerCase().contains(searchLower)) {
+                return true;
+            }
+            return false;
+        };
+    }
+
     public void showAndFilterCompanies() {
         ArrayList<Company> companies = DB.fetchCompanies();
+
+        String searchText = searchTextField.getText();
+        if (searchText != null && !searchText.isEmpty()) {
+            Predicate<Company> matchesSearch = matches(searchText);
+            companies.removeIf(matchesSearch.negate());
+        }
 
         ObservableList<Company> observableItemList = FXCollections.observableArrayList(companies);
         companiesTableView.setItems(observableItemList);

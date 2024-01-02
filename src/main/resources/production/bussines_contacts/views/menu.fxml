@@ -16,12 +16,13 @@
                 <Menu mnemonicParsing="false" text="Companies">
                     <items>
                         <MenuItem mnemonicParsing="false" onAction="#showCompaniesScreen" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#showAddCompaniesScreen" text="Dodaj" />
                     </items>
                 </Menu>
             <Menu mnemonicParsing="false" text="Contacts">
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#showContactsScreen" text="Pretraga" />
-                  <MenuItem mnemonicParsing="false" onAction="#showCompaniesScreen" text="Dodaj" />
+                  <MenuItem mnemonicParsing="false" onAction="#redirectToAddContactsScreen" text="Dodaj" />
                </items>
             </Menu>
                 <Menu fx:id="usersMenu" mnemonicParsing="false" text="Users">

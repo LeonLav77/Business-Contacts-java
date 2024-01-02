@@ -1,23 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="production.bussines_contacts.controllers.UsersController">
     <GridPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <TableView fx:id="usersTableView" prefHeight="421.0" prefWidth="600.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <TableView fx:id="usersTableView" editable="true" prefHeight="421.0" prefWidth="600.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <columns>
                 <TableColumn fx:id="editColumn" prefWidth="50.0" text="Edit" />
-                <TableColumn fx:id="userIDTableColumn" text="User ID" />
-                <TableColumn fx:id="userNameTableColumn" prefWidth="115.20001220703125" text="Username" />
-                <TableColumn fx:id="userRoleTableColumn" prefWidth="108.0" text="Role" />
+                <TableColumn fx:id="userIDTableColumn" prefWidth="63.20001220703125" text="User ID" />
+                <TableColumn fx:id="userNameTableColumn" prefWidth="236.0" text="Username" />
+                <TableColumn fx:id="userRoleTableColumn" prefWidth="116.800048828125" text="Role" />
+                <TableColumn fx:id="deleteColumn" prefWidth="131.99993896484375" text="Delete" />
                 <!-- Add more columns as needed -->
             </columns>
         </TableView>
+      <Label text="Search Users" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+         <GridPane.margin>
+            <Insets bottom="30.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField GridPane.columnIndex="1" fx:id="searchTextField">
+         <GridPane.margin>
+            <Insets left="200.0" right="200.0" top="40.0" />
+         </GridPane.margin>
+      </TextField>
       <columnConstraints>
          <ColumnConstraints />
          <ColumnConstraints />

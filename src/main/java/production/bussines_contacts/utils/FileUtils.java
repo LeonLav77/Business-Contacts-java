@@ -110,4 +110,27 @@ public class FileUtils {
             return false;
         }
     }
+
+    public static boolean deleteUser(User user) {
+        Long userId = user.getId();
+        List<User> users = readUsersFromFile(); // Step 1: Read all users
+        boolean userFound = false;
+
+        // Step 2: Find and remove the user
+        for (int i = 0; i < users.size(); i++) {
+            if (users.get(i).getId().equals(userId)) {
+                users.remove(i);
+                userFound = true;
+                break;
+            }
+        }
+
+        if (!userFound) {
+            logger.warning("User with ID " + userId + " not found.");
+            return false;
+        }
+
+        // Step 3: Write the updated list back to the file
+        return writeUsersToFile(users);
+    }
 }
