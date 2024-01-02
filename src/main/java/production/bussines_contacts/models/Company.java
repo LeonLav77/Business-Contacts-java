@@ -104,4 +104,8 @@ public class Company implements Editable, Deletable {
     public String toString() {
         return this.getName(); // Where getName() returns the company's name
     }
+    @Override
+    public String deleteText() {
+        return "Delete " + this + "?" + "\n" + "This action cannot be undone.\n All of the contacts associated with this company will also be deleted.";
+    }
 }

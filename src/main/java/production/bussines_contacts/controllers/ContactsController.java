@@ -18,6 +18,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.function.Predicate;
 
+import static production.bussines_contacts.utils.FunctionUtils.confirmSaveOperation;
+
 public class ContactsController {
 
     @FXML
@@ -75,24 +77,36 @@ public class ContactsController {
         // Making the companyNameColumn editable
         contactNameColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
         contactNameColumn.setOnEditCommit(event -> {
+            if(!confirmSaveOperation("Save User")) {
+                return;
+            }
             Contact contact = event.getRowValue();
             contact.setName(event.getNewValue());
             updateContactInDatabase(contact);
         });
         departmentColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
         departmentColumn.setOnEditCommit(event -> {
+            if(!confirmSaveOperation("Save User")) {
+                return;
+            }
             Contact contact = event.getRowValue();
             contact.setDepartment(event.getNewValue());
             updateContactInDatabase(contact);
         });
         phoneNumberColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
         phoneNumberColumn.setOnEditCommit(event -> {
+            if(!confirmSaveOperation("Save User")) {
+                return;
+            }
             Contact contact = event.getRowValue();
             contact.setPhone_number(event.getNewValue());
             updateContactInDatabase(contact);
         });
         customNoteColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
         customNoteColumn.setOnEditCommit(event -> {
+            if(!confirmSaveOperation("Save User")) {
+                return;
+            }
             Contact contact = event.getRowValue();
             contact.setCustom_note (event.getNewValue());
             updateContactInDatabase(contact);
@@ -104,18 +118,13 @@ public class ContactsController {
     }
 
     private void sortContacts() {
-        // Retrieve the current items in the TableView
         ObservableList<Contact> currentItems = contactsTableView.getItems();
 
         if (groupByCompanyCheckBox.isSelected()) {
-            // Group by company when the checkbox is selected
             currentItems.sort(Comparator.comparing(contact -> contact.getCompany().getName()));
         } else {
-            // Default sorting (by importance or other criteria)
             currentItems.sort(Comparator.comparing(Contact::getImportance));
         }
-
-        // No need to set the items again since we are sorting the existing ObservableList
     }
 
     private void filterContacts(String searchText) {

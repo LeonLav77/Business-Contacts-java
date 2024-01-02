@@ -19,6 +19,8 @@ import production.bussines_contacts.utils.FileUtils;
 import java.io.File;
 import java.util.List;
 
+import static production.bussines_contacts.utils.FunctionUtils.confirmSaveOperation;
+
 public class UsersController {
     @FXML
     private TableView<User> usersTableView;
@@ -49,6 +51,9 @@ public class UsersController {
     private void setupEditableColumns(){
         userNameTableColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
         userNameTableColumn.setOnEditCommit(event -> {
+            if(!confirmSaveOperation("Save User")) {
+                return;
+            }
             User user = event.getRowValue();
             user.setName(event.getNewValue());
             FileUtils.updateUser(user);

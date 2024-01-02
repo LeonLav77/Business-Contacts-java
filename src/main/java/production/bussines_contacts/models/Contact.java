@@ -121,10 +121,19 @@ public class Contact implements Editable, Deletable {
     public void edit() {
         MenuController.editContact(this);
     }
+
+    @Override
+    public String toString() {
+        return name + " - " + company.getName();
+    }
+
     public void delete(){
         DB.deleteContact(this);
     }
 
-
+    @Override
+    public String deleteText() {
+        return "Delete " + this + "?" + "\n" + "This action cannot be undone";
+    }
     // Add your constructors, getters, and setters here
 }

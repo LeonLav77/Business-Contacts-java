@@ -25,4 +25,9 @@ public class Admin extends User {
     public void edit() {
         MenuController.editUser(this);
     }
+
+    @Override
+    public String deleteText() {
+        return "Delete User";
+    }
 }

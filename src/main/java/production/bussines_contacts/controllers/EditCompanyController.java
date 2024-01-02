@@ -5,6 +5,8 @@ import javafx.scene.control.TextField;
 import production.bussines_contacts.models.Company;
 import production.bussines_contacts.database.DB;
 
+import static production.bussines_contacts.utils.FunctionUtils.confirmSaveOperation;
+
 public class EditCompanyController {
 
     @FXML
@@ -28,6 +30,10 @@ public class EditCompanyController {
 
     @FXML
     private void saveCompany() {
+        if(!confirmSaveOperation("Save Company")) {
+            return;
+        }
+
         if (company != null) {
             company.setName(nameField.getText());
             company.setIndustry(industryField.getText());

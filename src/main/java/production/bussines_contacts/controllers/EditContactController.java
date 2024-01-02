@@ -8,6 +8,9 @@ import production.bussines_contacts.enums.Importance;
 import production.bussines_contacts.database.DB;
 
 import java.util.List;
+import java.util.Optional;
+
+import static production.bussines_contacts.utils.FunctionUtils.confirmSaveOperation;
 
 public class EditContactController {
 
@@ -52,10 +55,15 @@ public class EditContactController {
         }
     }
 
+
+
     @FXML
     private void saveContact() {
+        if(!confirmSaveOperation("Save Contact")) {
+            return;
+        }
+
         if (contact != null) {
-            // ... other updates ...
 
             contact.setCustom_note(customNoteField.getText());
             contact.setImportance(importanceComboBox.getValue());
@@ -65,13 +73,11 @@ public class EditContactController {
 
             Company selectedCompany = companyComboBox.getValue();
             if (selectedCompany != null) {
-                contact.setCompany(selectedCompany); // Assuming you can set the whole Company object
+                contact.setCompany(selectedCompany);
             }
 
             DB.updateContact(contact);
             MenuController.showContactsScreen();
-
-            // ... save the contact ...
         }
     }
 }

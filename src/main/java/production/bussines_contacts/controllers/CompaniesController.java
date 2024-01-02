@@ -20,6 +20,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
+import static production.bussines_contacts.utils.FunctionUtils.confirmSaveOperation;
+
 public class CompaniesController {
 
     @FXML
@@ -71,6 +73,9 @@ public class CompaniesController {
         // Making the companyNameColumn editable
         companyNameColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
         companyNameColumn.setOnEditCommit(event -> {
+            if(!confirmSaveOperation("Save Company")) {
+                return;
+            }
             Company company = event.getRowValue();
             company.setName(event.getNewValue());
             updateCompanyInDatabase(company);
@@ -78,6 +83,9 @@ public class CompaniesController {
 
         industryColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
         industryColumn.setOnEditCommit(event -> {
+            if(!confirmSaveOperation("Save Company")) {
+                return;
+            }
             Company company = event.getRowValue();
             company.setIndustry(event.getNewValue());
             updateCompanyInDatabase(company);
@@ -85,6 +93,9 @@ public class CompaniesController {
 
         headquartersColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
         headquartersColumn.setOnEditCommit(event -> {
+            if(!confirmSaveOperation("Save Company")) {
+                return;
+            }
             Company company = event.getRowValue();
             company.setHeadquarters(event.getNewValue());
             updateCompanyInDatabase(company);
@@ -92,6 +103,9 @@ public class CompaniesController {
 
         websiteColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
         websiteColumn.setOnEditCommit(event -> {
+            if(!confirmSaveOperation("Save Company")) {
+                return;
+            }
             Company company = event.getRowValue();
             company.setWebsite(event.getNewValue());
             updateCompanyInDatabase(company);

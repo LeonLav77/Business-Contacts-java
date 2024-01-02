@@ -58,10 +58,13 @@
                 </GridPane.margin>
             </ComboBox>
             <Button onAction="#createContact" text="Create" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
-            <Label text="Add Contact" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+            <Label text="Edit Contact" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0">
                 <font>
                     <Font size="26.0" />
                 </font>
+            <GridPane.margin>
+               <Insets top="30.0" />
+            </GridPane.margin>
             </Label>
         </children>
       <columnConstraints>
@@ -69,14 +72,14 @@
          <ColumnConstraints maxWidth="493.6000244140624" minWidth="333.6000244140624" prefWidth="385.6000244140624" />
       </columnConstraints>
       <rowConstraints>
-         <RowConstraints />
-         <RowConstraints />
-         <RowConstraints maxHeight="52.800012207031244" minHeight="30.40001831054687" prefHeight="49.599999999999994" />
-         <RowConstraints maxHeight="67.99999389648437" minHeight="30.399987792968744" prefHeight="44.0" />
-         <RowConstraints maxHeight="176.80001220703122" minHeight="139.2000061035156" prefHeight="139.2000061035156" />
-         <RowConstraints />
-         <RowConstraints maxHeight="51.200000000000045" minHeight="14.399987792968773" prefHeight="35.99997558593748" />
-         <RowConstraints maxHeight="36.80001220703127" minHeight="0.0" prefHeight="16.000024414062523" />
+         <RowConstraints maxHeight="98.40000839233399" minHeight="43.19998779296875" prefHeight="69.59999389648438" />
+         <RowConstraints maxHeight="72.80001831054686" minHeight="21.60000991821289" prefHeight="44.00001220703123" />
+         <RowConstraints maxHeight="91.99999389648438" minHeight="30.40001831054687" prefHeight="43.999999999999986" />
+         <RowConstraints maxHeight="79.99999389648437" minHeight="30.399987792968744" prefHeight="40.00000610351563" />
+         <RowConstraints maxHeight="176.80001220703122" minHeight="81.59998168945316" prefHeight="81.59998168945316" />
+         <RowConstraints maxHeight="62.40003662109376" minHeight="15.199963378906261" prefHeight="44.80000000000001" />
+         <RowConstraints maxHeight="57.59996337890624" minHeight="14.399987792968773" prefHeight="51.19999999999999" />
+         <RowConstraints maxHeight="36.80001220703127" minHeight="0.0" prefHeight="12.0" />
       </rowConstraints>
     </GridPane>
     <fx:include source="menu.fxml" />
