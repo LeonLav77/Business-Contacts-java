@@ -6,9 +6,13 @@ import production.bussines_contacts.enums.Role;
 import production.bussines_contacts.models.Admin;
 import production.bussines_contacts.models.User;
 import production.bussines_contacts.models.Viewer;
+import production.bussines_contacts.utils.ChangeLog;
 import production.bussines_contacts.utils.FileUtils;
 
 import java.io.File;
+import java.util.Map;
+
+import static production.bussines_contacts.utils.FunctionUtils.confirmSaveOperation;
 
 public class EditUserController {
     @FXML
@@ -42,22 +46,23 @@ public class EditUserController {
     @FXML
     private void saveUser() {
         // display a dialog to confirm the save
-        Alert confirmDialog = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure you want to save these changes?", ButtonType.YES, ButtonType.NO);
-        confirmDialog.setTitle("Confirm Save");
-        confirmDialog.setHeaderText("Save User");
+        if(!confirmSaveOperation("Save Contact")) {
+            return;
+        }
 
-        confirmDialog.showAndWait().ifPresent(response -> {
-            if (response == ButtonType.YES) {
-                saveUserChanges();
-            }else{
-                System.out.println("User changes not saved");
-            }
-        });
+        User tempUser = createTempUser();
+        Map<String, Map<String, String>> differences = user.getDifferencesMap(tempUser);
+
+        if (!differences.isEmpty()) {
+            ChangeLog.persistChanges(differences, user);
+            saveUserChanges();
+        }
+
+        MenuController.redirectToUsersScreen();
     }
 
     private void saveUserChanges() {
         // Save logic here
-        System.out.println("Saving user: " + user.getName());
         Long id = user.getId();
         String userPassword = user.getPassword();
         String username = usernameField.getText();
@@ -66,6 +71,12 @@ public class EditUserController {
 
         User user = (role == Role.ADMIN) ? new Admin(id, username, userPassword) : new Viewer(id, username, userPassword);
         FileUtils.updateUser(user);
-        MenuController.redirectToUsersScreen();
+    }
+
+    private User createTempUser() {
+        String username = usernameField.getText();
+        String roleName = roleComboBox.getValue();
+        Role role = Role.fromRoleName(roleName);
+        return (role == Role.ADMIN) ? new Admin(null, username, null) : new Viewer(null, username, null);
     }
 }

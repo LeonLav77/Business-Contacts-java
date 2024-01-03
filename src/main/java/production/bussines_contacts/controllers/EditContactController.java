@@ -2,13 +2,15 @@ package production.bussines_contacts.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import production.bussines_contacts.Application;
+import production.bussines_contacts.models.ChangeDataModel;
 import production.bussines_contacts.models.Contact;
 import production.bussines_contacts.models.Company;
 import production.bussines_contacts.enums.Importance;
 import production.bussines_contacts.database.DB;
+import production.bussines_contacts.utils.ChangeLog;
 
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 import static production.bussines_contacts.utils.FunctionUtils.confirmSaveOperation;
 
@@ -63,21 +65,41 @@ public class EditContactController {
             return;
         }
 
-        if (contact != null) {
+        Contact tempContact = createTempContact();
+        Map<String, Map<String, String>> differences = contact.getDifferencesMap(tempContact);
 
-            contact.setCustom_note(customNoteField.getText());
-            contact.setImportance(importanceComboBox.getValue());
-            contact.setPhone_number(phoneNumberField.getText());
-            contact.setDepartment(departmentField.getText());
-            contact.setName(nameField.getText());
 
-            Company selectedCompany = companyComboBox.getValue();
-            if (selectedCompany != null) {
-                contact.setCompany(selectedCompany);
-            }
-
-            DB.updateContact(contact);
-            MenuController.showContactsScreen();
+        if (!differences.isEmpty()) {
+            ChangeLog.persistChanges(differences, contact);
+            updateContactDetails();
         }
+
+        DB.updateContact(contact);
+        MenuController.showContactsScreen();
+    }
+
+
+    private void updateContactDetails() {
+        contact.setCustom_note(customNoteField.getText());
+        contact.setImportance(importanceComboBox.getValue());
+        contact.setPhone_number(phoneNumberField.getText());
+        contact.setDepartment(departmentField.getText());
+        contact.setName(nameField.getText());
+
+        Company selectedCompany = companyComboBox.getValue();
+        if (selectedCompany != null) {
+            contact.setCompany(selectedCompany);
+        }
+    }
+
+    private Contact createTempContact() {
+        Contact tempContact = new Contact();
+        tempContact.setName(nameField.getText());
+        tempContact.setDepartment(departmentField.getText());
+        tempContact.setPhone_number(phoneNumberField.getText());
+        tempContact.setCustom_note(customNoteField.getText());
+        tempContact.setImportance(importanceComboBox.getValue());
+        tempContact.setCompany(companyComboBox.getValue());
+        return tempContact;
     }
 }

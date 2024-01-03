@@ -2,11 +2,18 @@ package production.bussines_contacts.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import production.bussines_contacts.Application;
+import production.bussines_contacts.models.ChangeDataModel;
 import production.bussines_contacts.models.Company;
 import production.bussines_contacts.database.DB;
+import production.bussines_contacts.models.User;
+import production.bussines_contacts.utils.ChangeLog;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Map;
 
 import static production.bussines_contacts.utils.FunctionUtils.confirmSaveOperation;
-
 public class EditCompanyController {
 
     @FXML
@@ -30,20 +37,35 @@ public class EditCompanyController {
 
     @FXML
     private void saveCompany() {
-        if(!confirmSaveOperation("Save Company")) {
+        if (!confirmSaveOperation("Save Company")) {
             return;
         }
 
-        if (company != null) {
-            company.setName(nameField.getText());
-            company.setIndustry(industryField.getText());
-            company.setHeadquarters(headquartersField.getText());
-            company.setWebsite(websiteField.getText());
+        Company tempCompany = createTempCompanyFromFields();
+        Map<String, Map<String, String>> differences = company.getDifferencesMap(tempCompany);
 
-            DB.updateCompany(company);
-            MenuController.redirectToCompaniesScreen();
-
-            // Handle post-update logic (such as navigating back to a list of companies)
+        if (!differences.isEmpty()) {
+            ChangeLog.persistChanges(differences, company);
+            updateCompanyDetails();
         }
+
+        MenuController.redirectToCompaniesScreen();
+    }
+
+    private Company createTempCompanyFromFields() {
+        Company tempCompany = new Company();
+        tempCompany.setName(nameField.getText());
+        tempCompany.setIndustry(industryField.getText());
+        tempCompany.setHeadquarters(headquartersField.getText());
+        tempCompany.setWebsite(websiteField.getText());
+        return tempCompany;
+    }
+
+    private void updateCompanyDetails() {
+        company.setName(nameField.getText());
+        company.setIndustry(industryField.getText());
+        company.setHeadquarters(headquartersField.getText());
+        company.setWebsite(websiteField.getText());
+        company.update();
     }
 }

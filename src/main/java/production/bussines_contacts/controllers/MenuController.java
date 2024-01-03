@@ -109,6 +109,14 @@ public class MenuController {
         }
     }
 
+    public static void showChangeLogScreen(){
+        loadScreen("changeLog", "Change log");
+    }
+
+    public void showChangeLogScreen(ActionEvent actionEvent) {
+        loadScreen("changesLog", "Changes log");
+    }
+
     public static void loadScreen(String fxmlName, String title){
         FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("views/" + fxmlName + ".fxml"));
         try {

@@ -8,10 +8,13 @@ import production.bussines_contacts.enums.Importance;
 import production.bussines_contacts.interfaces.Deletable;
 import production.bussines_contacts.interfaces.Editable;
 
+import java.io.Serializable;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 @DatabaseTable(tableName = "contacts")
-public class Contact implements Editable, Deletable {
+public class Contact implements Editable, Deletable, Serializable {
     @DatabaseField(generatedId = true)
     private Long id;
 
@@ -136,4 +139,54 @@ public class Contact implements Editable, Deletable {
         return "Delete " + this + "?" + "\n" + "This action cannot be undone";
     }
     // Add your constructors, getters, and setters here
+    public Map<String, Map<String, String>> getDifferencesMap(Contact changedContact) {
+        Map<String, Map<String, String>> changes = new HashMap<>();
+
+        if (!this.getName().equals(changedContact.getName())) {
+            Map<String, String> nameChange = new HashMap<>();
+            nameChange.put("old", this.getName());
+            nameChange.put("new", changedContact.getName());
+            changes.put("name", nameChange);
+        }
+
+        if (!this.getDepartment().equals(changedContact.getDepartment())) {
+            Map<String, String> departmentChange = new HashMap<>();
+            departmentChange.put("old", this.getDepartment());
+            departmentChange.put("new", changedContact.getDepartment());
+            changes.put("department", departmentChange);
+        }
+
+        // Assuming Company has an overridden equals method
+        if (this.getCompany() != null && !this.getCompany().equals(changedContact.getCompany())) {
+            Map<String, String> companyChange = new HashMap<>();
+            companyChange.put("old", this.getCompany().getName());
+            companyChange.put("new", changedContact.getCompany().getName());
+            changes.put("company", companyChange);
+        }
+
+        if (this.getImportance() != changedContact.getImportance()) {
+            Map<String, String> importanceChange = new HashMap<>();
+            importanceChange.put("old", this.getImportance().toString());
+            importanceChange.put("new", changedContact.getImportance().toString());
+            changes.put("importance", importanceChange);
+        }
+
+        if (!this.getPhone_number().equals(changedContact.getPhone_number())) {
+            Map<String, String> phoneNumberChange = new HashMap<>();
+            phoneNumberChange.put("old", this.getPhone_number());
+            phoneNumberChange.put("new", changedContact.getPhone_number());
+            changes.put("phone_number", phoneNumberChange);
+        }
+
+        if (!this.getCustom_note().equals(changedContact.getCustom_note())) {
+            Map<String, String> customNoteChange = new HashMap<>();
+            customNoteChange.put("old", this.getCustom_note());
+            customNoteChange.put("new", changedContact.getCustom_note());
+            changes.put("custom_note", customNoteChange);
+        }
+
+        // Add similar blocks for other fields you want to track changes for
+
+        return changes;
+    }
 }

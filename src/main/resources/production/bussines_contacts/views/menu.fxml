@@ -30,6 +30,11 @@
                         <MenuItem mnemonicParsing="false" onAction="#showUsersScreen" text="Pretraga" />
                     </items>
                 </Menu>
+            <Menu fx:id="usersMenu1" mnemonicParsing="false" text="Change Log">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showChangeLogScreen" text="Pretraga" />
+               </items>
+            </Menu>
             </menus>
         </MenuBar>
         <Button onAction="#logout" text="Logout" HBox.hgrow="NEVER" />

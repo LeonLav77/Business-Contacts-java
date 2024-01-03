@@ -2,16 +2,20 @@ package production.bussines_contacts.models;
 
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
+import production.bussines_contacts.Application;
 import production.bussines_contacts.controllers.MenuController;
 import production.bussines_contacts.database.DB;
 import production.bussines_contacts.interfaces.Deletable;
 import production.bussines_contacts.interfaces.Editable;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.Map;
 import java.util.function.Predicate;
 
 @DatabaseTable(tableName = "companies")
-public class Company implements Editable, Deletable {
+public class Company implements Editable, Deletable, Serializable {
     @DatabaseField(generatedId = true)
     private Long id;
 
@@ -100,6 +104,9 @@ public class Company implements Editable, Deletable {
         DB.deleteCompany(this);
     }
 
+    public void update() {
+        DB.updateCompany(this);
+    }
     @Override
     public String toString() {
         return this.getName(); // Where getName() returns the company's name
@@ -107,5 +114,39 @@ public class Company implements Editable, Deletable {
     @Override
     public String deleteText() {
         return "Delete " + this + "?" + "\n" + "This action cannot be undone.\n All of the contacts associated with this company will also be deleted.";
+    }
+
+    public Map<String, Map<String, String>> getDifferencesMap(Company changedCompany) {
+        Map<String, Map<String, String>> changes = new java.util.HashMap<>();
+
+        if (!this.getName().equals(changedCompany.getName())) {
+            Map<String, String> nameChange = new java.util.HashMap<>();
+            nameChange.put("old", this.getName());
+            nameChange.put("new", changedCompany.getName());
+            changes.put("name", nameChange);
+        }
+
+        if (!this.getIndustry().equals(changedCompany.getIndustry())) {
+            Map<String, String> industryChange = new java.util.HashMap<>();
+            industryChange.put("old", this.getIndustry());
+            industryChange.put("new", changedCompany.getIndustry());
+            changes.put("industry", industryChange);
+        }
+
+        if (!this.getHeadquarters().equals(changedCompany.getHeadquarters())) {
+            Map<String, String> headquartersChange = new java.util.HashMap<>();
+            headquartersChange.put("old", this.getHeadquarters());
+            headquartersChange.put("new", changedCompany.getHeadquarters());
+            changes.put("headquarters", headquartersChange);
+        }
+
+        if (!this.getWebsite().equals(changedCompany.getWebsite())) {
+            Map<String, String> websiteChange = new java.util.HashMap<>();
+            websiteChange.put("old", this.getWebsite());
+            websiteChange.put("new", changedCompany.getWebsite());
+            changes.put("website", websiteChange);
+        }
+
+        return changes;
     }
 }

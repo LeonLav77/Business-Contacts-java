@@ -4,23 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea87d55-1246-4cb1-8b29-5f53e63286c8" name="Changes" comment="Gotov CRUD za sve">
-      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/FunctionUtils.java" afterDir="false" />
+    <list default="true" id="7ea87d55-1246-4cb1-8b29-5f53e63286c8" name="Changes" comment="Are you sure promptovi svugdje">
+      <change afterPath="$PROJECT_DIR$/change_log/changeLog.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ChangesLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/ChangeDataModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/ChangeLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/production/bussines_contacts/views/changesLog.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dat/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dat/users.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/CompaniesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/CompaniesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ContactsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ContactsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/EditCompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/EditCompanyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/EditContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/EditContactController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/interfaces/Deletable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/interfaces/Deletable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/EditUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/EditUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/interfaces/Editable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/interfaces/Editable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Company.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Viewer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/partials/DeletableCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/partials/DeletableCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/production/bussines_contacts/views/addContact.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/production/bussines_contacts/views/addContact.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/production/bussines_contacts/views/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/production/bussines_contacts/views/menu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="FxmlFile" />
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -144,7 +146,7 @@
       <workItem from="1703983324938" duration="831000" />
       <workItem from="1704025909805" duration="12795000" />
       <workItem from="1704120088602" duration="9811000" />
-      <workItem from="1704191179914" duration="4653000" />
+      <workItem from="1704191179914" duration="17752000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -167,7 +169,14 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1704194108143</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="Are you sure promptovi svugdje">
+      <option name="closed" value="true" />
+      <created>1704195867487</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1704195867487</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +196,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Gotov CRUD za sve" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gotov CRUD za sve" />
+    <MESSAGE value="Are you sure promptovi svugdje" />
+    <option name="LAST_COMMIT_MESSAGE" value="Are you sure promptovi svugdje" />
   </component>
 </project>

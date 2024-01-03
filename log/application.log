@@ -4983,3 +4983,646 @@ INSERT INTO `companies` (`name` ,`industry` ,`headquarters` ,`created_at` ,`webs
 12:43:21.330 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @29998341 after 2 rows
 12:43:21.330 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 2 results
 12:43:26.317 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - delete data with statement 'DELETE FROM `contacts` WHERE `id` = ?' and 1 args, changed 1 rows
+13:15:36.491 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+13:15:36.494 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+13:15:36.575 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+13:15:36.580 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+13:15:36.586 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+13:15:36.594 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+13:15:36.594 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+13:15:36.595 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+13:15:36.596 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+13:15:36.596 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+13:15:36.596 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+13:15:41.739 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+13:15:41.739 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @601856573 for 'SELECT * FROM `companies`'
+13:15:41.740 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @601856573 after 1 rows
+13:15:41.740 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+13:15:41.740 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+13:15:41.740 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1690254669 for 'SELECT * FROM `companies`'
+13:15:41.740 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1690254669 after 1 rows
+13:15:41.740 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+13:15:44.875 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+13:15:44.907 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+13:15:44.907 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @60351910 for 'SELECT * FROM `companies`'
+13:15:44.907 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @60351910 after 1 rows
+13:15:44.907 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+13:15:44.907 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+13:15:44.908 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1495235635 for 'SELECT * FROM `companies`'
+13:15:44.908 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1495235635 after 1 rows
+13:15:44.908 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:07:06.001 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+23:07:06.004 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+23:07:06.105 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+23:07:06.113 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:07:06.121 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+23:07:06.126 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+23:07:06.126 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:07:06.127 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:07:06.127 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+23:07:06.127 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+23:07:06.127 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:07:10.932 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:07:10.932 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @601856573 for 'SELECT * FROM `companies`'
+23:07:10.933 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @601856573 after 1 rows
+23:07:10.933 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:07:10.933 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:07:10.933 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1690254669 for 'SELECT * FROM `companies`'
+23:07:10.933 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1690254669 after 1 rows
+23:07:10.933 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:07:15.396 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+23:07:15.411 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:07:15.412 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1626180673 for 'SELECT * FROM `companies`'
+23:07:15.412 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1626180673 after 1 rows
+23:07:15.412 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:07:15.413 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:07:15.413 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @551359295 for 'SELECT * FROM `companies`'
+23:07:15.413 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @551359295 after 1 rows
+23:07:15.413 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:08:29.615 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+23:08:29.619 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+23:08:29.704 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+23:08:29.712 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:08:29.718 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+23:08:29.724 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+23:08:29.724 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:08:29.725 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:08:29.725 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+23:08:29.726 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+23:08:29.726 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:08:51.846 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:08:51.846 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @601856573 for 'SELECT * FROM `companies`'
+23:08:51.847 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @601856573 after 1 rows
+23:08:51.847 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:08:51.847 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:08:51.847 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1690254669 for 'SELECT * FROM `companies`'
+23:08:51.847 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1690254669 after 1 rows
+23:08:51.847 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:08:56.157 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+23:08:56.178 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:08:56.179 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1626180673 for 'SELECT * FROM `companies`'
+23:08:56.180 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1626180673 after 1 rows
+23:08:56.180 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:08:56.180 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:08:56.181 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @551359295 for 'SELECT * FROM `companies`'
+23:08:56.181 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @551359295 after 1 rows
+23:08:56.181 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:13:52.550 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+23:13:52.556 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+23:13:52.650 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+23:13:52.656 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:13:52.661 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+23:13:52.666 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+23:13:52.666 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:13:52.667 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:13:52.667 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+23:13:52.667 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+23:13:52.667 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:13:57.690 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:13:57.690 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @2137006543 for 'SELECT * FROM `companies`'
+23:13:57.690 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @2137006543 after 1 rows
+23:13:57.690 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:13:57.691 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:13:57.691 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1474402190 for 'SELECT * FROM `companies`'
+23:13:57.691 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1474402190 after 1 rows
+23:13:57.691 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:14:07.683 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+23:14:07.697 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:14:07.698 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @27777926 for 'SELECT * FROM `companies`'
+23:14:07.698 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @27777926 after 1 rows
+23:14:07.698 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:14:07.698 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:14:07.699 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1578474641 for 'SELECT * FROM `companies`'
+23:14:07.699 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1578474641 after 1 rows
+23:14:07.699 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:15:48.142 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+23:15:48.145 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+23:15:48.223 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+23:15:48.231 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:15:48.239 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+23:15:48.244 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+23:15:48.244 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:15:48.245 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:15:48.246 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+23:15:48.246 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+23:15:48.246 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:15:52.140 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:15:52.140 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @565924599 for 'SELECT * FROM `companies`'
+23:15:52.141 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @565924599 after 1 rows
+23:15:52.141 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:15:52.141 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:15:52.142 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1698693578 for 'SELECT * FROM `companies`'
+23:15:52.142 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1698693578 after 1 rows
+23:15:52.142 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:16:04.232 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+23:16:04.247 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:16:04.248 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @343503513 for 'SELECT * FROM `companies`'
+23:16:04.248 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @343503513 after 1 rows
+23:16:04.248 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:16:04.249 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:16:04.249 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @466353978 for 'SELECT * FROM `companies`'
+23:16:04.249 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @466353978 after 1 rows
+23:16:04.249 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:20:52.966 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+23:20:52.969 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+23:20:53.056 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+23:20:53.065 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:20:53.071 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+23:20:53.080 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+23:20:53.081 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:20:53.081 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:20:53.082 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+23:20:53.082 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+23:20:53.082 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:20:56.875 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:20:56.875 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1966275740 for 'SELECT * FROM `companies`'
+23:20:56.875 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1966275740 after 1 rows
+23:20:56.875 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:20:56.876 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:20:56.876 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1575797849 for 'SELECT * FROM `companies`'
+23:20:56.876 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1575797849 after 1 rows
+23:20:56.876 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:21:03.158 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+23:21:03.187 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:21:03.188 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @60042801 for 'SELECT * FROM `companies`'
+23:21:03.188 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @60042801 after 1 rows
+23:21:03.188 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:21:03.188 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:21:03.189 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1620108317 for 'SELECT * FROM `companies`'
+23:21:03.189 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1620108317 after 1 rows
+23:21:03.189 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:26:58.237 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+23:26:58.240 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+23:26:58.313 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+23:26:58.320 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:26:58.325 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+23:26:58.330 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+23:26:58.330 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:26:58.330 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:26:58.331 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+23:26:58.331 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+23:26:58.331 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:27:01.590 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:27:01.591 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @601856573 for 'SELECT * FROM `companies`'
+23:27:01.591 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @601856573 after 1 rows
+23:27:01.591 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:27:01.591 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:27:01.591 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1690254669 for 'SELECT * FROM `companies`'
+23:27:01.592 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1690254669 after 1 rows
+23:27:01.592 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:27:05.915 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+23:27:05.931 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:27:05.932 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @304891782 for 'SELECT * FROM `companies`'
+23:27:05.932 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @304891782 after 1 rows
+23:27:05.932 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:27:05.932 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:27:05.932 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @646963850 for 'SELECT * FROM `companies`'
+23:27:05.932 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @646963850 after 1 rows
+23:27:05.932 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:27:38.999 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+23:27:39.001 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+23:27:39.080 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+23:27:39.087 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:27:39.093 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+23:27:39.098 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+23:27:39.098 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:27:39.099 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:27:39.099 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+23:27:39.099 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+23:27:39.099 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:27:45.241 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:27:45.242 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1678359176 for 'SELECT * FROM `companies`'
+23:27:45.242 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1678359176 after 1 rows
+23:27:45.242 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:27:45.242 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:27:45.242 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1519607848 for 'SELECT * FROM `companies`'
+23:27:45.243 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1519607848 after 1 rows
+23:27:45.243 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:27:49.677 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+23:27:49.696 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:27:49.696 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @921164042 for 'SELECT * FROM `companies`'
+23:27:49.696 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @921164042 after 1 rows
+23:27:49.696 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:27:49.697 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:27:49.697 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1110362769 for 'SELECT * FROM `companies`'
+23:27:49.697 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1110362769 after 1 rows
+23:27:49.697 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:28:49.747 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+23:28:49.751 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+23:28:49.832 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+23:28:49.839 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:28:49.844 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+23:28:49.850 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+23:28:49.850 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:28:49.851 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:28:49.851 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+23:28:49.851 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+23:28:49.851 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:28:55.553 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:28:55.553 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1575797849 for 'SELECT * FROM `companies`'
+23:28:55.553 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1575797849 after 1 rows
+23:28:55.554 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:28:55.554 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:28:55.554 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @595388530 for 'SELECT * FROM `companies`'
+23:28:55.554 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @595388530 after 1 rows
+23:28:55.554 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:28:59.450 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+23:28:59.470 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:28:59.472 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1777152560 for 'SELECT * FROM `companies`'
+23:28:59.472 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1777152560 after 1 rows
+23:28:59.472 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:28:59.473 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:28:59.473 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @339526269 for 'SELECT * FROM `companies`'
+23:28:59.474 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @339526269 after 1 rows
+23:28:59.474 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:30:18.997 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+23:30:19.001 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+23:30:19.079 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+23:30:19.084 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:30:19.089 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+23:30:19.095 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+23:30:19.095 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:30:19.095 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:30:19.096 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+23:30:19.096 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+23:30:19.096 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:30:21.953 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:30:21.954 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1966275740 for 'SELECT * FROM `companies`'
+23:30:21.954 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1966275740 after 1 rows
+23:30:21.954 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:30:21.954 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:30:21.954 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1575797849 for 'SELECT * FROM `companies`'
+23:30:21.954 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1575797849 after 1 rows
+23:30:21.954 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:30:26.135 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+23:30:26.151 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:30:26.151 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @40263895 for 'SELECT * FROM `companies`'
+23:30:26.151 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @40263895 after 1 rows
+23:30:26.151 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:30:26.152 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:30:26.152 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @657250609 for 'SELECT * FROM `companies`'
+23:30:26.152 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @657250609 after 1 rows
+23:30:26.152 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:37:52.141 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+23:37:52.145 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+23:37:52.212 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1278669295
+23:37:52.216 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:37:52.222 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @787779122 for 'SELECT * FROM `companies`'
+23:37:52.229 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @787779122 after 1 rows
+23:37:52.229 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:37:52.230 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:37:52.231 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1972555560 for 'SELECT * FROM `companies`'
+23:37:52.231 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1972555560 after 1 rows
+23:37:52.231 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:37:56.638 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:37:56.638 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @632552728 for 'SELECT * FROM `companies`'
+23:37:56.638 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @632552728 after 1 rows
+23:37:56.638 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:37:56.639 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:37:56.639 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1163376522 for 'SELECT * FROM `companies`'
+23:37:56.639 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1163376522 after 1 rows
+23:37:56.639 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:38:00.738 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+23:38:00.753 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:38:00.754 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @2042409773 for 'SELECT * FROM `companies`'
+23:38:00.754 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @2042409773 after 1 rows
+23:38:00.754 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+23:38:00.754 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+23:38:00.754 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @748214951 for 'SELECT * FROM `companies`'
+23:38:00.754 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @748214951 after 1 rows
+23:38:00.754 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+00:05:30.617 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+00:05:30.620 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+00:05:30.694 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+00:05:30.702 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+00:05:30.708 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+00:05:30.713 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+00:05:30.713 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+00:05:30.714 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+00:05:30.714 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+00:05:30.714 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+00:05:30.714 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+00:05:34.856 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+00:05:34.857 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @601856573 for 'SELECT * FROM `companies`'
+00:05:34.857 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @601856573 after 1 rows
+00:05:34.857 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+00:05:34.857 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+00:05:34.857 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1690254669 for 'SELECT * FROM `companies`'
+00:05:34.857 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1690254669 after 1 rows
+00:05:34.857 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+00:05:40.059 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+00:05:40.077 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+00:05:40.078 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @921164042 for 'SELECT * FROM `companies`'
+00:05:40.078 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @921164042 after 1 rows
+00:05:40.078 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+00:05:40.078 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+00:05:40.078 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1110362769 for 'SELECT * FROM `companies`'
+00:05:40.078 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1110362769 after 1 rows
+00:05:40.078 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+00:05:49.963 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+00:05:49.976 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+00:05:49.977 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1968930089 for 'SELECT * FROM `companies`'
+00:05:49.977 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1968930089 after 1 rows
+00:05:49.977 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+00:05:49.977 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+00:05:49.978 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @855889097 for 'SELECT * FROM `companies`'
+00:05:49.978 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @855889097 after 1 rows
+00:05:49.978 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+02:24:33.826 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+02:24:33.829 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+02:24:33.899 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+02:24:33.904 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+02:24:33.910 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+02:24:33.915 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+02:24:33.915 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+02:24:33.916 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+02:24:33.916 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+02:24:33.917 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+02:24:33.917 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+02:24:40.158 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+02:24:40.159 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @539890754 for 'SELECT * FROM `companies`'
+02:24:40.159 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @539890754 after 1 rows
+02:24:40.159 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+02:24:40.159 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+02:24:40.160 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @607407055 for 'SELECT * FROM `companies`'
+02:24:40.160 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @607407055 after 1 rows
+02:24:40.160 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+02:24:43.855 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+02:24:43.869 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+02:24:43.870 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @744350401 for 'SELECT * FROM `companies`'
+02:24:43.870 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @744350401 after 1 rows
+02:24:43.870 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+02:24:43.870 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+02:24:43.870 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @982646236 for 'SELECT * FROM `companies`'
+02:24:43.870 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @982646236 after 1 rows
+02:24:43.870 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+02:28:17.674 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+02:28:17.685 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+02:28:17.804 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #488984606
+02:28:17.817 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+02:28:17.824 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1639301117 for 'SELECT * FROM `companies`'
+02:28:17.833 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1639301117 after 1 rows
+02:28:17.833 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+02:28:17.834 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+02:28:17.835 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @746281095 for 'SELECT * FROM `companies`'
+02:28:17.835 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @746281095 after 1 rows
+02:28:17.835 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+02:28:21.786 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+02:28:21.786 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @965581503 for 'SELECT * FROM `companies`'
+02:28:21.786 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @965581503 after 1 rows
+02:28:21.787 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+02:28:21.787 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+02:28:21.787 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @747240094 for 'SELECT * FROM `companies`'
+02:28:21.787 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @747240094 after 1 rows
+02:28:21.787 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+02:28:24.857 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+02:28:24.879 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+02:28:24.879 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @442735174 for 'SELECT * FROM `companies`'
+02:28:24.880 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @442735174 after 1 rows
+02:28:24.880 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+02:28:24.880 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+02:28:24.881 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1488707858 for 'SELECT * FROM `companies`'
+02:28:24.881 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1488707858 after 1 rows
+02:28:24.881 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+02:28:30.159 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+02:28:30.180 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+02:28:30.181 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @31910994 for 'SELECT * FROM `companies`'
+02:28:30.181 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @31910994 after 1 rows
+02:28:30.181 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+02:28:30.181 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+02:28:30.182 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @831278359 for 'SELECT * FROM `companies`'
+02:28:30.182 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @831278359 after 1 rows
+02:28:30.182 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:35:54.713 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+03:35:54.717 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+03:35:54.794 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+03:35:54.799 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:35:54.805 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+03:35:54.810 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+03:35:54.810 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:35:54.811 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:35:54.811 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+03:35:54.812 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+03:35:54.812 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:35:59.245 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Contact with reflection
+03:35:59.245 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `contacts`
+03:35:59.246 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+03:35:59.247 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @355287896 for 'SELECT * FROM `contacts`'
+03:35:59.253 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+03:35:59.253 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @355287896 after 1 rows
+03:35:59.253 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 1 results
+03:36:00.661 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:36:00.661 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1919720225 for 'SELECT * FROM `companies`'
+03:36:00.662 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1919720225 after 1 rows
+03:36:00.662 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:36:00.662 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:36:00.662 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @149991034 for 'SELECT * FROM `companies`'
+03:36:00.662 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @149991034 after 1 rows
+03:36:00.662 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:36:06.550 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `contacts` SET `name` = ?, `department` = ?, `company_id` = ?, `created_at` = ?, `importance` = ?, `phone_number` = ?, `custom_note` = ? WHERE `id` = ?' and 8 args, changed 1 rows
+03:36:06.566 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+03:36:06.567 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @566037843 for 'SELECT * FROM `contacts`'
+03:36:06.568 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+03:36:06.568 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @566037843 after 1 rows
+03:36:06.568 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 1 results
+03:36:55.485 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+03:36:55.489 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+03:36:55.567 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+03:36:55.574 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:36:55.579 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+03:36:55.584 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+03:36:55.585 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:36:55.585 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:36:55.586 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+03:36:55.586 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+03:36:55.586 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:36:58.957 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:36:58.957 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @328981518 for 'SELECT * FROM `companies`'
+03:36:58.957 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @328981518 after 1 rows
+03:36:58.958 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:36:58.958 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:36:58.958 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @308883199 for 'SELECT * FROM `companies`'
+03:36:58.958 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @308883199 after 1 rows
+03:36:58.958 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:37:00.095 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Contact with reflection
+03:37:00.095 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `contacts`
+03:37:00.095 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+03:37:00.096 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1952470865 for 'SELECT * FROM `contacts`'
+03:37:00.102 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+03:37:00.102 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1952470865 after 1 rows
+03:37:00.102 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 1 results
+03:37:02.119 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:37:02.120 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @316155977 for 'SELECT * FROM `companies`'
+03:37:02.120 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @316155977 after 1 rows
+03:37:02.120 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:37:02.120 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:37:02.121 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @654226867 for 'SELECT * FROM `companies`'
+03:37:02.121 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @654226867 after 1 rows
+03:37:02.121 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:37:06.145 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `contacts` SET `name` = ?, `department` = ?, `company_id` = ?, `created_at` = ?, `importance` = ?, `phone_number` = ?, `custom_note` = ? WHERE `id` = ?' and 8 args, changed 1 rows
+03:37:06.163 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+03:37:06.163 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @465276026 for 'SELECT * FROM `contacts`'
+03:37:06.164 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+03:37:06.165 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @465276026 after 1 rows
+03:37:06.165 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 1 results
+03:37:08.808 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:37:08.808 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @421653787 for 'SELECT * FROM `companies`'
+03:37:08.808 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @421653787 after 1 rows
+03:37:08.808 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:37:08.808 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:37:08.808 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @616716603 for 'SELECT * FROM `companies`'
+03:37:08.808 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @616716603 after 1 rows
+03:37:08.808 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:37:11.132 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:37:11.132 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @2114940783 for 'SELECT * FROM `companies`'
+03:37:11.133 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @2114940783 after 1 rows
+03:37:11.133 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:37:11.133 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:37:11.133 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1242413824 for 'SELECT * FROM `companies`'
+03:37:11.133 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1242413824 after 1 rows
+03:37:11.133 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:37:11.940 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+03:37:11.941 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1172812954 for 'SELECT * FROM `contacts`'
+03:37:11.941 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+03:37:11.941 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1172812954 after 1 rows
+03:37:11.941 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 1 results
+03:37:13.412 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:37:13.412 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @249421071 for 'SELECT * FROM `companies`'
+03:37:13.412 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @249421071 after 1 rows
+03:37:13.413 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:37:13.413 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:37:13.413 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @642982067 for 'SELECT * FROM `companies`'
+03:37:13.413 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @642982067 after 1 rows
+03:37:13.413 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:37:19.162 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+03:37:19.173 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:37:19.173 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1472323777 for 'SELECT * FROM `companies`'
+03:37:19.173 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1472323777 after 1 rows
+03:37:19.173 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:37:19.173 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:37:19.174 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1539253482 for 'SELECT * FROM `companies`'
+03:37:19.174 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1539253482 after 1 rows
+03:37:19.174 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:47:35.251 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+03:47:35.254 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+03:47:35.341 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+03:47:35.348 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:47:35.355 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+03:47:35.361 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+03:47:35.361 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:47:35.362 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:47:35.362 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+03:47:35.362 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+03:47:35.362 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:47:39.275 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Contact with reflection
+03:47:39.275 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `contacts`
+03:47:39.276 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+03:47:39.277 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @850610355 for 'SELECT * FROM `contacts`'
+03:47:39.283 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+03:47:39.284 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @850610355 after 1 rows
+03:47:39.284 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 1 results
+03:47:41.056 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:47:41.057 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @840216233 for 'SELECT * FROM `companies`'
+03:47:41.057 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @840216233 after 1 rows
+03:47:41.057 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:47:41.057 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:47:41.057 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @678205579 for 'SELECT * FROM `companies`'
+03:47:41.058 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @678205579 after 1 rows
+03:47:41.058 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:47:44.069 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `contacts` SET `name` = ?, `department` = ?, `company_id` = ?, `created_at` = ?, `importance` = ?, `phone_number` = ?, `custom_note` = ? WHERE `id` = ?' and 8 args, changed 1 rows
+03:47:44.085 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+03:47:44.086 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1397242693 for 'SELECT * FROM `contacts`'
+03:47:44.086 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+03:47:44.086 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1397242693 after 1 rows
+03:47:44.086 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 1 results
+03:48:19.955 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+03:48:19.959 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+03:48:20.034 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+03:48:20.040 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:48:20.047 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+03:48:20.053 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+03:48:20.053 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:48:20.054 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:48:20.054 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+03:48:20.054 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+03:48:20.054 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:48:23.675 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:48:23.676 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1489239183 for 'SELECT * FROM `companies`'
+03:48:23.676 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1489239183 after 1 rows
+03:48:23.676 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:48:23.676 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:48:23.677 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1274546809 for 'SELECT * FROM `companies`'
+03:48:23.677 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1274546809 after 1 rows
+03:48:23.677 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:48:27.340 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
+03:48:27.358 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:48:27.359 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1110362769 for 'SELECT * FROM `companies`'
+03:48:27.359 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1110362769 after 1 rows
+03:48:27.359 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:48:27.359 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:48:27.359 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @197210879 for 'SELECT * FROM `companies`'
+03:48:27.360 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @197210879 after 1 rows
+03:48:27.360 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:51:45.712 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+03:51:45.716 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+03:51:45.793 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+03:51:45.800 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:51:45.806 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+03:51:45.813 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+03:51:45.814 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:51:45.814 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:51:45.815 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+03:51:45.815 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+03:51:45.815 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:52:06.084 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+03:52:06.087 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+03:52:06.171 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+03:52:06.179 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:52:06.185 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+03:52:06.191 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+03:52:06.191 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:52:06.191 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:52:06.192 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+03:52:06.192 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+03:52:06.192 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:58:57.511 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+03:58:57.515 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+03:58:57.592 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+03:58:57.596 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:58:57.602 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+03:58:57.608 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+03:58:57.608 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:58:57.609 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:58:57.609 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+03:58:57.609 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+03:58:57.609 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:59:01.181 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:59:01.182 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @740554214 for 'SELECT * FROM `companies`'
+03:59:01.182 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @740554214 after 1 rows
+03:59:01.182 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:59:01.183 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:59:01.183 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1409060885 for 'SELECT * FROM `companies`'
+03:59:01.183 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1409060885 after 1 rows
+03:59:01.183 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:59:19.342 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+03:59:19.345 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+03:59:19.429 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1254917026
+03:59:19.433 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:59:19.438 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @588732527 for 'SELECT * FROM `companies`'
+03:59:19.444 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @588732527 after 1 rows
+03:59:19.444 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+03:59:19.445 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+03:59:19.446 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @81442025 for 'SELECT * FROM `companies`'
+03:59:19.446 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @81442025 after 1 rows
+03:59:19.446 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+04:00:35.993 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+04:00:35.997 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+04:00:36.076 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #542036575
+04:00:36.082 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+04:00:36.088 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1377884376 for 'SELECT * FROM `companies`'
+04:00:36.094 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1377884376 after 1 rows
+04:00:36.094 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
+04:00:36.095 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+04:00:36.095 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @136293041 for 'SELECT * FROM `companies`'
+04:00:36.095 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @136293041 after 1 rows
+04:00:36.095 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 1 results
