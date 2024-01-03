@@ -15,6 +15,7 @@ import production.bussines_contacts.models.Company;
 import production.bussines_contacts.models.Contact;
 import production.bussines_contacts.partials.DeletableCell;
 import production.bussines_contacts.partials.EditableCell;
+import production.bussines_contacts.utils.FunctionUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,52 +71,10 @@ public class CompaniesController {
     }
 
     private void setupEditableColumns() {
-        // Making the companyNameColumn editable
-        companyNameColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
-        companyNameColumn.setOnEditCommit(event -> {
-            if(!confirmSaveOperation("Save Company")) {
-                return;
-            }
-            Company company = event.getRowValue();
-            company.setName(event.getNewValue());
-            updateCompanyInDatabase(company);
-        });
-
-        industryColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
-        industryColumn.setOnEditCommit(event -> {
-            if(!confirmSaveOperation("Save Company")) {
-                return;
-            }
-            Company company = event.getRowValue();
-            company.setIndustry(event.getNewValue());
-            updateCompanyInDatabase(company);
-        });
-
-        headquartersColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
-        headquartersColumn.setOnEditCommit(event -> {
-            if(!confirmSaveOperation("Save Company")) {
-                return;
-            }
-            Company company = event.getRowValue();
-            company.setHeadquarters(event.getNewValue());
-            updateCompanyInDatabase(company);
-        });
-
-        websiteColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
-        websiteColumn.setOnEditCommit(event -> {
-            if(!confirmSaveOperation("Save Company")) {
-                return;
-            }
-            Company company = event.getRowValue();
-            company.setWebsite(event.getNewValue());
-            updateCompanyInDatabase(company);
-        });
-    }
-
-    private void updateCompanyInDatabase(Company company) {
-        System.out.println("Updating company: " + company.getName());
-        DB.updateCompany(company);
-        showAndFilterCompanies();
+        FunctionUtils.setupEditableColumn(companyNameColumn, Company::setName);
+        FunctionUtils.setupEditableColumn(industryColumn, Company::setIndustry);
+        FunctionUtils.setupEditableColumn(headquartersColumn, Company::setHeadquarters);
+        FunctionUtils.setupEditableColumn(websiteColumn, Company::setWebsite);
     }
 
     public static Predicate<Company> matches(String searchText) {

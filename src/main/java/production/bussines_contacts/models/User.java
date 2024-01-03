@@ -4,19 +4,20 @@ import production.bussines_contacts.enums.Role;
 import production.bussines_contacts.interfaces.Deletable;
 import production.bussines_contacts.interfaces.Editable;
 import production.bussines_contacts.utils.FileUtils;
+import production.bussines_contacts.utils.FunctionUtils;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.Map;
 
-public abstract class User implements Editable, Deletable, Serializable {
+public abstract class User implements Editable<User>, Deletable, Serializable {
     public static final String STORAGE_FILE_NAME = "dat/users.txt";
     protected Long id;
     protected String name;
     protected String password;
     @Serial
     private static final long serialVersionUID = 1L; // Unique version identifier
-
 
     public String getPassword() {
         return password;
@@ -56,6 +57,14 @@ public abstract class User implements Editable, Deletable, Serializable {
     public void delete() {
         FileUtils.deleteUser(this);
     }
-    public abstract Map<String, Map<String, String>> getDifferencesMap(User user);
+    @Override
+    public Map<String, Map<String, String>> getDifferencesMap(User otherUser) {
+        Map<String, Map<String, String>> changes = new HashMap<>();
 
+        FunctionUtils.addChange(changes, "name", this.getName(), otherUser.getName());
+        FunctionUtils.addChange(changes, "role" , this.getRole().getRoleName(), otherUser.getRole().getRoleName());
+
+        return changes;
+    }
+    public abstract User clone();
 }

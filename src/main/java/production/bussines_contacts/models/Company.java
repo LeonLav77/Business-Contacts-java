@@ -7,7 +7,9 @@ import production.bussines_contacts.controllers.MenuController;
 import production.bussines_contacts.database.DB;
 import production.bussines_contacts.interfaces.Deletable;
 import production.bussines_contacts.interfaces.Editable;
+import production.bussines_contacts.utils.FunctionUtils;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
@@ -15,7 +17,10 @@ import java.util.Map;
 import java.util.function.Predicate;
 
 @DatabaseTable(tableName = "companies")
-public class Company implements Editable, Deletable, Serializable {
+public class Company implements Editable<Company>, Deletable, Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L; // Unique version identifier
+
     @DatabaseField(generatedId = true)
     private Long id;
 
@@ -107,6 +112,12 @@ public class Company implements Editable, Deletable, Serializable {
     public void update() {
         DB.updateCompany(this);
     }
+
+    @Override
+    public Company clone() {
+        return new Company(this.getId(), this.getName(), this.getIndustry(), this.getHeadquarters(), this.getCreated_at(), this.getWebsite());
+    }
+
     @Override
     public String toString() {
         return this.getName(); // Where getName() returns the company's name
@@ -116,36 +127,14 @@ public class Company implements Editable, Deletable, Serializable {
         return "Delete " + this + "?" + "\n" + "This action cannot be undone.\n All of the contacts associated with this company will also be deleted.";
     }
 
+    @Override
     public Map<String, Map<String, String>> getDifferencesMap(Company changedCompany) {
         Map<String, Map<String, String>> changes = new java.util.HashMap<>();
 
-        if (!this.getName().equals(changedCompany.getName())) {
-            Map<String, String> nameChange = new java.util.HashMap<>();
-            nameChange.put("old", this.getName());
-            nameChange.put("new", changedCompany.getName());
-            changes.put("name", nameChange);
-        }
-
-        if (!this.getIndustry().equals(changedCompany.getIndustry())) {
-            Map<String, String> industryChange = new java.util.HashMap<>();
-            industryChange.put("old", this.getIndustry());
-            industryChange.put("new", changedCompany.getIndustry());
-            changes.put("industry", industryChange);
-        }
-
-        if (!this.getHeadquarters().equals(changedCompany.getHeadquarters())) {
-            Map<String, String> headquartersChange = new java.util.HashMap<>();
-            headquartersChange.put("old", this.getHeadquarters());
-            headquartersChange.put("new", changedCompany.getHeadquarters());
-            changes.put("headquarters", headquartersChange);
-        }
-
-        if (!this.getWebsite().equals(changedCompany.getWebsite())) {
-            Map<String, String> websiteChange = new java.util.HashMap<>();
-            websiteChange.put("old", this.getWebsite());
-            websiteChange.put("new", changedCompany.getWebsite());
-            changes.put("website", websiteChange);
-        }
+        FunctionUtils.addChange(changes, "name", this.getName(), changedCompany.getName());
+        FunctionUtils.addChange(changes, "industry", this.getIndustry(), changedCompany.getIndustry());
+        FunctionUtils.addChange(changes, "headquarters", this.getHeadquarters(), changedCompany.getHeadquarters());
+        FunctionUtils.addChange(changes, "website", this.getWebsite(), changedCompany.getWebsite());
 
         return changes;
     }

@@ -2,6 +2,8 @@ package production.bussines_contacts.models;
 
 import production.bussines_contacts.controllers.MenuController;
 import production.bussines_contacts.enums.Role;
+import production.bussines_contacts.utils.FileUtils;
+import production.bussines_contacts.utils.FunctionUtils;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -29,27 +31,6 @@ public class Admin extends User {
     }
 
     @Override
-    public Map<String, Map<String, String>> getDifferencesMap(User otherUser) {
-        Map<String, Map<String, String>> changes = new HashMap<>();
-
-        if (!this.getName().equals(otherUser.getName())) {
-            Map<String, String> nameChange = new HashMap<>();
-            nameChange.put("old", this.getName());
-            nameChange.put("new", otherUser.getName());
-            changes.put("name", nameChange);
-        }
-
-        if(this.getRole() != otherUser.getRole()) {
-            Map<String, String> roleChange = new HashMap<>();
-            roleChange.put("old", this.getRole().getRoleName());
-            roleChange.put("new", otherUser.getRole().getRoleName());
-            changes.put("role", roleChange);
-        }
-
-        return changes;
-    }
-
-    @Override
     public void edit() {
         MenuController.editUser(this);
     }
@@ -57,5 +38,14 @@ public class Admin extends User {
     @Override
     public String deleteText() {
         return "Delete User";
+    }
+    @Override
+    public Admin clone() {
+        return new Admin(this.getId(), this.getName(), this.getPassword());
+    }
+
+    @Override
+    public void update(){
+        FileUtils.updateUser(this);
     }
 }

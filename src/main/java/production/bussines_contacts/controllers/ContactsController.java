@@ -14,8 +14,13 @@ import production.bussines_contacts.partials.DeletableCell;
 import production.bussines_contacts.partials.EditableCell;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.converter.DefaultStringConverter;
+import production.bussines_contacts.utils.ChangeLog;
+import production.bussines_contacts.utils.FunctionUtils;
+
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.function.BiConsumer;
 import java.util.function.Predicate;
 
 import static production.bussines_contacts.utils.FunctionUtils.confirmSaveOperation;
@@ -60,7 +65,6 @@ public class ContactsController {
         customNoteColumn.setCellValueFactory(data -> new ReadOnlyStringWrapper(data.getValue().getCustom_note()));
 
         this.setupEditColumn();
-        //this.setupRowFactory();
         this.showAndFilterContacts();
         this.setupEditableColumns();
         this.setupDeleteColumn();
@@ -73,48 +77,11 @@ public class ContactsController {
     }
 
 
-    private void setupEditableColumns(){
-        // Making the companyNameColumn editable
-        contactNameColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
-        contactNameColumn.setOnEditCommit(event -> {
-            if(!confirmSaveOperation("Save User")) {
-                return;
-            }
-            Contact contact = event.getRowValue();
-            contact.setName(event.getNewValue());
-            updateContactInDatabase(contact);
-        });
-        departmentColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
-        departmentColumn.setOnEditCommit(event -> {
-            if(!confirmSaveOperation("Save User")) {
-                return;
-            }
-            Contact contact = event.getRowValue();
-            contact.setDepartment(event.getNewValue());
-            updateContactInDatabase(contact);
-        });
-        phoneNumberColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
-        phoneNumberColumn.setOnEditCommit(event -> {
-            if(!confirmSaveOperation("Save User")) {
-                return;
-            }
-            Contact contact = event.getRowValue();
-            contact.setPhone_number(event.getNewValue());
-            updateContactInDatabase(contact);
-        });
-        customNoteColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
-        customNoteColumn.setOnEditCommit(event -> {
-            if(!confirmSaveOperation("Save User")) {
-                return;
-            }
-            Contact contact = event.getRowValue();
-            contact.setCustom_note (event.getNewValue());
-            updateContactInDatabase(contact);
-        });
-    }
-
-    private void updateContactInDatabase(Contact contact) {
-        DB.updateContact(contact);
+    private void setupEditableColumns() {
+        FunctionUtils.setupEditableColumn(contactNameColumn, Contact::setName);
+        FunctionUtils.setupEditableColumn(departmentColumn, Contact::setDepartment);
+        FunctionUtils.setupEditableColumn(phoneNumberColumn, Contact::setPhone_number);
+        FunctionUtils.setupEditableColumn(customNoteColumn, Contact::setCustom_note);
     }
 
     private void sortContacts() {
@@ -161,25 +128,6 @@ public class ContactsController {
             }
             return contact.getCustom_note().toLowerCase().contains(searchLower);
         };
-    }
-
-    private void setupRowFactory() {
-        contactsTableView.setRowFactory(tableView -> new TableRow<Contact>() {
-            @Override
-            protected void updateItem(Contact contact, boolean empty) {
-                super.updateItem(contact, empty);
-                if (contact == null || empty) {
-                    setStyle("");
-                } else {
-                    // Check the importance of the contact and set the row color
-                    if (contact.getImportance() == Importance.HIGH) {
-                        setStyle("-fx-background-color: #ff99a4;");
-                    } else {
-                        setStyle(""); // Default style
-                    }
-                }
-            }
-        });
     }
 
     private void showAndFilterContacts() {

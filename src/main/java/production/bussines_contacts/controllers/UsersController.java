@@ -10,14 +10,19 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.Callback;
 import javafx.util.converter.DefaultStringConverter;
+import production.bussines_contacts.enums.Role;
+import production.bussines_contacts.models.Admin;
 import production.bussines_contacts.models.Company;
 import production.bussines_contacts.models.User;
+import production.bussines_contacts.models.Viewer;
 import production.bussines_contacts.partials.DeletableCell;
 import production.bussines_contacts.partials.EditableCell;
+import production.bussines_contacts.utils.ChangeLog;
 import production.bussines_contacts.utils.FileUtils;
 
 import java.io.File;
 import java.util.List;
+import java.util.Map;
 
 import static production.bussines_contacts.utils.FunctionUtils.confirmSaveOperation;
 
@@ -55,8 +60,14 @@ public class UsersController {
                 return;
             }
             User user = event.getRowValue();
-            user.setName(event.getNewValue());
-            FileUtils.updateUser(user);
+            User tempUser = (user.getRole() == Role.ADMIN) ? new Admin(null, event.getNewValue(), null) : new Viewer(null, event.getNewValue(), null);
+            Map<String, Map<String, String>> differences = user.getDifferencesMap(tempUser);
+
+            if (!differences.isEmpty()) {
+                ChangeLog.persistChanges(differences, user);
+                user.setName(event.getNewValue());
+                FileUtils.updateUser(user);
+            }
         });
     }
 

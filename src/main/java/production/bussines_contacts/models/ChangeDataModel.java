@@ -25,6 +25,8 @@ public class ChangeDataModel<T extends Editable> implements Serializable {
     // Getters and other methods...
 
     public static class Builder<T extends Editable> {
+        private static final long serialVersionUID = 1L; // Unique version identifier
+
         private User user;
         private Date changeTime;
         private Map<String, Map<String, String>> differences;

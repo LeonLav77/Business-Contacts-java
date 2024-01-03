@@ -7,6 +7,7 @@ import production.bussines_contacts.database.DB;
 import production.bussines_contacts.enums.Importance;
 import production.bussines_contacts.interfaces.Deletable;
 import production.bussines_contacts.interfaces.Editable;
+import production.bussines_contacts.utils.FunctionUtils;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -14,7 +15,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 @DatabaseTable(tableName = "contacts")
-public class Contact implements Editable, Deletable, Serializable {
+public class Contact implements Editable<Contact>, Deletable, Serializable, Cloneable {
+    private static final long serialVersionUID = 1L; // Unique version identifier
+
     @DatabaseField(generatedId = true)
     private Long id;
 
@@ -142,51 +145,25 @@ public class Contact implements Editable, Deletable, Serializable {
     public Map<String, Map<String, String>> getDifferencesMap(Contact changedContact) {
         Map<String, Map<String, String>> changes = new HashMap<>();
 
-        if (!this.getName().equals(changedContact.getName())) {
-            Map<String, String> nameChange = new HashMap<>();
-            nameChange.put("old", this.getName());
-            nameChange.put("new", changedContact.getName());
-            changes.put("name", nameChange);
-        }
-
-        if (!this.getDepartment().equals(changedContact.getDepartment())) {
-            Map<String, String> departmentChange = new HashMap<>();
-            departmentChange.put("old", this.getDepartment());
-            departmentChange.put("new", changedContact.getDepartment());
-            changes.put("department", departmentChange);
-        }
-
-        // Assuming Company has an overridden equals method
-        if (this.getCompany() != null && !this.getCompany().equals(changedContact.getCompany())) {
-            Map<String, String> companyChange = new HashMap<>();
-            companyChange.put("old", this.getCompany().getName());
-            companyChange.put("new", changedContact.getCompany().getName());
-            changes.put("company", companyChange);
-        }
-
-        if (this.getImportance() != changedContact.getImportance()) {
-            Map<String, String> importanceChange = new HashMap<>();
-            importanceChange.put("old", this.getImportance().toString());
-            importanceChange.put("new", changedContact.getImportance().toString());
-            changes.put("importance", importanceChange);
-        }
-
-        if (!this.getPhone_number().equals(changedContact.getPhone_number())) {
-            Map<String, String> phoneNumberChange = new HashMap<>();
-            phoneNumberChange.put("old", this.getPhone_number());
-            phoneNumberChange.put("new", changedContact.getPhone_number());
-            changes.put("phone_number", phoneNumberChange);
-        }
-
-        if (!this.getCustom_note().equals(changedContact.getCustom_note())) {
-            Map<String, String> customNoteChange = new HashMap<>();
-            customNoteChange.put("old", this.getCustom_note());
-            customNoteChange.put("new", changedContact.getCustom_note());
-            changes.put("custom_note", customNoteChange);
-        }
-
-        // Add similar blocks for other fields you want to track changes for
+        FunctionUtils.addChange(changes, "name", this.getName(), changedContact.getName());
+        FunctionUtils.addChange(changes, "department", this.getDepartment(), changedContact.getDepartment());
+        FunctionUtils.addChange(changes, "importance", this.getImportance().getDescription(), changedContact.getImportance().getDescription());
+        FunctionUtils.addChange(changes, "phone_number", this.getPhone_number(), changedContact.getPhone_number());
+        FunctionUtils.addChange(changes, "custom_note", this.getCustom_note(), changedContact.getCustom_note());
 
         return changes;
+    }
+
+    @Override
+    public Contact clone() {
+        try {
+            return (Contact) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError(); // Can ignore as we implement Cloneable
+        }
+    }
+
+    public void update(){
+        DB.updateContact(this);
     }
 }
