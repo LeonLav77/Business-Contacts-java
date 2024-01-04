@@ -19,7 +19,7 @@ import production.bussines_contacts.database.DB;
 import production.bussines_contacts.utils.FileUtils;
 
 public class ImportOptionsController {
-    private String importType;
+    private int userCounter = 0;
 
     private File handleOpeningCSV() {
         FileChooser fileChooser = new FileChooser();
@@ -113,8 +113,7 @@ public class ImportOptionsController {
 
         user.setName(values[0].trim());
         user.setPassword(values[1].trim());
-        // FIXAT ILI SVI DOBIJU ISTI ID
-        user.setId(FileUtils.getNextUserId());
+        user.setId(FileUtils.getNextUserId() + userCounter++);
         return user;
     }
 
