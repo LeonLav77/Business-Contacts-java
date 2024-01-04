@@ -7,17 +7,19 @@ import production.bussines_contacts.controllers.MenuController;
 import production.bussines_contacts.database.DB;
 import production.bussines_contacts.interfaces.Deletable;
 import production.bussines_contacts.interfaces.Editable;
+import production.bussines_contacts.interfaces.Importable;
 import production.bussines_contacts.utils.FunctionUtils;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 import java.util.function.Predicate;
 
 @DatabaseTable(tableName = "companies")
-public class Company implements Editable<Company>, Deletable, Serializable {
+public class Company implements Editable<Company>, Deletable, Serializable, Cloneable, Importable<Company> {
     @Serial
     private static final long serialVersionUID = 1L; // Unique version identifier
 
@@ -112,6 +114,9 @@ public class Company implements Editable<Company>, Deletable, Serializable {
     public void update() {
         DB.updateCompany(this);
     }
+    public void save() {
+        DB.createCompany(this);
+    }
 
     @Override
     public Company clone() {
@@ -137,5 +142,9 @@ public class Company implements Editable<Company>, Deletable, Serializable {
         FunctionUtils.addChange(changes, "website", this.getWebsite(), changedCompany.getWebsite());
 
         return changes;
+    }
+
+    public void redirectToConfirmScreen(List<Company> companies) {
+        MenuController.showReviewCompaniesScreen(companies);
     }
 }

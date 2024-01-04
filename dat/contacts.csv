@@ -1,0 +1,11 @@
+CompanyName,Name,Department,Importance,PhoneNumber,CustomNote
+Acme Corporation,John Doe,Sales,High,1234567890,Key account manager
+Acme Corporation,Jane Smith,Marketing,Medium,987654321,Leads marketing campaigns
+Acme Corporation,Robert Brown,IT,Low,555123456,IT support specialist
+Acme Corporation,Emily White,Research,High,456789123,Works on product development
+Umbrella Corporation,Alice Johnson,Security,Medium,321654987,Security officer
+Umbrella Corporation,George Costanza,Exporting,Low,159753456,Export manager
+Initech,Gavin Belson,CEO,High,258456357,Company CEO
+Initech,Richard Hendricks,Engineering,Medium,357159258,Lead engineer
+Initech,Michael Bluth,Management,Low,951357456,Operations manager
+Initech,Bruce Wayne,Research,High,753951456,Head of R&D

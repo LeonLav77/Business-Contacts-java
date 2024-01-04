@@ -47,5 +47,6 @@
           </ComboBox>
       </children>
    </GridPane>
-    <!-- Other UI elements here -->
+    <fx:include source="menu.fxml" />
+
 </AnchorPane>

@@ -1,5 +1,6 @@
 package production.bussines_contacts.controllers;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,6 +12,7 @@ import production.bussines_contacts.models.Contact;
 import production.bussines_contacts.models.User;
 
 import java.io.IOException;
+import java.util.List;
 
 public class MenuController {
     @FXML
@@ -115,6 +117,63 @@ public class MenuController {
 
     public void showChangeLogScreen(ActionEvent actionEvent) {
         loadScreen("changesLog", "Changes log");
+    }
+
+    public void showImportCompaniesScreen(ActionEvent actionEvent) {
+        loadScreen("importCompanies", "Import companies");
+    }
+
+    public static void showReviewCompaniesScreen(List<Company> companies){
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("views/reviewCompanies.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+
+            // Set the user in the controller
+            ReviewCompaniesController controller = fxmlLoader.getController();
+            controller.setCompanies(companies);
+            System.out.println(companies);
+
+            Application.getMainStage().setTitle("Review Companies");
+            Application.getMainStage().setScene(scene);
+            Application.getMainStage().show();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void showReviewContactsScreen(List<Contact> contacts){
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("views/reviewContacts.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+
+            // Set the user in the controller
+            ReviewContactsController controller = fxmlLoader.getController();
+            controller.setContacts(contacts);
+            System.out.println(contacts);
+
+            Application.getMainStage().setTitle("Review Contacts");
+            Application.getMainStage().setScene(scene);
+            Application.getMainStage().show();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void showReviewUsersScreen(List<User> users){
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("views/reviewUsers.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+
+            ReviewUsersController controller = fxmlLoader.getController();
+            controller.setUsers(users);
+            System.out.println(users);
+
+            Application.getMainStage().setTitle("Review Users");
+            Application.getMainStage().setScene(scene);
+            Application.getMainStage().show();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static void loadScreen(String fxmlName, String title){

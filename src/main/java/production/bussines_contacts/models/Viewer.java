@@ -15,6 +15,10 @@ public class Viewer extends User {
         super(id, name, password);
     }
 
+    public Viewer() {
+        super();
+    }
+
     @Override
     public Role getRole() {
         // Implementation specific to Viewer

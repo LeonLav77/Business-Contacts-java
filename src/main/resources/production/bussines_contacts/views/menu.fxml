@@ -35,6 +35,13 @@
                   <MenuItem mnemonicParsing="false" onAction="#showChangeLogScreen" text="Pretraga" />
                </items>
             </Menu>
+            <Menu fx:id="usersMenu11" mnemonicParsing="false" text="Import">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showImportCompaniesScreen" text="Companies" />
+                  <MenuItem mnemonicParsing="false" onAction="#showChangeLogScreen" text="Contacts" />
+                  <MenuItem mnemonicParsing="false" onAction="#showChangeLogScreen" text="Users" />
+               </items>
+            </Menu>
             </menus>
         </MenuBar>
         <Button onAction="#logout" text="Logout" HBox.hgrow="NEVER" />

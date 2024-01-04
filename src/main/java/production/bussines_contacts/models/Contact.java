@@ -7,15 +7,17 @@ import production.bussines_contacts.database.DB;
 import production.bussines_contacts.enums.Importance;
 import production.bussines_contacts.interfaces.Deletable;
 import production.bussines_contacts.interfaces.Editable;
+import production.bussines_contacts.interfaces.Importable;
 import production.bussines_contacts.utils.FunctionUtils;
 
 import java.io.Serializable;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @DatabaseTable(tableName = "contacts")
-public class Contact implements Editable<Contact>, Deletable, Serializable, Cloneable {
+public class Contact implements Editable<Contact>, Deletable, Serializable, Cloneable, Importable<Contact> {
     private static final long serialVersionUID = 1L; // Unique version identifier
 
     @DatabaseField(generatedId = true)
@@ -165,5 +167,13 @@ public class Contact implements Editable<Contact>, Deletable, Serializable, Clon
 
     public void update(){
         DB.updateContact(this);
+    }
+    public void redirectToConfirmScreen(List<Contact> contacts) {
+//        MenuController.showConfirmScreen(contact);
+        MenuController.showIndexScreen();
+    }
+
+    public void save() {
+        DB.createContact(this);
     }
 }

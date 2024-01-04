@@ -18,6 +18,10 @@ public class Admin extends User {
     @Serial
     private static final long serialVersionUID = 1L; // Unique version identifier
 
+    public Admin() {
+
+    }
+
     @Override
     public Role getRole() {
         // Implementation specific to Admin

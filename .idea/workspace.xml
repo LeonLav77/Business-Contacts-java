@@ -4,22 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea87d55-1246-4cb1-8b29-5f53e63286c8" name="Changes" comment="Are you sure promptovi svugdje">
+    <list default="true" id="7ea87d55-1246-4cb1-8b29-5f53e63286c8" name="Changes" comment="Massive refactoring for change log method functions">
+      <change afterPath="$PROJECT_DIR$/dat/companies.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dat/contacts.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dat/users.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ImportOptionsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ReviewCompaniesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ReviewContactsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ReviewUsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/interfaces/Importable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/production/bussines_contacts/views/importCompanies.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/production/bussines_contacts/views/reviewCompanies.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/production/bussines_contacts/views/reviewContacts.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/production/bussines_contacts/views/reviewUsers.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/change_log/changeLog.dat" beforeDir="false" afterPath="$PROJECT_DIR$/change_log/changeLog.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dat/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dat/users.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/CompaniesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/CompaniesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ContactsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ContactsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/interfaces/Editable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/interfaces/Editable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/MenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/ChangeDataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/ChangeDataModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Company.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Contact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Viewer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/FunctionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/FunctionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/production/bussines_contacts/views/editUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/production/bussines_contacts/views/editUser.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/production/bussines_contacts/views/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/production/bussines_contacts/views/menu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +40,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -144,7 +153,7 @@
       <workItem from="1704025909805" duration="12795000" />
       <workItem from="1704120088602" duration="9811000" />
       <workItem from="1704191179914" duration="17752000" />
-      <workItem from="1704288292894" duration="4175000" />
+      <workItem from="1704288292894" duration="19413000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -174,7 +183,14 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1704195867487</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Massive refactoring for change log method functions">
+      <option name="closed" value="true" />
+      <created>1704292772005</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1704292772005</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +211,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Gotov CRUD za sve" />
     <MESSAGE value="Are you sure promptovi svugdje" />
-    <option name="LAST_COMMIT_MESSAGE" value="Are you sure promptovi svugdje" />
+    <MESSAGE value="Massive refactoring for change log method functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Massive refactoring for change log method functions" />
   </component>
 </project>
