@@ -34,7 +34,6 @@ public class ReviewUsersController {
         System.out.println(users.isEmpty());
         ObservableList<User> observableItemList = FXCollections.observableArrayList(users);
         usersTable.setItems(observableItemList);
-        // If necessary, refresh the table view or perform additional setup
     }
     @FXML
     private void handleConfirmImport() {

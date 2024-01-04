@@ -75,8 +75,7 @@ public abstract class User implements Editable<User>, Deletable, Serializable, C
     }
     public abstract User clone();
     public void redirectToConfirmScreen(List<User> items) {
-//        FunctionUtils.redirectToConfirmScreen(items, "user");
-        MenuController.showIndexScreen();
+        MenuController.showReviewUsersScreen(items);
     }
 
     public void update(){
@@ -85,5 +84,20 @@ public abstract class User implements Editable<User>, Deletable, Serializable, C
 
     public void save() {
         FileUtils.insertUser(this);
+    }
+
+    public int getNumberOfColumns() {
+        return 3;
+    }
+
+    public User createItem(String[] data) {
+        String roleStr = data[2].trim();
+        Role role = Role.valueOf(roleStr.toUpperCase());
+
+        User user = (role == Role.ADMIN) ? new Admin() : new Viewer();
+
+        user.setName(data[0].trim());
+        user.setPassword(data[1].trim());
+        return user;
     }
 }

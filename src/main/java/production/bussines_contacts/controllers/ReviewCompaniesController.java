@@ -47,7 +47,6 @@ public class ReviewCompaniesController {
         System.out.println(companies.isEmpty());
         ObservableList<Company> observableItemList = FXCollections.observableArrayList(companies);
         companiesTable.setItems(observableItemList);
-        // If necessary, refresh the table view or perform additional setup
     }
 
     @FXML

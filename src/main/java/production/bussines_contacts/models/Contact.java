@@ -11,10 +11,7 @@ import production.bussines_contacts.interfaces.Importable;
 import production.bussines_contacts.utils.FunctionUtils;
 
 import java.io.Serializable;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @DatabaseTable(tableName = "contacts")
 public class Contact implements Editable<Contact>, Deletable, Serializable, Cloneable, Importable<Contact> {
@@ -165,15 +162,38 @@ public class Contact implements Editable<Contact>, Deletable, Serializable, Clon
         }
     }
 
+    @Override
     public void update(){
         DB.updateContact(this);
     }
+    @Override
     public void redirectToConfirmScreen(List<Contact> contacts) {
-//        MenuController.showConfirmScreen(contact);
-        MenuController.showIndexScreen();
+        MenuController.showReviewContactsScreen(contacts);
     }
 
     public void save() {
         DB.createContact(this);
+    }
+    @Override
+    public int getNumberOfColumns() {
+        return 6;
+    }
+    @Override
+    public Contact createItem(String[] data) {
+        String companyName = data[0].trim();
+        ArrayList<Company> companies = DB.fetchCompanies();
+
+        Optional<Company> contactCompany = companies.stream()
+                .filter(c -> c.getName().equals(companyName))
+                .findFirst();
+
+        if (contactCompany.isEmpty()) {
+            throw new RuntimeException("Company not found");
+        }
+
+        return contactCompany.map(company ->
+                        new Contact(null, data[1], data[2], company, new Date(),
+                                Importance.valueOf(data[3].trim().toUpperCase()), data[4], data[5]))
+                .orElse(null);
     }
 }

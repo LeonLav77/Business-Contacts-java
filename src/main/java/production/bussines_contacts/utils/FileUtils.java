@@ -39,16 +39,22 @@ public class FileUtils {
     public static boolean insertUser(User user) {
         String filePath = User.STORAGE_FILE_NAME;
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
-            Long roleIndicator = (user instanceof Admin) ? Role.ADMIN.getId() : Role.VIEWER.getId(); // Check if the user is an instance of Admin
+            Long roleIndicator = (user instanceof Admin) ? Role.ADMIN.getId() : Role.VIEWER.getId();
+
+            // If user.id is null, find the last ID and increment it by 1
+            if (user.getId() == null) {
+                user.setId(getNextUserId());
+            }
+
             String userData = user.getId() + " - " + user.getName() + " - " +
                     Base64.getEncoder().encodeToString(user.getPassword().getBytes()) + " - " +
                     roleIndicator;
             writer.write(userData);
             writer.newLine();
-            return true; // Return true if insertion is successful
+            return true;
         } catch (IOException e) {
             logger.severe("Error inserting user into file: " + e.getMessage());
-            return false; // Return false if an exception occurred
+            return false;
         }
     }
 

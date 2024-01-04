@@ -147,4 +147,12 @@ public class Company implements Editable<Company>, Deletable, Serializable, Clon
     public void redirectToConfirmScreen(List<Company> companies) {
         MenuController.showReviewCompaniesScreen(companies);
     }
+
+    public int getNumberOfColumns() {
+        return 4;
+    }
+
+    public Company createItem(String[] data) {
+        return new Company(null, data[0], data[1], data[2], new Date(), data[3]);
+    }
 }
