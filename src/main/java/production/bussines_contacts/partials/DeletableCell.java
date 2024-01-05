@@ -2,8 +2,7 @@ package production.bussines_contacts.partials;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.TableCell;
-import javafx.scene.control.TableView;
-import production.bussines_contacts.interfaces.Deletable; // You need to create this interface
+import production.bussines_contacts.interfaces.Deletable;
 
 import static production.bussines_contacts.utils.FunctionUtils.confirmDeleteOperation;
 
@@ -21,10 +20,8 @@ public class DeletableCell<T extends Deletable> extends TableCell<T, Void> {
         if(!confirmDeleteOperation(item.deleteText())) {
             return;
         }
-        if (item != null) {
-            item.delete(); // Assuming T has a delete method defined in Deletable interface
-            getTableView().getItems().remove(item); // Or refresh the table view as needed
-        }
+        item.delete();
+        getTableView().getItems().remove(item);
     }
 
     @Override

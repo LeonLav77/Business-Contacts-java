@@ -44,7 +44,7 @@ public class AddContactController {
         newContact.setCustom_note(customNoteField.getText());
         newContact.setImportance(importanceComboBox.getValue());
         newContact.setCompany(companyComboBox.getValue());
-        newContact.setCreated_at(new Date()); // Set the current date as the creation date
+        newContact.setCreated_at(new Date());
 
         DB.createContact(newContact);
         MenuController.showContactsScreen();

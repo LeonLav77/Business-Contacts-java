@@ -122,7 +122,7 @@ public final class ImportOptionsController implements Loggable {
                 fileContent.append(line).append("\n");
             }
         }
-        return fileContent.toString(); // Return the actual file content
+        return fileContent.toString();
     }
 
     private File handleOpeningCSV() throws FileNotWorkingException {
@@ -143,7 +143,7 @@ public final class ImportOptionsController implements Loggable {
     private <T> List<T> importCSV(File file, Function<String, T> createItemFunction) throws InvalidCSVException {
         List<T> items = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            String line = br.readLine(); // Read the first line (header) of the CSV file
+            String line = br.readLine();
             if (line == null) {
                 throw new InvalidCSVException("Empty CSV file");
             }
@@ -178,7 +178,6 @@ public final class ImportOptionsController implements Loggable {
     private <T> T createObjectFromCSVLine(String line, Importable<T> importable) {
         String[] values = line.split(",");
         if (values.length != importable.getNumberOfColumns()) {
-            // Handle invalid CSV line, for example, by logging an error or returning null.
             return null;
         }
         return importable.createItem(values);

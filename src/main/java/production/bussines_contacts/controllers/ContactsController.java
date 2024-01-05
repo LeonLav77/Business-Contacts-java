@@ -70,7 +70,6 @@ public class ContactsController {
             this.setupEditableColumns();
             this.setupDeleteColumn();
         } else {
-            // If not admin, hide or disable edit and delete options
             editColumn.setVisible(false);
             deleteColumn.setVisible(false);
         }
@@ -112,7 +111,7 @@ public class ContactsController {
 
         ObservableList<Contact> observableItemList = FXCollections.observableArrayList(contactsList);
         contactsTableView.setItems(observableItemList);
-        sortContacts(); // Sort after filtering
+        sortContacts();
     }
 
     private void setupEditColumn() {
@@ -141,12 +140,9 @@ public class ContactsController {
     private void showAndFilterContacts() {
         List<Contact> contactsList = DB.fetchContacts();
 
-        // Sort contacts by importance
         contactsList.sort(Comparator.comparing(Contact::getImportance));
 
         ObservableList<Contact> observableItemList = FXCollections.observableArrayList(contactsList);
         contactsTableView.setItems(observableItemList);
     }
-
-    // Additional methods to handle events, load data, etc.
 }

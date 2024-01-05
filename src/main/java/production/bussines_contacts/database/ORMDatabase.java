@@ -27,7 +27,6 @@ public class ORMDatabase {
             connectionSource = new JdbcConnectionSource(dbUrl, dbUsername, dbPassword);
         } catch (IOException | SQLException e) {
             logger.log(Level.SEVERE, "Error initializing database connection source.", e);
-            // Consider re-throwing as a custom exception
         }
     }
 

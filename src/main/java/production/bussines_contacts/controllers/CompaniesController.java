@@ -60,7 +60,6 @@ public class CompaniesController {
             this.setupEditableColumns();
             this.setupDeleteColumn();
         } else {
-            // If not admin, hide or disable edit and delete options
             editColumn.setVisible(false);
             deleteColumn.setVisible(false);
         }

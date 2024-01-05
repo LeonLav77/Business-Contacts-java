@@ -41,7 +41,6 @@ public class FileUtils {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
             Long roleIndicator = (user instanceof Admin) ? Role.ADMIN.getId() : Role.VIEWER.getId();
 
-            // If user.id is null, find the last ID and increment it by 1
             if (user.getId() == null) {
                 user.setId(getNextUserId());
             }
@@ -77,11 +76,9 @@ public class FileUtils {
     }
 
     public static boolean updateUser(User updatedUser) {
-        String filePath = User.STORAGE_FILE_NAME;
-        List<User> users = readUsersFromFile(); // Step 1: Read all users
+        List<User> users = readUsersFromFile();
         boolean userFound = false;
 
-        // Step 2: Find and update the user
         for (int i = 0; i < users.size(); i++) {
             if (users.get(i).getId().equals(updatedUser.getId())) {
                 users.set(i, updatedUser);
@@ -95,7 +92,6 @@ public class FileUtils {
             return false;
         }
 
-        // Step 3: Write all users back to the file
         return writeUsersToFile(users);
     }
 
@@ -119,10 +115,9 @@ public class FileUtils {
 
     public static boolean deleteUser(User user) {
         Long userId = user.getId();
-        List<User> users = readUsersFromFile(); // Step 1: Read all users
+        List<User> users = readUsersFromFile();
         boolean userFound = false;
 
-        // Step 2: Find and remove the user
         for (int i = 0; i < users.size(); i++) {
             if (users.get(i).getId().equals(userId)) {
                 users.remove(i);
@@ -136,7 +131,6 @@ public class FileUtils {
             return false;
         }
 
-        // Step 3: Write the updated list back to the file
         return writeUsersToFile(users);
     }
 }

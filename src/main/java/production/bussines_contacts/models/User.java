@@ -20,7 +20,7 @@ public abstract class User implements Editable<User>, Deletable, Serializable, C
     protected String name;
     protected String password;
     @Serial
-    private static final long serialVersionUID = 1L; // Unique version identifier
+    private static final long serialVersionUID = 1L;
 
     public User() {
 
@@ -56,7 +56,6 @@ public abstract class User implements Editable<User>, Deletable, Serializable, C
         this.name = name;
     }
 
-    // You can also include abstract methods that must be implemented by subclasses
     public abstract Role getRole();
     public abstract boolean isAdmin();
 

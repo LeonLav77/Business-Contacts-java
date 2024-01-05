@@ -31,7 +31,6 @@ public class MenuController {
             FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("views/editCompany.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 
-            // Set the user in the controller
             EditCompanyController controller = fxmlLoader.getController();
             controller.setCompany(company);
 
@@ -65,9 +64,6 @@ public class MenuController {
     public void redirectToAddContactsScreen(ActionEvent actionEvent) {
         loadScreen("addContact", "Add contact");
     }
-    public static void addContactsScreen(){
-        loadScreen("addContacts", "Add contacts");
-    }
     public static void redirectToUsersScreen(){
         loadScreen("users", "Users");
     }
@@ -92,7 +88,6 @@ public class MenuController {
             FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("views/editUser.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 
-            // Set the user in the controller
             EditUserController controller = fxmlLoader.getController();
             controller.setUser(user);
 
@@ -109,7 +104,6 @@ public class MenuController {
             FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("views/editContact.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 
-            // Set the user in the controller
             EditContactController controller = fxmlLoader.getController();
             controller.setContact(contact);
 
@@ -120,11 +114,6 @@ public class MenuController {
             throw new RuntimeException(e);
         }
     }
-
-    public static void showChangeLogScreen(){
-        loadScreen("changeLog", "Change log");
-    }
-
     public void showChangeLogScreen(ActionEvent actionEvent) {
         loadScreen("changesLog", "Changes log");
     }
@@ -132,17 +121,11 @@ public class MenuController {
     public void showImportScreen(ActionEvent actionEvent) {
         loadScreen("import", "Import companies");
     }
-
-    public static void showImportScreen(){
-        loadScreen("import", "Import");
-    }
-
     public static void showReviewCompaniesScreen(List<Company> companies){
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("views/reviewCompanies.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 
-            // Set the user in the controller
             ReviewCompaniesController controller = fxmlLoader.getController();
             controller.setCompanies(companies);
 
@@ -159,7 +142,6 @@ public class MenuController {
             FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("views/reviewContacts.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 
-            // Set the user in the controller
             ReviewContactsController controller = fxmlLoader.getController();
             controller.setContacts(contacts);
 

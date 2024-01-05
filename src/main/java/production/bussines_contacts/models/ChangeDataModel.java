@@ -13,7 +13,7 @@ public class ChangeDataModel<T extends Editable> implements Serializable {
     private final User user;
     private final Date changeTime;
     private final Map<String, Map<String, String>> differences;
-    private final T changedObject; // Generic field for the changed object
+    private final T changedObject;
 
     private ChangeDataModel(Builder<T> builder) {
         this.user = builder.user;
@@ -22,10 +22,8 @@ public class ChangeDataModel<T extends Editable> implements Serializable {
         this.changedObject = builder.changedObject;
     }
 
-    // Getters and other methods...
-
-    public static class Builder<T extends Editable> {
-        private static final long serialVersionUID = 1L; // Unique version identifier
+    public static class Builder<T extends Editable<T>> {
+        private static final long serialVersionUID = 1L;
 
         private User user;
         private Date changeTime;
@@ -75,7 +73,7 @@ public class ChangeDataModel<T extends Editable> implements Serializable {
         String changeTimeFormatted = dateFormat.format(changeTime);
 
         String objectType = changedObject.getClass().getSimpleName();
-        String objectIdentifier = String.valueOf(changedObject.getId()); // Replace with method to get object's identifier, if applicable
+        String objectIdentifier = String.valueOf(changedObject.getId());
 
         StringJoiner changesJoiner = new StringJoiner(", ");
         for (Map.Entry<String, Map<String, String>> entry : differences.entrySet()) {

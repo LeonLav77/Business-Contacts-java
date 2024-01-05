@@ -18,7 +18,6 @@ public class CustomMigrationTool {
     private static final String DATABASE_FILE = "conf/database.properties";
 
     public static void runMigrations() {
-        // Load database properties
         try (FileReader reader = new FileReader(DATABASE_FILE)) {
             Properties loginInfo = new Properties();
             loginInfo.load(reader);
@@ -28,13 +27,10 @@ public class CustomMigrationTool {
             String dbPassword = loginInfo.getProperty("password");
 
 
-        // Connect to the database
         try (Connection conn = DriverManager.getConnection(dbUrl, dbUsername, dbPassword)) {
-            // List files in the migrations directory
             try {
                 Files.list(Paths.get(CustomMigrationTool.class.getResource(MIGRATIONS_PATH).toURI()))
                         .forEach(path -> {
-                            // Execute SQL in each file
                             try {
                                 System.out.println("Executing migration: " + path);
                                 String sql = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);

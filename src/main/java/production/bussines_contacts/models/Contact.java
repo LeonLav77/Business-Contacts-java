@@ -10,12 +10,14 @@ import production.bussines_contacts.interfaces.Editable;
 import production.bussines_contacts.interfaces.Importable;
 import production.bussines_contacts.utils.FunctionUtils;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.*;
 
 @DatabaseTable(tableName = "contacts")
 public final class Contact implements Editable<Contact>, Deletable, Serializable, Cloneable, Importable<Contact> {
-    private static final long serialVersionUID = 1L; // Unique version identifier
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     @DatabaseField(generatedId = true)
     private Long id;
@@ -105,10 +107,7 @@ public final class Contact implements Editable<Contact>, Deletable, Serializable
         this.custom_note = custom_note;
     }
 
-    // Constructors, Getters, and Setters
-
     public Contact() {
-        // ORMLite needs a no-arg constructor
     }
 
     public Contact(Long id, String name, String department, Company company, Date created_at, Importance importance, String phone_number, String custom_note) {
@@ -140,7 +139,6 @@ public final class Contact implements Editable<Contact>, Deletable, Serializable
     public String deleteText() {
         return "Delete " + this + "?" + "\n" + "This action cannot be undone";
     }
-    // Add your constructors, getters, and setters here
     public Map<String, Map<String, String>> getDifferencesMap(Contact changedContact) {
         Map<String, Map<String, String>> changes = new HashMap<>();
 
@@ -158,7 +156,7 @@ public final class Contact implements Editable<Contact>, Deletable, Serializable
         try {
             return (Contact) super.clone();
         } catch (CloneNotSupportedException e) {
-            throw new AssertionError(); // Can ignore as we implement Cloneable
+            throw new AssertionError();
         }
     }
 

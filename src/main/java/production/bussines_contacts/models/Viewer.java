@@ -11,7 +11,7 @@ import java.util.Map;
 
 public final class Viewer extends User {
     @Serial
-    private static final long serialVersionUID = 1L; // Unique version identifier
+    private static final long serialVersionUID = 1L;
 
     public Viewer(Long id, String name, String password) {
         super(id, name, password);
@@ -23,13 +23,11 @@ public final class Viewer extends User {
 
     @Override
     public Role getRole() {
-        // Implementation specific to Viewer
         return Role.VIEWER;
     }
 
     @Override
     public boolean isAdmin() {
-        // Implementation specific to Admin
         return false;
     }
 

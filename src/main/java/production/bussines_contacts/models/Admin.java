@@ -16,7 +16,7 @@ public final class Admin extends User {
         super(id, name, password);
     }
     @Serial
-    private static final long serialVersionUID = 1L; // Unique version identifier
+    private static final long serialVersionUID = 1L;
 
     public Admin() {
 
@@ -24,13 +24,11 @@ public final class Admin extends User {
 
     @Override
     public Role getRole() {
-        // Implementation specific to Admin
         return Role.ADMIN;
     }
 
     @Override
     public boolean isAdmin() {
-        // Implementation specific to Admin
         return true;
     }
 

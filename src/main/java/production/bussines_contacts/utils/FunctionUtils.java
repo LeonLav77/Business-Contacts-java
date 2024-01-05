@@ -87,7 +87,7 @@ public class FunctionUtils {
     }
 
     public static void handleException(String title, Exception e, Alert.AlertType alertType, Loggable loggable) {
-        loggable.log(Level.SEVERE, title + ": " + e.getMessage(), e); // Using the default method
+        loggable.log(Level.SEVERE, title + ": " + e.getMessage(), e);
         showAlert(alertType, title, e.getMessage());
         if (e instanceof InterruptedException) {
             Thread.currentThread().interrupt();

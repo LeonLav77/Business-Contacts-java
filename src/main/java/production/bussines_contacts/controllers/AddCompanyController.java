@@ -20,10 +20,9 @@ public class AddCompanyController {
         company.setIndustry(industryField.getText());
         company.setHeadquarters(headquartersField.getText());
         company.setWebsite(websiteField.getText());
-        company.setCreated_at(new Date()); // Set the current date as the creation date
+        company.setCreated_at(new Date());
 
         DB.createCompany(company);
         MenuController.redirectToCompaniesScreen();
-        // Handle post-creation logic (like closing the dialog or refreshing a list)
     }
 }

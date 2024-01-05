@@ -50,7 +50,6 @@ public class ReviewCompaniesController {
 
     @FXML
     private void handleConfirmImport() {
-        // Save the companies to the database
         for (Company company : companies) {
             company.setCreated_at(new Date());
             company.save();

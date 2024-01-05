@@ -18,7 +18,7 @@ public class EditUserController {
     @FXML
     private TextField usernameField;
     @FXML
-    private ComboBox<String> roleComboBox; // Updated line
+    private ComboBox<String> roleComboBox;
     private User user;
 
     public void initialize() {
@@ -39,13 +39,12 @@ public class EditUserController {
     private void updateFields() {
         if (user != null) {
             usernameField.setText(user.getName());
-            roleComboBox.setValue(user.getRole().getRoleName()); // Assuming User has getRole method
+            roleComboBox.setValue(user.getRole().getRoleName());
         }
     }
 
     @FXML
     private void saveUser() {
-        // display a dialog to confirm the save
         if(!confirmSaveOperation("Save Contact")) {
             return;
         }
@@ -62,7 +61,6 @@ public class EditUserController {
     }
 
     private void saveUserChanges() {
-        // Save logic here
         Long id = user.getId();
         String userPassword = user.getPassword();
         String username = usernameField.getText();

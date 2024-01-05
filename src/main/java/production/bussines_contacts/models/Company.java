@@ -21,7 +21,7 @@ import java.util.function.Predicate;
 @DatabaseTable(tableName = "companies")
 public final class Company implements Editable<Company>, Deletable, Serializable, Cloneable, Importable<Company> {
     @Serial
-    private static final long serialVersionUID = 1L; // Unique version identifier
+    private static final long serialVersionUID = 1L;
 
     @DatabaseField(generatedId = true)
     private Long id;
@@ -40,8 +40,6 @@ public final class Company implements Editable<Company>, Deletable, Serializable
 
     @DatabaseField
     private String website;
-
-    // Constructors
     public Company() {}
 
     public Long getId() {
@@ -124,7 +122,7 @@ public final class Company implements Editable<Company>, Deletable, Serializable
 
     @Override
     public String toString() {
-        return this.getName(); // Where getName() returns the company's name
+        return this.getName();
     }
     @Override
     public String deleteText() {

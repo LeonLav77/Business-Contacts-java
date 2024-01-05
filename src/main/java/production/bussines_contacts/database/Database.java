@@ -27,7 +27,6 @@ public class Database {
             connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
         } catch (IOException | SQLException e) {
             logger.log(Level.SEVERE, "Error initializing database connection.", e);
-            // Consider re-throwing as a custom exception
         }
     }
 
