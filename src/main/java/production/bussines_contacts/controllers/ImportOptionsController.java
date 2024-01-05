@@ -15,6 +15,7 @@ import production.bussines_contacts.exceptions.InvalidCSVException;
 import production.bussines_contacts.interfaces.Importable;
 import production.bussines_contacts.interfaces.Loggable;
 import production.bussines_contacts.models.*;
+import production.bussines_contacts.records.ChatGPTResponse;
 import production.bussines_contacts.utils.FunctionUtils;
 
 import java.io.*;
@@ -70,16 +71,16 @@ public final class ImportOptionsController implements Loggable {
 
     private boolean validateCSVWithAI(File file, Importable<?> importable) throws IOException, InterruptedException, ChatGPTRequestException, ChatGPTAnswerException {
         String CSVHeader = importable.getCSVHeader();
-        JSONObject CSVValidByAI = callAI(file, CSVHeader);
+        ChatGPTResponse CSVValidByAI = callAI(file, CSVHeader);
 
-        if (trustAI.isSelected() && !CSVValidByAI.optString("valid").equalsIgnoreCase("TRUE")) {
-            FunctionUtils.showAlert(Alert.AlertType.WARNING, "Invalid CSV File", "The CSV file is invalid: " + CSVValidByAI.optString("reason"));
+        if (trustAI.isSelected() && !CSVValidByAI.content().optString("valid").equalsIgnoreCase("TRUE")) {
+            FunctionUtils.showAlert(Alert.AlertType.WARNING, "Invalid CSV File", "The CSV file is invalid: " + CSVValidByAI.content().optString("reason"));
             return false;
         }
         return true;
     }
 
-    private JSONObject callAI(File file, String CSVHeader) throws IOException, InterruptedException, ChatGPTRequestException {
+    private ChatGPTResponse callAI(File file, String CSVHeader) throws IOException, InterruptedException, ChatGPTRequestException {
         String fileContent = readFileAsString(file);
         String requestBody = buildJsonPayload(fileContent, CSVHeader);
         ChatGPTHandler chatGPTHandler = new ChatGPTHandler("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");
@@ -90,6 +91,7 @@ public final class ImportOptionsController implements Loggable {
         JSONArray messages = new JSONArray();
         String prompt = PROMPT_TEXT + CSVHeader + BELOW_DATA_TEXT + fileContent + ANSWER_TYPE_TEXT + CHECK_WITHOUT_FIX_TEXT;
 
+        System.out.println(prompt);
         messages.put(new JSONObject()
                 .put("role", "system")
                 .put("content", "You are a program that checks CSV file formats. Verify if the headers match with each line of data."));
