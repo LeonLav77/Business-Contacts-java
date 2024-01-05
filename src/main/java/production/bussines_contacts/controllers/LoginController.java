@@ -20,11 +20,11 @@ public class LoginController {
     protected void onLoginButtonClick() {
         List<User> users = FileUtils.readUsersFromFile();
         for (User user : users) {
-            //if (user.getName().equals(usernameField.getText()) && users.getFirst().getPassword().trim().equals(passwordField.getText().trim())) {
+            if (user.getName().equals(usernameField.getText()) && users.getFirst().getPassword().trim().equals(passwordField.getText().trim())) {
                 Application.setLoggedInUser(user);
                 MenuController.showIndexScreen();
                 return;
-            //}
+            }
         }
     }
 }

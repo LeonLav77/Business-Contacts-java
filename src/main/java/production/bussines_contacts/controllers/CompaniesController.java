@@ -55,9 +55,16 @@ public class CompaniesController {
         websiteColumn.setCellValueFactory(data -> new ReadOnlyStringWrapper(data.getValue().getWebsite()));
         createdColumn.setCellValueFactory(data -> new ReadOnlyStringWrapper(data.getValue().getCreated_at().toString()));
 
-        this.setupEditColumn();
-        this.setupEditableColumns();
-        this.setupDeleteColumn();
+        if (FunctionUtils.isUserAdmin()) {
+            this.setupEditColumn();
+            this.setupEditableColumns();
+            this.setupDeleteColumn();
+        } else {
+            // If not admin, hide or disable edit and delete options
+            editColumn.setVisible(false);
+            deleteColumn.setVisible(false);
+        }
+
         this.showAndFilterCompanies();
         searchTextField.textProperty().addListener((observable, oldValue, newValue) -> showAndFilterCompanies());
     }
@@ -108,6 +115,4 @@ public class CompaniesController {
         ObservableList<Company> observableItemList = FXCollections.observableArrayList(companies);
         companiesTableView.setItems(observableItemList);
     }
-
-    // Additional methods to handle events, load data, etc.
 }

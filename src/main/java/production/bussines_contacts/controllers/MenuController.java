@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Menu;
+import javafx.scene.control.MenuItem;
 import production.bussines_contacts.Application;
 import production.bussines_contacts.models.Company;
 import production.bussines_contacts.models.Contact;
@@ -17,7 +18,14 @@ import java.util.List;
 public class MenuController {
     @FXML
     private Menu usersMenu;
-
+    @FXML
+    private Menu importMenu;
+    @FXML
+    private MenuItem addCompanySubMenu;
+    @FXML
+    private MenuItem addContactSubMenu;
+    @FXML
+    private MenuItem addUserSubMenu;
     public static void editCompany(Company company) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("views/editCompany.fxml"));
@@ -41,6 +49,9 @@ public class MenuController {
     private void updateMenuVisibility() {
         User currentUser = Application.getLoggedInUser();
         usersMenu.setVisible(currentUser.isAdmin());
+        importMenu.setVisible(currentUser.isAdmin());
+        addCompanySubMenu.setVisible(currentUser.isAdmin());
+        addContactSubMenu.setVisible(currentUser.isAdmin());
     }
     public static void showIndexScreen(){
         loadScreen("index", "Index");

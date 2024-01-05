@@ -64,10 +64,18 @@ public class ContactsController {
         createdColumn.setCellValueFactory(data -> new ReadOnlyStringWrapper(data.getValue().getCreated_at().toString()));
         customNoteColumn.setCellValueFactory(data -> new ReadOnlyStringWrapper(data.getValue().getCustom_note()));
 
-        this.setupEditColumn();
+
+        if (FunctionUtils.isUserAdmin()) {
+            this.setupEditColumn();
+            this.setupEditableColumns();
+            this.setupDeleteColumn();
+        } else {
+            // If not admin, hide or disable edit and delete options
+            editColumn.setVisible(false);
+            deleteColumn.setVisible(false);
+        }
+
         this.showAndFilterContacts();
-        this.setupEditableColumns();
-        this.setupDeleteColumn();
         groupByCompanyCheckBox.setOnAction(event -> sortContacts());
         searchTextField.textProperty().addListener((observable, oldValue, newValue) -> filterContacts(newValue));
     }

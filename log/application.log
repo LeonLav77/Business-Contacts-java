@@ -188,3 +188,291 @@
 16:39:18.408 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @649540813 for 'SELECT * FROM `companies`'
 16:39:18.416 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @649540813 after 27 rows
 16:39:18.416 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 27 results
+17:58:33.358 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+17:58:33.362 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+17:58:33.451 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #2090688447
+17:58:33.458 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+17:58:33.466 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @649540813 for 'SELECT * FROM `companies`'
+17:58:33.472 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @649540813 after 27 rows
+17:58:33.473 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 27 results
+17:58:57.066 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+17:58:57.069 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+17:58:57.151 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1946265308
+17:58:57.160 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+17:58:57.171 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1646971740 for 'SELECT * FROM `companies`'
+17:58:57.177 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1646971740 after 27 rows
+17:58:57.177 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 27 results
+18:00:47.784 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+18:00:47.790 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+18:00:47.874 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #2090688447
+18:00:47.881 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+18:00:47.886 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @649540813 for 'SELECT * FROM `companies`'
+18:00:47.893 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @649540813 after 27 rows
+18:00:47.893 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 27 results
+18:03:07.843 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+18:03:07.848 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+18:03:07.929 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1347885938
+18:03:07.938 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+18:03:07.949 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1855239806 for 'SELECT * FROM `companies`'
+18:03:07.959 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1855239806 after 27 rows
+18:03:07.959 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 27 results
+18:03:43.355 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Contact with reflection
+18:03:43.355 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `contacts`
+18:03:43.356 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+18:03:43.357 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @833223 for 'SELECT * FROM `contacts`'
+18:03:43.363 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.364 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.365 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.366 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.367 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.367 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.368 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.369 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.369 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.370 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.371 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.371 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.372 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.373 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.373 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.374 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.375 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.376 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.377 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.377 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.378 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.378 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.379 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.380 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.381 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.382 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.382 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.383 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:03:43.383 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @833223 after 28 rows
+18:03:43.383 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 28 results
+18:03:49.557 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+18:03:49.558 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @752728413 for 'SELECT * FROM `companies`'
+18:03:49.559 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @752728413 after 27 rows
+18:03:49.559 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 27 results
+18:03:54.520 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+18:03:54.521 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1319475720 for 'SELECT * FROM `companies`'
+18:03:54.521 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1319475720 after 27 rows
+18:03:54.522 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 27 results
+18:09:12.237 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+18:09:12.241 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+18:09:12.320 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #2090688447
+18:09:12.327 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+18:09:12.332 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @649540813 for 'SELECT * FROM `companies`'
+18:09:12.340 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @649540813 after 27 rows
+18:09:12.340 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 27 results
+18:09:19.597 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+18:09:19.599 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @935237227 for 'SELECT * FROM `companies`'
+18:09:19.600 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @935237227 after 27 rows
+18:09:19.600 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 27 results
+18:09:34.422 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Contact with reflection
+18:09:34.422 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `contacts`
+18:09:34.422 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+18:09:34.423 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1252669631 for 'SELECT * FROM `contacts`'
+18:09:34.433 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.434 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.436 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.437 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.437 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.438 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.439 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.440 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.440 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.441 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.441 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.442 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.443 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.444 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.445 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.446 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.446 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.447 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.448 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.448 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.448 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.449 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.450 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.450 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.451 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.451 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.452 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.452 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:09:34.452 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1252669631 after 28 rows
+18:09:34.452 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 28 results
+18:09:58.263 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+18:09:58.267 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+18:09:58.345 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #2090688447
+18:09:58.351 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+18:09:58.361 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @649540813 for 'SELECT * FROM `companies`'
+18:09:58.369 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @649540813 after 27 rows
+18:09:58.369 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 27 results
+18:10:07.978 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+18:10:07.979 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @63112265 for 'SELECT * FROM `companies`'
+18:10:07.980 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @63112265 after 27 rows
+18:10:07.980 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 27 results
+18:10:08.987 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Contact with reflection
+18:10:08.988 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `contacts`
+18:10:08.988 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+18:10:08.989 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1273705052 for 'SELECT * FROM `contacts`'
+18:10:08.996 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:08.997 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:08.998 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:08.999 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:08.999 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.000 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.001 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.002 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.002 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.003 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.004 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.005 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.006 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.007 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.008 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.009 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.009 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.010 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.010 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.011 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.012 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.013 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.013 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.014 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.015 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.015 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.016 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.017 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:09.017 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1273705052 after 28 rows
+18:10:09.017 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 28 results
+18:10:11.608 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+18:10:11.609 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1781732394 for 'SELECT * FROM `contacts`'
+18:10:11.610 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.611 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.612 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.613 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.614 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.615 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.616 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.617 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.617 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.618 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.619 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.619 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.620 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.620 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.621 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.621 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.622 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.623 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.623 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.624 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.624 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.625 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.625 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.626 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.627 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.627 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.628 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.628 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.628 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1781732394 after 28 rows
+18:10:11.628 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 28 results
+18:10:11.840 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+18:10:11.841 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1817379312 for 'SELECT * FROM `contacts`'
+18:10:11.842 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.843 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.844 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.844 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.845 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.845 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.846 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.847 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.848 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.848 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.849 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.849 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.850 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.850 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.851 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.852 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.852 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.854 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.855 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.855 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.856 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.856 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.857 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.858 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.858 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.859 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.859 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.860 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:11.860 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1817379312 after 28 rows
+18:10:11.860 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 28 results
+18:10:12.319 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+18:10:12.320 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1542214806 for 'SELECT * FROM `contacts`'
+18:10:12.321 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.322 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.323 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.323 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.324 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.325 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.326 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.327 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.327 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.328 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.329 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.330 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.330 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.331 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.332 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.333 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.333 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.334 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.335 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.336 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.336 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.337 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.338 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.338 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.339 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.340 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.341 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.341 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.341 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1542214806 after 28 rows
+18:10:12.341 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 28 results
+18:10:12.471 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+18:10:12.472 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1780832135 for 'SELECT * FROM `contacts`'
+18:10:12.472 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.473 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.473 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.474 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.475 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.475 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.476 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.476 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.477 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.477 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.478 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.478 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.479 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.479 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.480 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.481 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.483 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.484 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.484 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.484 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.485 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.485 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.486 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.486 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.487 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.487 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.488 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.488 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+18:10:12.488 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1780832135 after 28 rows
+18:10:12.488 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 28 results

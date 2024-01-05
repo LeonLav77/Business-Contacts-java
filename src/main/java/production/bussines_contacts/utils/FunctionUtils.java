@@ -5,8 +5,10 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.converter.DefaultStringConverter;
+import production.bussines_contacts.Application;
 import production.bussines_contacts.interfaces.Editable;
 import production.bussines_contacts.interfaces.Loggable;
+import production.bussines_contacts.models.User;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -90,5 +92,13 @@ public class FunctionUtils {
         if (e instanceof InterruptedException) {
             Thread.currentThread().interrupt();
         }
+    }
+
+    public static User getLoggedInUser() {
+        return Application.getLoggedInUser();
+    }
+
+    public static boolean isUserAdmin() {
+        return Application.getLoggedInUser().isAdmin();
     }
 }
