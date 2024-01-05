@@ -4,14 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea87d55-1246-4cb1-8b29-5f53e63286c8" name="Changes" comment="Added record">
-      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/threads/ChangeLogWriterTask.java" afterDir="false" />
+    <list default="true" id="7ea87d55-1246-4cb1-8b29-5f53e63286c8" name="Changes" comment="Threads and Type fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/change_log/changeLog.dat" beforeDir="false" afterPath="$PROJECT_DIR$/change_log/changeLog.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dat/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dat/users.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/ChangeLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/ChangeLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/AddCompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/AddCompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/AddContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/AddContactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ChangesLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ChangesLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/CompaniesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/CompaniesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ContactsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ContactsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/EditUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/EditUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ImportOptionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ImportOptionsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ReviewCompaniesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ReviewCompaniesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/database/CustomMigrationTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/database/CustomMigrationTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/database/ORMDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/database/ORMDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/exceptions/ChatGPTRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/exceptions/ChatGPTRequestException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/ChangeDataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/ChangeDataModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Viewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/partials/DeletableCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/partials/DeletableCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/FunctionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/FunctionUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +155,7 @@
       <workItem from="1704191179914" duration="17752000" />
       <workItem from="1704288292894" duration="19413000" />
       <workItem from="1704368738871" duration="17058000" />
-      <workItem from="1704453577700" duration="14339000" />
+      <workItem from="1704453577700" duration="14825000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -210,7 +227,14 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1704475399667</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="Threads and Type fixes">
+      <option name="closed" value="true" />
+      <created>1704477686217</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1704477686217</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +261,7 @@
     <MESSAGE value="ChatGPT API supoort, CSV support, exception handling, refactoring, Add users screen, logging" />
     <MESSAGE value="Make Viewer not allowed to edit and add" />
     <MESSAGE value="Added record" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added record" />
+    <MESSAGE value="Threads and Type fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Threads and Type fixes" />
   </component>
 </project>
