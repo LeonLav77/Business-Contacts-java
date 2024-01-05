@@ -31,7 +31,6 @@ public class ReviewUsersController {
         passwordColumn.setCellValueFactory(data -> new ReadOnlyObjectWrapper<>(data.getValue().getPassword()));
         roleColumn.setCellValueFactory(data -> new ReadOnlyObjectWrapper<>(data.getValue().getRole().toString()));
 
-        System.out.println(users.isEmpty());
         ObservableList<User> observableItemList = FXCollections.observableArrayList(users);
         usersTable.setItems(observableItemList);
     }

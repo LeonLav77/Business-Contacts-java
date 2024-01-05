@@ -72,7 +72,6 @@ public class MenuController {
         loadScreen("companies", "Companies");
     }
     public void logout(ActionEvent actionEvent) {
-        System.out.println("Logout");
         Application.setLoggedInUser(null);
         loadScreen("login", "Login");
     }
@@ -119,8 +118,12 @@ public class MenuController {
         loadScreen("changesLog", "Changes log");
     }
 
-    public void showImportCompaniesScreen(ActionEvent actionEvent) {
-        loadScreen("importCompanies", "Import companies");
+    public void showImportScreen(ActionEvent actionEvent) {
+        loadScreen("import", "Import companies");
+    }
+
+    public static void showImportScreen(){
+        loadScreen("import", "Import");
     }
 
     public static void showReviewCompaniesScreen(List<Company> companies){
@@ -131,7 +134,6 @@ public class MenuController {
             // Set the user in the controller
             ReviewCompaniesController controller = fxmlLoader.getController();
             controller.setCompanies(companies);
-            System.out.println(companies);
 
             Application.getMainStage().setTitle("Review Companies");
             Application.getMainStage().setScene(scene);
@@ -149,7 +151,6 @@ public class MenuController {
             // Set the user in the controller
             ReviewContactsController controller = fxmlLoader.getController();
             controller.setContacts(contacts);
-            System.out.println(contacts);
 
             Application.getMainStage().setTitle("Review Contacts");
             Application.getMainStage().setScene(scene);
@@ -166,7 +167,6 @@ public class MenuController {
 
             ReviewUsersController controller = fxmlLoader.getController();
             controller.setUsers(users);
-            System.out.println(users);
 
             Application.getMainStage().setTitle("Review Users");
             Application.getMainStage().setScene(scene);
@@ -176,7 +176,11 @@ public class MenuController {
         }
     }
 
-    public static void loadScreen(String fxmlName, String title){
+    public void showAddUserScreen(ActionEvent actionEvent) {
+        loadScreen("addUser", "Add user");
+    }
+
+    private static void loadScreen(String fxmlName, String title){
         FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("views/" + fxmlName + ".fxml"));
         try {
             Scene scene = new Scene(fxmlLoader.load(), 600, 400);

@@ -100,4 +100,9 @@ public abstract class User implements Editable<User>, Deletable, Serializable, C
         user.setPassword(data[1].trim());
         return user;
     }
+
+    @Override
+    public String getCSVHeader() {
+        return "Name,Password,Role";
+    }
 }

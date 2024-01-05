@@ -7,6 +7,8 @@ module production.bussines_contacts {
     requires java.sql;
     requires ormlite.core;
     requires ormlite.jdbc;
+    requires java.net.http;
+    requires org.json;
 
     opens production.bussines_contacts to javafx.fxml;
     exports production.bussines_contacts;
@@ -15,4 +17,6 @@ module production.bussines_contacts {
 
     // Open the models package to ormlite.core for reflection
     opens production.bussines_contacts.models to ormlite.core;
+    exports production.bussines_contacts.exceptions;
+    opens production.bussines_contacts.exceptions to javafx.fxml;
 }

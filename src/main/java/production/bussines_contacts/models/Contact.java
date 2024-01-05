@@ -14,7 +14,7 @@ import java.io.Serializable;
 import java.util.*;
 
 @DatabaseTable(tableName = "contacts")
-public class Contact implements Editable<Contact>, Deletable, Serializable, Cloneable, Importable<Contact> {
+public final class Contact implements Editable<Contact>, Deletable, Serializable, Cloneable, Importable<Contact> {
     private static final long serialVersionUID = 1L; // Unique version identifier
 
     @DatabaseField(generatedId = true)
@@ -195,5 +195,9 @@ public class Contact implements Editable<Contact>, Deletable, Serializable, Clon
                         new Contact(null, data[1], data[2], company, new Date(),
                                 Importance.valueOf(data[3].trim().toUpperCase()), data[4], data[5]))
                 .orElse(null);
+    }
+
+    public String getCSVHeader() {
+        return "CompanyName,Name,Department,Importance,PhoneNumber,CustomNote";
     }
 }

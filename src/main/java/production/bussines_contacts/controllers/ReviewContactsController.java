@@ -16,7 +16,6 @@ public class ReviewContactsController {
     private TableView<Contact> contactsTable;
     @FXML
     private TableColumn<Contact, String> nameColumn;
-    // departmentColumn, CompanyColumn, ImportnaceColumn,PhoneNumberColumn,CustomNoteColumn
     @FXML
     private TableColumn<Contact, String> departmentColumn;
     @FXML
@@ -27,8 +26,6 @@ public class ReviewContactsController {
     private TableColumn<Contact, String> phoneNumberColumn;
     @FXML
     private TableColumn<Contact, String> customNoteColumn;
-
-    // ... other TableColumn declarations
 
     private List<Contact> contacts;
 
@@ -51,7 +48,6 @@ public class ReviewContactsController {
 
     @FXML
     private void handleConfirmImport() {
-        // Save the contacts to the database
         for (Contact contact : contacts) {
             contact.save();
         }

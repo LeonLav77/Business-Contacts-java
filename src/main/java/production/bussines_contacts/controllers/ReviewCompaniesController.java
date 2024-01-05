@@ -44,7 +44,6 @@ public class ReviewCompaniesController {
         headquartersColumn.setCellValueFactory(data -> new ReadOnlyObjectWrapper<>(data.getValue().getHeadquarters()));
         websiteColumn.setCellValueFactory(data -> new ReadOnlyObjectWrapper<>(data.getValue().getWebsite()));
 
-        System.out.println(companies.isEmpty());
         ObservableList<Company> observableItemList = FXCollections.observableArrayList(companies);
         companiesTable.setItems(observableItemList);
     }

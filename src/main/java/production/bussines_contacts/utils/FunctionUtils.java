@@ -6,11 +6,13 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.converter.DefaultStringConverter;
 import production.bussines_contacts.interfaces.Editable;
+import production.bussines_contacts.interfaces.Loggable;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.function.BiConsumer;
+import java.util.logging.Level;
 
 public class FunctionUtils {
     public static boolean confirmSaveOperation(String header) {
@@ -24,7 +26,6 @@ public class FunctionUtils {
         if (result.isPresent() && result.get() == ButtonType.YES) {
             return true;
         } else {
-            System.out.println("Contact changes not saved");
             return false;
         }
     }
@@ -40,7 +41,6 @@ public class FunctionUtils {
         if (result.isPresent() && result.get() == ButtonType.YES) {
             return true;
         } else {
-            System.out.println("Contact changes not saved");
             return false;
         }
     }
@@ -73,6 +73,22 @@ public class FunctionUtils {
             change.put("old", oldValue);
             change.put("new", newValue);
             changes.put(fieldName, change);
+        }
+    }
+
+    public static void showAlert(Alert.AlertType alertType, String title, String message) {
+        Alert alert = new Alert(alertType);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
+
+    public static void handleException(String title, Exception e, Alert.AlertType alertType, Loggable loggable) {
+        loggable.log(Level.SEVERE, title + ": " + e.getMessage(), e); // Using the default method
+        showAlert(alertType, title, e.getMessage());
+        if (e instanceof InterruptedException) {
+            Thread.currentThread().interrupt();
         }
     }
 }

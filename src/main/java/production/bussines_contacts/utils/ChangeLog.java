@@ -75,7 +75,6 @@ public class ChangeLog {
     public static void logChangeData() {
         try {
             List<ChangeDataModel<?>> changeLog = readFromChangeLog();
-            changeLog.forEach(System.out::println);
         } catch (Exception e) {
             e.printStackTrace(); // Consider using a logging framework here
         }

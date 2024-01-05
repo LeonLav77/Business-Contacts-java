@@ -28,5 +28,5 @@
    </children>
     <fx:include source="menu.fxml" />
    <Button mnemonicParsing="false" onAction="#handleConfirmImport" text="Confirm" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
-   <Button mnemonicParsing="false" text="Cancel" GridPane.halignment="CENTER" />
+   <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" GridPane.halignment="CENTER" />
 </GridPane>

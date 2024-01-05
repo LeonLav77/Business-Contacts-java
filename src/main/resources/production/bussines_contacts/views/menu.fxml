@@ -28,6 +28,7 @@
                 <Menu fx:id="usersMenu" mnemonicParsing="false" text="Users">
                     <items>
                         <MenuItem mnemonicParsing="false" onAction="#showUsersScreen" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#showAddUserScreen" text="Dodaj" />
                     </items>
                 </Menu>
             <Menu fx:id="usersMenu1" mnemonicParsing="false" text="Change Log">
@@ -37,9 +38,7 @@
             </Menu>
             <Menu fx:id="usersMenu11" mnemonicParsing="false" text="Import">
                <items>
-                  <MenuItem mnemonicParsing="false" onAction="#showImportCompaniesScreen" text="Companies" />
-                  <MenuItem mnemonicParsing="false" onAction="#showChangeLogScreen" text="Contacts" />
-                  <MenuItem mnemonicParsing="false" onAction="#showChangeLogScreen" text="Users" />
+                  <MenuItem mnemonicParsing="false" onAction="#showImportScreen" text="Import" />
                </items>
             </Menu>
             </menus>

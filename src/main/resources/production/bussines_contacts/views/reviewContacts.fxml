@@ -21,7 +21,7 @@
     </children>
     <fx:include source="menu.fxml" />
     <Button mnemonicParsing="false" onAction="#handleConfirmImport" text="Confirm" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
-    <Button mnemonicParsing="false" text="Cancel" GridPane.halignment="CENTER" />
+    <Button mnemonicParsing="false"  onAction="#handleCancel" text="Cancel" GridPane.halignment="CENTER" />
     <TableView fx:id="contactsTable" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2">
         <columns>
             <TableColumn fx:id="nameColumn" text="Name" />

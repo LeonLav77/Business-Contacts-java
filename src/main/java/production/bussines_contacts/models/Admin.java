@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Admin extends User {
+public final class Admin extends User {
 
     public Admin(Long id, String name, String password) {
         super(id, name, password);

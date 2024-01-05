@@ -5,10 +5,12 @@ import production.bussines_contacts.enums.Role;
 import production.bussines_contacts.utils.FileUtils;
 import production.bussines_contacts.utils.FunctionUtils;
 
+import java.io.Serial;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Viewer extends User {
+public final class Viewer extends User {
+    @Serial
     private static final long serialVersionUID = 1L; // Unique version identifier
 
     public Viewer(Long id, String name, String password) {
@@ -50,4 +52,5 @@ public class Viewer extends User {
     public void update(){
         FileUtils.updateUser(this);
     }
+
 }

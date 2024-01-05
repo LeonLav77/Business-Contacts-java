@@ -19,7 +19,7 @@ import java.util.Map;
 import java.util.function.Predicate;
 
 @DatabaseTable(tableName = "companies")
-public class Company implements Editable<Company>, Deletable, Serializable, Cloneable, Importable<Company> {
+public final class Company implements Editable<Company>, Deletable, Serializable, Cloneable, Importable<Company> {
     @Serial
     private static final long serialVersionUID = 1L; // Unique version identifier
 
@@ -107,7 +107,6 @@ public class Company implements Editable<Company>, Deletable, Serializable, Clon
     }
 
     public void delete(){
-        System.out.println("Deleting company: " + this.getName() + " with id: " + this.getId());
         DB.deleteCompany(this);
     }
 
@@ -154,5 +153,9 @@ public class Company implements Editable<Company>, Deletable, Serializable, Clon
 
     public Company createItem(String[] data) {
         return new Company(null, data[0], data[1], data[2], new Date(), data[3]);
+    }
+
+    public String getCSVHeader() {
+        return "Name,Industry,Headquarters,Website";
     }
 }

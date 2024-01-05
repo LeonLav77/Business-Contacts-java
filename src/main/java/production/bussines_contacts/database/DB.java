@@ -11,8 +11,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class DB {
+    static Logger logger = Logger.getLogger(DB.class.getName());
     private static Connection getConnection() {
         return Database.getInstance().getConnection();
     }
@@ -24,23 +27,20 @@ public class DB {
     public static ArrayList<Company> fetchCompanies() {
         try {
             Dao<Company, Long> companyDao = DaoManager.createDao(getConnectionSource(), Company.class);
-            companyDao.queryForAll().forEach(System.out::println);
 
             return new ArrayList<>(companyDao.queryForAll());
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "Error fetching companies", e);
+            return new ArrayList<>();
         }
-        return new ArrayList<>();
     }
 
     public static void updateCompany(Company company) {
         try {
             Dao<Company, Long> companyDao = DaoManager.createDao(getConnectionSource(), Company.class);
             companyDao.update(company);
-            System.out.println("Company updated: " + company.getName());
         } catch (SQLException e) {
-            e.printStackTrace();
-            System.out.println("Error updating company: " + company.getName());
+            logger.log(Level.SEVERE, "Error updating company", e);
         }
     }
 
@@ -49,20 +49,15 @@ public class DB {
             Dao<Company, Long> companyDao = DaoManager.createDao(getConnectionSource(), Company.class);
             Dao<Contact, Long> contactDao = DaoManager.createDao(getConnectionSource(), Contact.class);
 
-            // Retrieve all contacts associated with the company
             List<Contact> contacts = contactDao.queryForEq("company_id", company.getId());
 
-            // Delete all retrieved contacts
             for (Contact contact : contacts) {
                 contactDao.delete(contact);
-                System.out.println("Contact deleted: " + contact.getName());
             }
 
             companyDao.delete(company);
-            System.out.println("Company deleted: " + company.getName());
         } catch (SQLException e) {
-            e.printStackTrace();
-            System.out.println("Error deleting company: " + company.getName());
+            logger.log(Level.SEVERE, "Error deleting company", e);
         }
     }
 
@@ -70,10 +65,8 @@ public class DB {
         try {
             Dao<Company, Long> companyDao = DaoManager.createDao(getConnectionSource(), Company.class);
             companyDao.create(company);
-            System.out.println("Company created: " + company.getName());
         } catch (SQLException e) {
-            e.printStackTrace();
-            System.out.println("Error creating company: " + company.getName());
+            logger.log(Level.SEVERE, "Error creating company", e);
         }
     }
 
@@ -81,10 +74,8 @@ public class DB {
         try {
             Dao<Contact, Long> contactDao = DaoManager.createDao(getConnectionSource(), Contact.class);
             contactDao.create(contact);
-            System.out.println("Contact created: " + contact.getName());
         } catch (SQLException e) {
-            e.printStackTrace();
-            System.out.println("Error creating contact: " + contact.getName());
+            logger.log(Level.SEVERE, "Error creating contact", e);
         }
     }
 
@@ -92,10 +83,8 @@ public class DB {
         try {
             Dao<Contact, Long> contactDao = DaoManager.createDao(getConnectionSource(), Contact.class);
             contactDao.update(contact);
-            System.out.println("Contact updated: " + contact.getName());
         } catch (SQLException e) {
-            e.printStackTrace();
-            System.out.println("Error updating contact: " + contact.getName());
+            logger.log(Level.SEVERE, "Error updating contact", e);
         }
     }
 
@@ -103,10 +92,8 @@ public class DB {
         try {
             Dao<Contact, Long> contactDao = DaoManager.createDao(getConnectionSource(), Contact.class);
             contactDao.delete(contact);
-            System.out.println("Contact deleted: " + contact.getName());
         } catch (SQLException e) {
-            e.printStackTrace();
-            System.out.println("Error deleting contact: " + contact.getName());
+            logger.log(Level.SEVERE, "Error deleting contact", e);
         }
     }
 
@@ -116,7 +103,8 @@ public class DB {
 
             return contactDao.queryForAll();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            logger.log(Level.SEVERE, "Error fetching contacts", e);
+            return new ArrayList<>();
         }
     }
 }

@@ -6,4 +6,5 @@ public interface Importable<T> {
     void redirectToConfirmScreen(List<T> items);
     int getNumberOfColumns();
     T createItem(String[] data);
+    String getCSVHeader();
 }
