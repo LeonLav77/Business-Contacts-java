@@ -2,8 +2,6 @@ package production.bussines_contacts.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import production.bussines_contacts.Application;
-import production.bussines_contacts.models.ChangeDataModel;
 import production.bussines_contacts.models.Contact;
 import production.bussines_contacts.models.Company;
 import production.bussines_contacts.enums.Importance;
@@ -61,7 +59,7 @@ public class EditContactController {
 
     @FXML
     private void saveContact() {
-        if(!confirmSaveOperation("Save Contact")) {
+        if(confirmSaveOperation("Save Contact")) {
             return;
         }
 

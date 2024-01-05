@@ -3,12 +3,8 @@ package production.bussines_contacts.models;
 import production.bussines_contacts.controllers.MenuController;
 import production.bussines_contacts.enums.Role;
 import production.bussines_contacts.utils.FileUtils;
-import production.bussines_contacts.utils.FunctionUtils;
 
 import java.io.Serial;
-import java.io.Serializable;
-import java.util.HashMap;
-import java.util.Map;
 
 public final class Admin extends User {
 

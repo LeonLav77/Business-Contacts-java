@@ -8,20 +8,14 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.control.cell.TextFieldTableCell;
-import javafx.util.converter.DefaultStringConverter;
 import production.bussines_contacts.database.DB;
 import production.bussines_contacts.models.Company;
-import production.bussines_contacts.models.Contact;
 import production.bussines_contacts.partials.DeletableCell;
 import production.bussines_contacts.partials.EditableCell;
 import production.bussines_contacts.utils.FunctionUtils;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.function.Predicate;
-
-import static production.bussines_contacts.utils.FunctionUtils.confirmSaveOperation;
 
 public class CompaniesController {
 
@@ -95,10 +89,7 @@ public class CompaniesController {
             if (company.getHeadquarters().toLowerCase().contains(searchLower)) {
                 return true;
             }
-            if (company.getWebsite().toLowerCase().contains(searchLower)) {
-                return true;
-            }
-            return false;
+            return company.getWebsite().toLowerCase().contains(searchLower);
         };
     }
 

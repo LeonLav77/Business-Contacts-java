@@ -6,11 +6,8 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
 import production.bussines_contacts.models.Company;
-import production.bussines_contacts.models.Contact;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -27,10 +24,6 @@ public class ReviewCompaniesController {
     @FXML
     private TableColumn<Company, String> websiteColumn;
     private List<Company> companies;
-
-    public void initialize() {
-
-    }
 
     public List<Company> getCompanies() {
         return companies;

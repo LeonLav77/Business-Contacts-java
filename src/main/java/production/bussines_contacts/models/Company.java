@@ -2,7 +2,6 @@ package production.bussines_contacts.models;
 
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
-import production.bussines_contacts.Application;
 import production.bussines_contacts.controllers.MenuController;
 import production.bussines_contacts.database.DB;
 import production.bussines_contacts.interfaces.Deletable;
@@ -13,11 +12,9 @@ import production.bussines_contacts.utils.FunctionUtils;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Predicate;
 
 @DatabaseTable(tableName = "companies")
 public final class Company implements Editable<Company>, Deletable, Serializable, Cloneable, Importable<Company>, Importantable {

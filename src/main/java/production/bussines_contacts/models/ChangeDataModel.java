@@ -53,22 +53,9 @@ public class ChangeDataModel<T extends Editable<T>> implements Serializable {
         }
 
         public ChangeDataModel<T> build() {
-            return new ChangeDataModel<T>(this);
+            return new ChangeDataModel<>(this);
         }
     }
-
-    private static String getOrdinalSuffix(int day) {
-        if (day >= 11 && day <= 13) {
-            return "th";
-        }
-        switch (day % 10) {
-            case 1:  return "st";
-            case 2:  return "nd";
-            case 3:  return "rd";
-            default: return "th";
-        }
-    }
-
     @Override
     public String toString() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMM yyyy");

@@ -1,6 +1,5 @@
 package production.bussines_contacts.controllers;
 
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -24,8 +23,6 @@ public class MenuController {
     private MenuItem addCompanySubMenu;
     @FXML
     private MenuItem addContactSubMenu;
-    @FXML
-    private MenuItem addUserSubMenu;
     public static void editCompany(Company company) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("views/editCompany.fxml"));

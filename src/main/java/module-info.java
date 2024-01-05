@@ -2,8 +2,6 @@ module production.bussines_contacts {
     requires javafx.controls;
     requires javafx.fxml;
 
-    requires com.dlsc.formsfx;
-    requires java.logging;
     requires java.sql;
     requires ormlite.core;
     requires ormlite.jdbc;

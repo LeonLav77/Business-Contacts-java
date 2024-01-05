@@ -6,10 +6,8 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import production.bussines_contacts.models.Company;
 import production.bussines_contacts.models.User;
 
-import java.util.Date;
 import java.util.List;
 
 public class ReviewUsersController {

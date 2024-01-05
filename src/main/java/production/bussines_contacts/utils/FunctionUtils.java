@@ -14,7 +14,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.function.BiConsumer;
-import java.util.logging.Level;
 
 public class FunctionUtils {
     public static boolean confirmSaveOperation(String header) {
@@ -25,11 +24,7 @@ public class FunctionUtils {
 
         Optional<ButtonType> result = confirmDialog.showAndWait();
 
-        if (result.isPresent() && result.get() == ButtonType.YES) {
-            return true;
-        } else {
-            return false;
-        }
+        return result.isEmpty() || result.get() != ButtonType.YES;
     }
 
     public static boolean confirmDeleteOperation(String header) {
@@ -40,18 +35,14 @@ public class FunctionUtils {
 
         Optional<ButtonType> result = confirmDialog.showAndWait();
 
-        if (result.isPresent() && result.get() == ButtonType.YES) {
-            return true;
-        } else {
-            return false;
-        }
+        return result.isPresent() && result.get() == ButtonType.YES;
     }
 
     public static <T extends Editable<T>> void setupEditableColumn(TableColumn<T, String> column,
                                                                    BiConsumer<T, String> setter) {
         column.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
         column.setOnEditCommit(event -> {
-            if (!confirmSaveOperation("Save")) {
+            if (confirmSaveOperation("Save")) {
                 return;
             }
 

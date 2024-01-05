@@ -7,23 +7,14 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import production.bussines_contacts.database.DB;
-import production.bussines_contacts.enums.Importance;
 import production.bussines_contacts.models.Contact;
-import production.bussines_contacts.models.User;
 import production.bussines_contacts.partials.DeletableCell;
 import production.bussines_contacts.partials.EditableCell;
-import javafx.scene.control.cell.TextFieldTableCell;
-import javafx.util.converter.DefaultStringConverter;
-import production.bussines_contacts.utils.ChangeLog;
 import production.bussines_contacts.utils.FunctionUtils;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Map;
-import java.util.function.BiConsumer;
 import java.util.function.Predicate;
-
-import static production.bussines_contacts.utils.FunctionUtils.confirmSaveOperation;
 
 public class ContactsController {
 

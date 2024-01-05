@@ -9,7 +9,6 @@ import production.bussines_contacts.models.Viewer;
 import production.bussines_contacts.utils.ChangeLog;
 import production.bussines_contacts.utils.FileUtils;
 
-import java.io.File;
 import java.util.Map;
 
 import static production.bussines_contacts.utils.FunctionUtils.confirmSaveOperation;
@@ -45,7 +44,7 @@ public class EditUserController {
 
     @FXML
     private void saveUser() {
-        if(!confirmSaveOperation("Save Contact")) {
+        if(confirmSaveOperation("Save Contact")) {
             return;
         }
 

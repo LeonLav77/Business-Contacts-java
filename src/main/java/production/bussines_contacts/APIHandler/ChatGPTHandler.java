@@ -51,7 +51,6 @@ public class ChatGPTHandler {
         JSONObject firstChoice = choices.getJSONObject(0);
         JSONObject message = firstChoice.getJSONObject("message");
         String jsonString = message.getString("content");
-        JSONObject jsonObject = new JSONObject(jsonString);
-        return jsonObject;
+        return new JSONObject(jsonString);
     }
 }

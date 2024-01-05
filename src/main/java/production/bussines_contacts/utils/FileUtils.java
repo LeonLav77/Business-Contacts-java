@@ -37,7 +37,7 @@ public class FileUtils {
         return users;
     }
 
-    public static boolean insertUser(User user) {
+    public static void insertUser(User user) {
         String filePath = User.STORAGE_FILE_NAME;
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
             Long roleIndicator = (user instanceof Admin) ? Role.ADMIN.getId() : Role.VIEWER.getId();
@@ -51,10 +51,8 @@ public class FileUtils {
                     roleIndicator;
             writer.write(userData);
             writer.newLine();
-            return true;
         } catch (IOException e) {
             logger.error("Error inserting user into file: {}", e.getMessage());
-            return false;
         }
     }
 
@@ -76,7 +74,7 @@ public class FileUtils {
         return highestId + 1;
     }
 
-    public static boolean updateUser(User updatedUser) {
+    public static void updateUser(User updatedUser) {
         List<User> users = readUsersFromFile();
         boolean userFound = false;
 
@@ -90,10 +88,10 @@ public class FileUtils {
 
         if (!userFound) {
             logger.warn("User with ID {} not found.", updatedUser.getId());
-            return false;
+            return;
         }
 
-        return writeUsersToFile(users);
+        writeUsersToFile(users);
     }
 
     private static boolean writeUsersToFile(List<User> users) {
@@ -114,7 +112,7 @@ public class FileUtils {
         }
     }
 
-    public static boolean deleteUser(User user) {
+    public static void deleteUser(User user) {
         Long userId = user.getId();
         List<User> users = readUsersFromFile();
         boolean userFound = false;
@@ -129,9 +127,9 @@ public class FileUtils {
 
         if (!userFound) {
             logger.warn("User with ID {} not found.", userId);
-            return false;
+            return;
         }
 
-        return writeUsersToFile(users);
+        writeUsersToFile(users);
     }
 }

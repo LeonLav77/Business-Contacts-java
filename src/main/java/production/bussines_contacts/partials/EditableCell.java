@@ -2,12 +2,9 @@ package production.bussines_contacts.partials;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.TableCell;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TableColumn;
-import javafx.util.Callback;
 import production.bussines_contacts.interfaces.Editable;
 
-public class EditableCell<T extends Editable> extends TableCell<T, Void> {
+public class EditableCell<T extends Editable<T>> extends TableCell<T, Void> {
     private final Button editButton;
 
     public EditableCell() {

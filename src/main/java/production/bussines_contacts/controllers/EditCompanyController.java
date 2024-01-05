@@ -2,15 +2,9 @@ package production.bussines_contacts.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-import production.bussines_contacts.Application;
-import production.bussines_contacts.models.ChangeDataModel;
 import production.bussines_contacts.models.Company;
-import production.bussines_contacts.database.DB;
-import production.bussines_contacts.models.User;
 import production.bussines_contacts.utils.ChangeLog;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.Map;
 
 import static production.bussines_contacts.utils.FunctionUtils.confirmSaveOperation;
@@ -37,7 +31,7 @@ public class EditCompanyController {
 
     @FXML
     private void saveCompany() {
-        if (!confirmSaveOperation("Save Company")) {
+        if (confirmSaveOperation("Save Company")) {
             return;
         }
 

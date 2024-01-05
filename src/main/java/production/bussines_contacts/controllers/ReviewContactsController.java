@@ -29,9 +29,6 @@ public class ReviewContactsController {
 
     private List<Contact> contacts;
 
-    public void initialize() {
-    }
-
     public void setContacts(List<Contact> contacts) {
         this.contacts = contacts;
 

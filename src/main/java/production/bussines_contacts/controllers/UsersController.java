@@ -6,13 +6,10 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
-import javafx.util.Callback;
 import javafx.util.converter.DefaultStringConverter;
 import production.bussines_contacts.enums.Role;
 import production.bussines_contacts.models.Admin;
-import production.bussines_contacts.models.Company;
 import production.bussines_contacts.models.User;
 import production.bussines_contacts.models.Viewer;
 import production.bussines_contacts.partials.DeletableCell;
@@ -20,7 +17,6 @@ import production.bussines_contacts.partials.EditableCell;
 import production.bussines_contacts.utils.ChangeLog;
 import production.bussines_contacts.utils.FileUtils;
 
-import java.io.File;
 import java.util.List;
 import java.util.Map;
 
@@ -56,7 +52,7 @@ public class UsersController {
     private void setupEditableColumns(){
         userNameTableColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DefaultStringConverter()));
         userNameTableColumn.setOnEditCommit(event -> {
-            if(!confirmSaveOperation("Save User")) {
+            if(confirmSaveOperation("Save User")) {
                 return;
             }
             User user = event.getRowValue();

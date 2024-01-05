@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea87d55-1246-4cb1-8b29-5f53e63286c8" name="Changes" comment="Removed unnecessary code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/generics/ImportanceComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/interfaces/Importantable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/threads/ChangeLogReaderTask.java" afterDir="false" />
+    <list default="true" id="7ea87d55-1246-4cb1-8b29-5f53e63286c8" name="Changes" comment="Logger changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/change_log/changeLog.dat" beforeDir="false" afterPath="$PROJECT_DIR$/change_log/changeLog.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dat/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dat/users.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ImportOptionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ImportOptionsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/APIHandler/ChatGPTHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/APIHandler/ChatGPTHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/AddCompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/AddCompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ChangesLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ChangesLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/CompaniesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/CompaniesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ContactsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ContactsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/EditCompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/EditCompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/EditContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/EditContactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/EditUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/EditUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ReviewCompaniesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ReviewCompaniesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ReviewContactsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ReviewContactsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ReviewUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ReviewUsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/UsersController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/database/CustomMigrationTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/database/CustomMigrationTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/database/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/database/DB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/database/ORMDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/database/ORMDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/interfaces/Loggable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/interfaces/Loggable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/ChangeDataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/ChangeDataModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/models/Viewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/partials/EditableCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/partials/EditableCell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/threads/ChangeLogWriterTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/threads/ChangeLogWriterTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/ChangeLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/ChangeLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/FileUtils.java" afterDir="false" />
@@ -67,37 +71,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DatabaseMigration.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Run Application.executor&quot;: &quot;Run&quot;,
-    &quot;Application.run.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/JAVA/Bussines_contacts/src/main/resources/production/bussines_contacts/views&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "Application.DatabaseMigration.executor": "Run",
+    "Application.HelloApplication.executor": "Run",
+    "Application.Run Application.executor": "Run",
+    "Application.run.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/JAVA/Bussines_contacts/src/main/resources/production/bussines_contacts/views",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\JAVA\Bussines_contacts\src\main\resources\production\bussines_contacts\views" />
@@ -156,7 +161,7 @@
       <workItem from="1704191179914" duration="17752000" />
       <workItem from="1704288292894" duration="19413000" />
       <workItem from="1704368738871" duration="17058000" />
-      <workItem from="1704453577700" duration="18236000" />
+      <workItem from="1704453577700" duration="18743000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -249,7 +254,14 @@
       <option name="presentableId" value="LOCAL−00013" />
       <updated>1704478185870</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL−00014" summary="Logger changes">
+      <option name="closed" value="true" />
+      <created>1704481622630</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1704481622630</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +290,7 @@
     <MESSAGE value="Added record" />
     <MESSAGE value="Threads and Type fixes" />
     <MESSAGE value="Removed unnecessary code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary code" />
+    <MESSAGE value="Logger changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logger changes" />
   </component>
 </project>
