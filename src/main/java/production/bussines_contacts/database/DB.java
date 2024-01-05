@@ -5,17 +5,17 @@ import com.j256.ormlite.dao.DaoManager;
 import com.j256.ormlite.support.ConnectionSource;
 import production.bussines_contacts.models.Company;
 import production.bussines_contacts.models.Contact;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class DB {
-    static Logger logger = Logger.getLogger(DB.class.getName());
+    private static final Logger logger = LoggerFactory.getLogger(DB.class);
+
     private static Connection getConnection() {
         return Database.getInstance().getConnection();
     }
@@ -27,10 +27,9 @@ public class DB {
     public static ArrayList<Company> fetchCompanies() {
         try {
             Dao<Company, Long> companyDao = DaoManager.createDao(getConnectionSource(), Company.class);
-
             return new ArrayList<>(companyDao.queryForAll());
         } catch (Exception e) {
-            logger.log(Level.SEVERE, "Error fetching companies", e);
+            logger.error("Error fetching companies", e);
             return new ArrayList<>();
         }
     }
@@ -40,7 +39,7 @@ public class DB {
             Dao<Company, Long> companyDao = DaoManager.createDao(getConnectionSource(), Company.class);
             companyDao.update(company);
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, "Error updating company", e);
+            logger.error("Error updating company", e);
         }
     }
 
@@ -57,7 +56,7 @@ public class DB {
 
             companyDao.delete(company);
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, "Error deleting company", e);
+            logger.error("Error deleting company", e);
         }
     }
 
@@ -66,7 +65,7 @@ public class DB {
             Dao<Company, Long> companyDao = DaoManager.createDao(getConnectionSource(), Company.class);
             companyDao.create(company);
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, "Error creating company", e);
+            logger.error("Error creating company", e);
         }
     }
 
@@ -75,7 +74,7 @@ public class DB {
             Dao<Contact, Long> contactDao = DaoManager.createDao(getConnectionSource(), Contact.class);
             contactDao.create(contact);
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, "Error creating contact", e);
+            logger.error("Error creating contact", e);
         }
     }
 
@@ -84,7 +83,7 @@ public class DB {
             Dao<Contact, Long> contactDao = DaoManager.createDao(getConnectionSource(), Contact.class);
             contactDao.update(contact);
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, "Error updating contact", e);
+            logger.error("Error updating contact", e);
         }
     }
 
@@ -93,17 +92,16 @@ public class DB {
             Dao<Contact, Long> contactDao = DaoManager.createDao(getConnectionSource(), Contact.class);
             contactDao.delete(contact);
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, "Error deleting contact", e);
+            logger.error("Error deleting contact", e);
         }
     }
 
     public static List<Contact> fetchContacts() {
         try {
             Dao<Contact, Long> contactDao = DaoManager.createDao(getConnectionSource(), Contact.class);
-
             return contactDao.queryForAll();
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, "Error fetching contacts", e);
+            logger.error("Error fetching contacts", e);
             return new ArrayList<>();
         }
     }

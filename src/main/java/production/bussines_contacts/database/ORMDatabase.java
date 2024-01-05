@@ -2,16 +2,16 @@ package production.bussines_contacts.database;
 
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.jdbc.JdbcConnectionSource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class ORMDatabase {
-    private static final Logger logger = Logger.getLogger(ORMDatabase.class.getName());
+    private static final Logger logger = LoggerFactory.getLogger(ORMDatabase.class);
     private ConnectionSource connectionSource;
     private static final String DATABASE_FILE = "conf/database.properties";
 
@@ -26,7 +26,7 @@ public class ORMDatabase {
 
             connectionSource = new JdbcConnectionSource(dbUrl, dbUsername, dbPassword);
         } catch (IOException | SQLException e) {
-            logger.log(Level.SEVERE, "Error initializing database connection source.", e);
+            logger.error("Error initializing database connection source.", e);
         }
     }
 
@@ -47,7 +47,7 @@ public class ORMDatabase {
             try {
                 connectionSource.close();
             } catch (IOException e) {
-                logger.log(Level.SEVERE, "Error closing database connection source.", e);
+                logger.error("Error closing database connection source.", e);
             }
         }
     }

@@ -6,14 +6,13 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Database {
-    private static final Logger logger = Logger.getLogger(Database.class.getName());
+    private static final Logger logger = LoggerFactory.getLogger(Database.class);
     private Connection connection;
     private static final String DATABASE_FILE = "conf/database.properties";
-
 
     private Database() {
         try (FileReader reader = new FileReader(DATABASE_FILE)) {
@@ -26,7 +25,7 @@ public class Database {
 
             connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
         } catch (IOException | SQLException e) {
-            logger.log(Level.SEVERE, "Error initializing database connection.", e);
+            logger.error("Error initializing database connection.", e);
         }
     }
 
@@ -48,7 +47,7 @@ public class Database {
                 connection.close();
             }
         } catch (SQLException e) {
-            logger.log(Level.SEVERE, "Error closing database connection.", e);
+            logger.error("Error closing database connection.", e);
         }
     }
 }

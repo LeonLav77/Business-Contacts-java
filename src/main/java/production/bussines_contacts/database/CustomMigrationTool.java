@@ -2,15 +2,13 @@ package production.bussines_contacts.database;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.nio.file.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Objects;
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.stream.Collectors;
 
 public class CustomMigrationTool {
 
@@ -26,31 +24,33 @@ public class CustomMigrationTool {
             String dbUsername = loginInfo.getProperty("username");
             String dbPassword = loginInfo.getProperty("password");
 
-
-        try (Connection conn = DriverManager.getConnection(dbUrl, dbUsername, dbPassword)) {
-            try {
-                Files.list(Paths.get(CustomMigrationTool.class.getResource(MIGRATIONS_PATH).toURI()))
-                        .forEach(path -> {
-                            try {
-                                System.out.println("Executing migration: " + path);
-                                String sql = new String(Files.readAllBytes(path), StandardCharsets.UTF_8);
-                                try (Statement stmt = conn.createStatement()) {
-                                    stmt.execute(sql);
+            try (Connection conn = DriverManager.getConnection(dbUrl, dbUsername, dbPassword)) {
+                try {
+                    Files.list(Paths.get(Objects.requireNonNull(CustomMigrationTool.class.getResource(MIGRATIONS_PATH)).toURI()))
+                            .forEach(path -> {
+                                try {
+                                    System.out.println("Executing migration: " + path);
+                                    String sql = Files.readString(path);
+                                    try (Statement stmt = conn.createStatement()) {
+                                        stmt.execute(sql);
+                                    }
+                                    System.out.println("Migration executed successfully: " + path);
+                                } catch (IOException | SQLException e) {
+                                    throw new RuntimeException("Error executing migration: " + path, e);
                                 }
-                            } catch (IOException | SQLException e) {
-                                throw new RuntimeException("Error executing migration: " + path, e);
-                            }
-                        });
-            } catch (Exception e) {
-                throw new RuntimeException("Error listing migration files", e);
+                            });
+                } catch (IOException e) {
+                    throw new RuntimeException("Error listing migration files", e);
+                }
+            } catch (SQLException e) {
+                throw new RuntimeException("Database connection error", e);
             }
-        } catch (SQLException e) {
-            throw new RuntimeException("Database connection error", e);
-        }
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Database properties file not found", e);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Error reading database properties file", e);
+        } catch (Exception e) {
+            throw new RuntimeException("Unexpected error", e);
         }
     }
 }

@@ -68,6 +68,13 @@
             <version>2.1.210</version> <!-- Use the appropriate version -->
         </dependency>
 
+        <!-- Logback Classic -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.6</version> <!-- Use the latest version -->
+        </dependency>
+
         <!-- SLF4J API -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -75,12 +82,6 @@
             <version>1.7.32</version> <!-- Use the latest version -->
         </dependency>
 
-        <!-- Logback Classic -->
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.2.6</version> <!-- Use the latest version -->
-        </dependency>
 
         <dependency>
             <groupId>org.json</groupId>

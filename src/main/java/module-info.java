@@ -9,6 +9,7 @@ module production.bussines_contacts {
     requires ormlite.jdbc;
     requires java.net.http;
     requires org.json;
+    requires org.slf4j;
 
     opens production.bussines_contacts to javafx.fxml;
     exports production.bussines_contacts;

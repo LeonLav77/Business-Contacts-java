@@ -5,6 +5,10 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import production.bussines_contacts.database.CustomMigrationTool;
 import production.bussines_contacts.database.DB;
+import production.bussines_contacts.generics.ImportanceComparator;
+import production.bussines_contacts.interfaces.Importantable;
+import production.bussines_contacts.models.Company;
+import production.bussines_contacts.models.Contact;
 import production.bussines_contacts.models.User;
 
 import java.io.IOException;
@@ -38,11 +42,28 @@ public class Application extends javafx.application.Application {
 
 
     public static void main(String[] args) {
+//        testAdditionalFeature();
         boolean isMigrationNeeded = false;
         if (isMigrationNeeded) {
             CustomMigrationTool.runMigrations();
         }else {
             launch();
+        }
+    }
+
+    public static void testAdditionalFeature(){
+        Company company = new Company();
+        Contact contact = new Contact();
+
+        ImportanceComparator<Company, Contact> comparator = new ImportanceComparator<>(company, contact);
+        Importantable moreImportant = comparator.compareImportance();
+
+        if (moreImportant == company) {
+            System.out.println("Company is more important.");
+        } else if (moreImportant == contact) {
+            System.out.println("Contact is more important.");
+        } else {
+            System.out.println("Both are equally important.");
         }
     }
 }

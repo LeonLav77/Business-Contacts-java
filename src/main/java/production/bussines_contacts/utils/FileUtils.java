@@ -4,15 +4,16 @@ import production.bussines_contacts.enums.Role;
 import production.bussines_contacts.models.Admin;
 import production.bussines_contacts.models.User;
 import production.bussines_contacts.models.Viewer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class FileUtils {
-    private static final Logger logger = Logger.getLogger(FileUtils.class.getName());
+    private static final Logger logger = LoggerFactory.getLogger(FileUtils.class);
 
     public static List<User> readUsersFromFile() {
         String filePath = User.STORAGE_FILE_NAME;
@@ -30,7 +31,7 @@ public class FileUtils {
                 users.add(user);
             }
         } catch (IOException e) {
-            logger.severe("Error reading from file: " + e.getMessage());
+            logger.error("Error reading from file: {}", e.getMessage());
             return new ArrayList<>();
         }
         return users;
@@ -52,7 +53,7 @@ public class FileUtils {
             writer.newLine();
             return true;
         } catch (IOException e) {
-            logger.severe("Error inserting user into file: " + e.getMessage());
+            logger.error("Error inserting user into file: {}", e.getMessage());
             return false;
         }
     }
@@ -70,7 +71,7 @@ public class FileUtils {
                 }
             }
         } catch (IOException e) {
-            logger.severe("Error reading from file to get next user ID: " + e.getMessage());
+            logger.error("Error reading from file to get next user ID: {}", e.getMessage());
         }
         return highestId + 1;
     }
@@ -88,7 +89,7 @@ public class FileUtils {
         }
 
         if (!userFound) {
-            logger.warning("User with ID " + updatedUser.getId() + " not found.");
+            logger.warn("User with ID {} not found.", updatedUser.getId());
             return false;
         }
 
@@ -108,7 +109,7 @@ public class FileUtils {
             }
             return true;
         } catch (IOException e) {
-            logger.severe("Error writing users to file: " + e.getMessage());
+            logger.error("Error writing users to file: {}", e.getMessage());
             return false;
         }
     }
@@ -127,7 +128,7 @@ public class FileUtils {
         }
 
         if (!userFound) {
-            logger.warning("User with ID " + userId + " not found.");
+            logger.warn("User with ID {} not found.", userId);
             return false;
         }
 

@@ -8,6 +8,7 @@ import production.bussines_contacts.database.DB;
 import production.bussines_contacts.interfaces.Deletable;
 import production.bussines_contacts.interfaces.Editable;
 import production.bussines_contacts.interfaces.Importable;
+import production.bussines_contacts.interfaces.Importantable;
 import production.bussines_contacts.utils.FunctionUtils;
 
 import java.io.Serial;
@@ -19,7 +20,7 @@ import java.util.Map;
 import java.util.function.Predicate;
 
 @DatabaseTable(tableName = "companies")
-public final class Company implements Editable<Company>, Deletable, Serializable, Cloneable, Importable<Company> {
+public final class Company implements Editable<Company>, Deletable, Serializable, Cloneable, Importable<Company>, Importantable {
     @Serial
     private static final long serialVersionUID = 1L;
 
@@ -155,5 +156,9 @@ public final class Company implements Editable<Company>, Deletable, Serializable
 
     public String getCSVHeader() {
         return "Name,Industry,Headquarters,Website";
+    }
+    @Override
+    public int getImportanceValue() {
+        return 20;
     }
 }

@@ -8,6 +8,7 @@ import production.bussines_contacts.enums.Importance;
 import production.bussines_contacts.interfaces.Deletable;
 import production.bussines_contacts.interfaces.Editable;
 import production.bussines_contacts.interfaces.Importable;
+import production.bussines_contacts.interfaces.Importantable;
 import production.bussines_contacts.utils.FunctionUtils;
 
 import java.io.Serial;
@@ -15,7 +16,7 @@ import java.io.Serializable;
 import java.util.*;
 
 @DatabaseTable(tableName = "contacts")
-public final class Contact implements Editable<Contact>, Deletable, Serializable, Cloneable, Importable<Contact> {
+public final class Contact implements Editable<Contact>, Deletable, Serializable, Cloneable, Importable<Contact>, Importantable {
     @Serial
     private static final long serialVersionUID = 1L;
 
@@ -197,5 +198,9 @@ public final class Contact implements Editable<Contact>, Deletable, Serializable
 
     public String getCSVHeader() {
         return "CompanyName,Name,Department,Importance,PhoneNumber,CustomNote";
+    }
+    @Override
+    public int getImportanceValue() {
+        return 6;
     }
 }

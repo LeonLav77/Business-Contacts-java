@@ -50,5 +50,9 @@ public final class Viewer extends User {
     public void update(){
         FileUtils.updateUser(this);
     }
+    @Override
+    public int getImportanceValue() {
+        return 1;
+    }
 
 }

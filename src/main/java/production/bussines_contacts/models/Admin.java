@@ -50,4 +50,8 @@ public final class Admin extends User {
     public void update(){
         FileUtils.updateUser(this);
     }
+    @Override
+    public int getImportanceValue() {
+        return 10;
+    }
 }

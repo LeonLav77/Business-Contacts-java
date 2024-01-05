@@ -3,13 +3,14 @@ package production.bussines_contacts.models;
 import production.bussines_contacts.interfaces.Editable;
 import production.bussines_contacts.models.User;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Map;
 import java.util.StringJoiner;
 
-public class ChangeDataModel<T extends Editable> implements Serializable {
+public class ChangeDataModel<T extends Editable<T>> implements Serializable {
     private final User user;
     private final Date changeTime;
     private final Map<String, Map<String, String>> differences;
@@ -22,7 +23,8 @@ public class ChangeDataModel<T extends Editable> implements Serializable {
         this.changedObject = builder.changedObject;
     }
 
-    public static class Builder<T extends Editable<T>> {
+    public static class Builder<T extends Editable<T>> implements Serializable {
+        @Serial
         private static final long serialVersionUID = 1L;
 
         private User user;

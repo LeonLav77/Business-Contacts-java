@@ -1,5 +1,7 @@
 package production.bussines_contacts.controllers;
 
+import com.j256.ormlite.logger.Logger;
+import com.j256.ormlite.logger.LoggerFactory;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.RadioButton;
@@ -22,9 +24,9 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
-import java.util.logging.Logger;
+
 public final class ImportOptionsController implements Loggable {
-    private static final Logger logger = Logger.getLogger(ImportOptionsController.class.getName());
+    private static final Logger logger = LoggerFactory.getLogger(ImportOptionsController.class);
     @FXML
     private RadioButton precheckAI;
     @FXML
@@ -182,6 +184,4 @@ public final class ImportOptionsController implements Loggable {
         }
         return importable.createItem(values);
     }
-
-
 }

@@ -5,6 +5,7 @@ import production.bussines_contacts.enums.Role;
 import production.bussines_contacts.interfaces.Deletable;
 import production.bussines_contacts.interfaces.Editable;
 import production.bussines_contacts.interfaces.Importable;
+import production.bussines_contacts.interfaces.Importantable;
 import production.bussines_contacts.utils.FileUtils;
 import production.bussines_contacts.utils.FunctionUtils;
 
@@ -14,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public abstract class User implements Editable<User>, Deletable, Serializable, Cloneable, Importable<User>{
+public abstract class User implements Editable<User>, Deletable, Serializable, Cloneable, Importable<User>, Importantable {
     public static final String STORAGE_FILE_NAME = "dat/users.txt";
     protected Long id;
     protected String name;
