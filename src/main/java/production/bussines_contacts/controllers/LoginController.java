@@ -1,11 +1,13 @@
 package production.bussines_contacts.controllers;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import production.bussines_contacts.Application;
 import production.bussines_contacts.models.User;
 import production.bussines_contacts.utils.FileUtils;
+import production.bussines_contacts.utils.FunctionUtils;
 
 import java.util.List;
 
@@ -26,5 +28,7 @@ public class LoginController {
                 return;
             }
         }
+        FunctionUtils.showAlert(Alert.AlertType.WARNING, "Not logged in", "Username or password is incorrect.");
+
     }
 }

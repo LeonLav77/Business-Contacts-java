@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea87d55-1246-4cb1-8b29-5f53e63286c8" name="Changes" comment="Make Viewer not allowed to edit and add">
-      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/records/ChatGPTResponse.java" afterDir="false" />
+    <list default="true" id="7ea87d55-1246-4cb1-8b29-5f53e63286c8" name="Changes" comment="Added record">
+      <change afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/threads/ChangeLogWriterTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/APIHandler/ChatGPTHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/APIHandler/ChatGPTHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ImportOptionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ImportOptionsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/change_log/changeLog.dat" beforeDir="false" afterPath="$PROJECT_DIR$/change_log/changeLog.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dat/users.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/ChangeLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/utils/ChangeLog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +138,7 @@
       <workItem from="1704191179914" duration="17752000" />
       <workItem from="1704288292894" duration="19413000" />
       <workItem from="1704368738871" duration="17058000" />
-      <workItem from="1704453577700" duration="11998000" />
+      <workItem from="1704453577700" duration="14339000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -200,7 +203,14 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1704474752345</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="Added record">
+      <option name="closed" value="true" />
+      <created>1704475399667</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1704475399667</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +236,7 @@
     <MESSAGE value="Importing complete, all features done" />
     <MESSAGE value="ChatGPT API supoort, CSV support, exception handling, refactoring, Add users screen, logging" />
     <MESSAGE value="Make Viewer not allowed to edit and add" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make Viewer not allowed to edit and add" />
+    <MESSAGE value="Added record" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added record" />
   </component>
 </project>
