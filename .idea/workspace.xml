@@ -7,11 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea87d55-1246-4cb1-8b29-5f53e63286c8" name="Changes" comment="Logger changes">
-      <change afterPath="$PROJECT_DIR$/conf/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7ea87d55-1246-4cb1-8b29-5f53e63286c8" name="Changes" comment="ChatGPT api keyto properties file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/conf/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/change_log/changeLog.dat" beforeDir="false" afterPath="$PROJECT_DIR$/change_log/changeLog.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dat/users.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/CompaniesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/CompaniesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ImportOptionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/production/bussines_contacts/controllers/ImportOptionsController.java" afterDir="false" />
@@ -33,6 +32,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LeonLav77"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a296583a-dbae-484d-ab59-6e4067c07df1" />
+        <option name="url" value="https://github.com/LeonLav77/Business-Contacts-java.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -144,7 +157,7 @@
       <workItem from="1704288292894" duration="19413000" />
       <workItem from="1704368738871" duration="17058000" />
       <workItem from="1704453577700" duration="18743000" />
-      <workItem from="1706700171430" duration="3649000" />
+      <workItem from="1706700171430" duration="10892000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -244,7 +257,15 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1704481622630</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ChatGPT api keyto properties file">
+      <option name="closed" value="true" />
+      <created>1706706245390</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1706706245390</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +295,7 @@
     <MESSAGE value="Threads and Type fixes" />
     <MESSAGE value="Removed unnecessary code" />
     <MESSAGE value="Logger changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logger changes" />
+    <MESSAGE value="ChatGPT api keyto properties file" />
+    <option name="LAST_COMMIT_MESSAGE" value="ChatGPT api keyto properties file" />
   </component>
 </project>

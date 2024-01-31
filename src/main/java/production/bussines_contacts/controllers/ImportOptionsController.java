@@ -51,6 +51,7 @@ public final class ImportOptionsController implements Loggable {
     public <T> void handleImport(Importable<T> importable, Function<String, T> createItemFunction) {
         try {
             File file = handleOpeningCSV();
+            // ako je check upaljen a AI kaze ne
             if (precheckAI.isSelected() && !validateCSVWithAI(file, importable)) {
                 return;
             }

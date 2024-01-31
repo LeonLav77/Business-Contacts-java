@@ -106,9 +106,4 @@ public class CompaniesController {
         ObservableList<Company> observableItemList = FXCollections.observableArrayList(companies);
         companiesTableView.setItems(observableItemList);
     }
-
-    private static List<Contact> fetchContactsByCompanyId(Long companyId) {
-        // Implement fetching logic in DB class
-        return new ArrayList<>();
-    }
 }
