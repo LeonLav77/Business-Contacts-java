@@ -1,8 +1,44 @@
-20:06:35.267 [JavaFX Application Thread] ERROR p.b.c.ImportOptionsController - CSV Processing Error: Unable to read the selected file
-production.bussines_contacts.exceptions.FileNotWorkingException: Unable to read the selected file
-	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleOpeningCSV(ImportOptionsController.java:139)
-	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleImport(ImportOptionsController.java:52)
-	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleImportContacts(ImportOptionsController.java:47)
+12:59:24.020 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+12:59:24.023 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+12:59:24.098 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #248229025
+12:59:24.102 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+12:59:24.107 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @44145921 for 'SELECT * FROM `companies`'
+12:59:24.112 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @44145921 after 4 rows
+12:59:24.113 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 4 results
+12:59:36.810 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+12:59:36.810 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @377115273 for 'SELECT * FROM `companies`'
+12:59:36.811 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @377115273 after 4 rows
+12:59:36.811 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 4 results
+12:59:38.554 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+12:59:38.554 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @488345971 for 'SELECT * FROM `companies`'
+12:59:38.555 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @488345971 after 4 rows
+12:59:38.555 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 4 results
+12:59:39.926 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Contact with reflection
+12:59:39.926 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `contacts`
+12:59:39.926 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
+12:59:39.927 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1200018131 for 'SELECT * FROM `contacts`'
+12:59:39.935 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+12:59:39.936 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+12:59:39.938 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+12:59:39.938 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+12:59:39.939 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+12:59:39.940 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+12:59:39.941 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+12:59:39.942 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+12:59:39.943 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+12:59:39.943 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
+12:59:39.943 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1200018131 after 10 rows
+12:59:39.943 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 10 results
+13:00:20.858 [JavaFX Application Thread] ERROR p.b.c.ImportOptionsController - Unexpected Error: JSONObject["error"] is not a string (class org.json.JSONObject).
+org.json.JSONException: JSONObject["error"] is not a string (class org.json.JSONObject).
+	at org.json@20230618/org.json.JSONObject.wrongValueFormatException(JSONObject.java:2694)
+	at org.json@20230618/org.json.JSONObject.getString(JSONObject.java:861)
+	at production.bussines_contacts/production.bussines_contacts.APIHandler.ChatGPTHandler.getJsonObject(ChatGPTHandler.java:43)
+	at production.bussines_contacts/production.bussines_contacts.APIHandler.ChatGPTHandler.simpleRequest(ChatGPTHandler.java:36)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.callAI(ImportOptionsController.java:89)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.validateCSVWithAI(ImportOptionsController.java:76)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleImport(ImportOptionsController.java:53)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleImportUsers(ImportOptionsController.java:43)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
@@ -57,232 +93,351 @@ production.bussines_contacts.exceptions.FileNotWorkingException: Unable to read 
 	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
 	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-20:06:43.966 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:06:43.967 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @491747106 for 'SELECT * FROM `companies`'
-20:06:43.967 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @491747106 after 28 rows
-20:06:43.967 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:06:43.968 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:06:43.969 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1434999730 for 'SELECT * FROM `companies`'
-20:06:43.969 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1434999730 after 28 rows
-20:06:43.969 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:06:43.969 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:06:43.970 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @865648710 for 'SELECT * FROM `companies`'
-20:06:43.970 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @865648710 after 28 rows
-20:06:43.970 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:06:43.970 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:06:43.971 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @952762931 for 'SELECT * FROM `companies`'
-20:06:43.971 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @952762931 after 28 rows
-20:06:43.971 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:06:43.971 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:06:43.972 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @2089319182 for 'SELECT * FROM `companies`'
-20:06:43.972 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @2089319182 after 28 rows
-20:06:43.972 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:06:43.972 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:06:43.972 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1808464614 for 'SELECT * FROM `companies`'
-20:06:43.973 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1808464614 after 28 rows
-20:06:43.973 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:06:43.973 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:06:43.973 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @505777449 for 'SELECT * FROM `companies`'
-20:06:43.974 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @505777449 after 28 rows
-20:06:43.974 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:06:43.974 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:06:43.974 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1981210436 for 'SELECT * FROM `companies`'
-20:06:43.974 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1981210436 after 28 rows
-20:06:43.974 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:06:43.975 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:06:43.975 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1241090691 for 'SELECT * FROM `companies`'
-20:06:43.975 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1241090691 after 28 rows
-20:06:43.975 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:06:43.975 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:06:43.976 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1968718992 for 'SELECT * FROM `companies`'
-20:06:43.976 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1968718992 after 28 rows
-20:06:43.976 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:06:45.406 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - insert data with statement 'INSERT INTO `contacts` (`name` ,`department` ,`company_id` ,`created_at` ,`importance` ,`phone_number` ,`custom_note` ) VALUES (?,?,?,?,?,?,?)' and 7 args, changed 1 rows
-20:06:45.406 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - assigned id '55' from keyholder to 'id' in Contact object
-20:06:45.407 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - insert data with statement 'INSERT INTO `contacts` (`name` ,`department` ,`company_id` ,`created_at` ,`importance` ,`phone_number` ,`custom_note` ) VALUES (?,?,?,?,?,?,?)' and 7 args, changed 1 rows
-20:06:45.407 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - assigned id '56' from keyholder to 'id' in Contact object
-20:06:45.407 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - insert data with statement 'INSERT INTO `contacts` (`name` ,`department` ,`company_id` ,`created_at` ,`importance` ,`phone_number` ,`custom_note` ) VALUES (?,?,?,?,?,?,?)' and 7 args, changed 1 rows
-20:06:45.407 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - assigned id '57' from keyholder to 'id' in Contact object
-20:06:45.408 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - insert data with statement 'INSERT INTO `contacts` (`name` ,`department` ,`company_id` ,`created_at` ,`importance` ,`phone_number` ,`custom_note` ) VALUES (?,?,?,?,?,?,?)' and 7 args, changed 1 rows
-20:06:45.408 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - assigned id '58' from keyholder to 'id' in Contact object
-20:06:45.409 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - insert data with statement 'INSERT INTO `contacts` (`name` ,`department` ,`company_id` ,`created_at` ,`importance` ,`phone_number` ,`custom_note` ) VALUES (?,?,?,?,?,?,?)' and 7 args, changed 1 rows
-20:06:45.409 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - assigned id '59' from keyholder to 'id' in Contact object
-20:06:45.409 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - insert data with statement 'INSERT INTO `contacts` (`name` ,`department` ,`company_id` ,`created_at` ,`importance` ,`phone_number` ,`custom_note` ) VALUES (?,?,?,?,?,?,?)' and 7 args, changed 1 rows
-20:06:45.409 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - assigned id '60' from keyholder to 'id' in Contact object
-20:06:45.410 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - insert data with statement 'INSERT INTO `contacts` (`name` ,`department` ,`company_id` ,`created_at` ,`importance` ,`phone_number` ,`custom_note` ) VALUES (?,?,?,?,?,?,?)' and 7 args, changed 1 rows
-20:06:45.410 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - assigned id '61' from keyholder to 'id' in Contact object
-20:06:45.410 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - insert data with statement 'INSERT INTO `contacts` (`name` ,`department` ,`company_id` ,`created_at` ,`importance` ,`phone_number` ,`custom_note` ) VALUES (?,?,?,?,?,?,?)' and 7 args, changed 1 rows
-20:06:45.410 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - assigned id '62' from keyholder to 'id' in Contact object
-20:06:45.411 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - insert data with statement 'INSERT INTO `contacts` (`name` ,`department` ,`company_id` ,`created_at` ,`importance` ,`phone_number` ,`custom_note` ) VALUES (?,?,?,?,?,?,?)' and 7 args, changed 1 rows
-20:06:45.411 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - assigned id '63' from keyholder to 'id' in Contact object
-20:06:45.411 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - insert data with statement 'INSERT INTO `contacts` (`name` ,`department` ,`company_id` ,`created_at` ,`importance` ,`phone_number` ,`custom_note` ) VALUES (?,?,?,?,?,?,?)' and 7 args, changed 1 rows
-20:06:45.411 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - assigned id '64' from keyholder to 'id' in Contact object
-20:06:45.422 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
-20:06:45.423 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @874496770 for 'SELECT * FROM `contacts`'
-20:06:45.423 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.423 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.424 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.424 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.424 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.425 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.425 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.425 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.426 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.426 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.426 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.427 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.427 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.427 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.427 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.428 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.428 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.428 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.428 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.429 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.429 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.429 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.429 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.429 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.430 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.430 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.430 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.430 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.430 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.431 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.431 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.431 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.431 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.431 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.431 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.432 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.432 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.432 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:06:45.432 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @874496770 after 38 rows
-20:06:45.432 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 38 results
-20:13:34.722 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
-20:13:34.726 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
-20:13:34.807 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #2025401834
-20:13:34.813 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:13:34.820 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1236912108 for 'SELECT * FROM `companies`'
-20:13:34.829 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1236912108 after 28 rows
-20:13:34.830 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:16:00.713 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
-20:16:00.716 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
-20:16:00.793 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #2025401834
-20:16:00.800 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:16:00.807 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1236912108 for 'SELECT * FROM `companies`'
-20:16:00.815 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1236912108 after 28 rows
-20:16:00.815 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:16:06.461 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:16:06.462 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @189581584 for 'SELECT * FROM `companies`'
-20:16:06.464 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @189581584 after 28 rows
-20:16:06.464 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:16:09.044 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
-20:16:11.587 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:16:11.588 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @522925687 for 'SELECT * FROM `companies`'
-20:16:11.589 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @522925687 after 28 rows
-20:16:11.589 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:16:16.254 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `companies` SET `name` = ?, `industry` = ?, `headquarters` = ?, `created_at` = ?, `website` = ? WHERE `id` = ?' and 6 args, changed 1 rows
-20:16:16.266 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:16:16.267 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @57809447 for 'SELECT * FROM `companies`'
-20:16:16.268 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @57809447 after 28 rows
-20:16:16.268 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 28 results
-20:16:20.412 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Contact with reflection
-20:16:20.413 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `contacts` WHERE `company_id` = 1
-20:16:20.414 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts` WHERE `company_id` = 1' with 0 args
-20:16:20.415 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @1792225168 for 'SELECT * FROM `contacts` WHERE `company_id` = 1'
-20:16:20.417 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:20.418 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:20.419 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:20.419 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @1792225168 after 3 rows
-20:16:20.419 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts` WHERE `company_id` = 1' with 0 args returned 3 results
-20:16:20.424 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - delete data with statement 'DELETE FROM `contacts` WHERE `id` = ?' and 1 args, changed 1 rows
-20:16:20.425 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - delete data with statement 'DELETE FROM `contacts` WHERE `id` = ?' and 1 args, changed 1 rows
-20:16:20.427 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - delete data with statement 'DELETE FROM `contacts` WHERE `id` = ?' and 1 args, changed 1 rows
-20:16:20.428 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - delete data with statement 'DELETE FROM `companies` WHERE `id` = ?' and 1 args, changed 1 rows
-20:16:21.418 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `contacts`
-20:16:21.419 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
-20:16:21.420 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @144848189 for 'SELECT * FROM `contacts`'
-20:16:21.421 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.421 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.421 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.422 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.422 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.423 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.423 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.423 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.424 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.424 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.425 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.425 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.427 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.427 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.428 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.428 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.428 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.429 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.429 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.430 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.430 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.430 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.431 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.431 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.432 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.432 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.433 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.433 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.434 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.434 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.435 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.435 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.436 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.436 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.437 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:21.437 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @144848189 after 35 rows
-20:16:21.437 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 35 results
-20:16:22.780 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
-20:16:22.781 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @55659434 for 'SELECT * FROM `companies`'
-20:16:22.781 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @55659434 after 27 rows
-20:16:22.781 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 27 results
-20:16:25.499 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - update data with statement 'UPDATE `contacts` SET `name` = ?, `department` = ?, `company_id` = ?, `created_at` = ?, `importance` = ?, `phone_number` = ?, `custom_note` = ? WHERE `id` = ?' and 8 args, changed 1 rows
-20:16:25.517 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `contacts`' with 0 args
-20:16:25.518 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @861291838 for 'SELECT * FROM `contacts`'
-20:16:25.518 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.519 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.519 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.520 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.520 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.521 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.521 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.522 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.523 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.524 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.524 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.525 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.525 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.526 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.526 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.527 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.527 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.528 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.528 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.529 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.529 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.530 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.530 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.530 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.531 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.531 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.531 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.532 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.532 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.533 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.533 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.533 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.534 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.534 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.535 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - query-for-id using 'SELECT * FROM `companies` WHERE `id` = ?' and 1 args, got 1 result
-20:16:25.535 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @861291838 after 35 rows
-20:16:25.535 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `contacts`' with 0 args returned 35 results
-20:16:33.307 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - delete data with statement 'DELETE FROM `contacts` WHERE `id` = ?' and 1 args, changed 1 rows
-20:16:36.189 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - delete data with statement 'DELETE FROM `contacts` WHERE `id` = ?' and 1 args, changed 1 rows
+13:00:41.684 [JavaFX Application Thread] ERROR p.b.c.ImportOptionsController - Unexpected Error: JSONObject["error"] is not a string (class org.json.JSONObject).
+org.json.JSONException: JSONObject["error"] is not a string (class org.json.JSONObject).
+	at org.json@20230618/org.json.JSONObject.wrongValueFormatException(JSONObject.java:2694)
+	at org.json@20230618/org.json.JSONObject.getString(JSONObject.java:861)
+	at production.bussines_contacts/production.bussines_contacts.APIHandler.ChatGPTHandler.getJsonObject(ChatGPTHandler.java:43)
+	at production.bussines_contacts/production.bussines_contacts.APIHandler.ChatGPTHandler.simpleRequest(ChatGPTHandler.java:36)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.callAI(ImportOptionsController.java:89)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.validateCSVWithAI(ImportOptionsController.java:76)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleImport(ImportOptionsController.java:53)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleImportCompanies(ImportOptionsController.java:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at javafx.base@21/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+	at javafx.fxml@21/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@21/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1855)
+	at javafx.fxml@21/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1726)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.controls@21/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@21/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@21/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+	at javafx.graphics@21/javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+	at javafx.graphics@21/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@21/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@21/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+13:09:32.650 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+13:09:32.654 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+13:09:32.752 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1935945936
+13:09:32.757 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+13:09:32.765 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @240097851 for 'SELECT * FROM `companies`'
+13:09:32.774 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @240097851 after 4 rows
+13:09:32.774 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 4 results
+13:09:49.859 [JavaFX Application Thread] ERROR p.b.c.ImportOptionsController - AI request error, try importing without AI precheck: Error reading API key from config.properties
+production.bussines_contacts.exceptions.ChatGPTRequestException: Error reading API key from config.properties
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.getApiKey(ImportOptionsController.java:102)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.callAI(ImportOptionsController.java:87)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.validateCSVWithAI(ImportOptionsController.java:77)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleImport(ImportOptionsController.java:54)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleImportCompanies(ImportOptionsController.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at javafx.base@21/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+	at javafx.fxml@21/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@21/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1855)
+	at javafx.fxml@21/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1726)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.controls@21/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@21/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@21/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+	at javafx.graphics@21/javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+	at javafx.graphics@21/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@21/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@21/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+13:10:02.135 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+13:10:02.138 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+13:10:02.212 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1920028956
+13:10:02.216 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+13:10:02.222 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @393748279 for 'SELECT * FROM `companies`'
+13:10:02.227 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @393748279 after 4 rows
+13:10:02.227 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 4 results
+13:11:22.156 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+13:11:22.159 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+13:11:22.230 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #984214013
+13:11:22.234 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+13:11:22.240 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @437828666 for 'SELECT * FROM `companies`'
+13:11:22.245 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @437828666 after 4 rows
+13:11:22.245 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 4 results
+13:11:39.347 [JavaFX Application Thread] ERROR p.b.c.ImportOptionsController - AI request error, try importing without AI precheck: Error reading API key from config.properties
+production.bussines_contacts.exceptions.ChatGPTRequestException: Error reading API key from config.properties
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.getApiKey(ImportOptionsController.java:102)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.callAI(ImportOptionsController.java:87)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.validateCSVWithAI(ImportOptionsController.java:77)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleImport(ImportOptionsController.java:54)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleImportCompanies(ImportOptionsController.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at javafx.base@21/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+	at javafx.fxml@21/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@21/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1855)
+	at javafx.fxml@21/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1726)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.controls@21/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@21/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@21/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+	at javafx.graphics@21/javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+	at javafx.graphics@21/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@21/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@21/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+13:11:57.328 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+13:11:57.331 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+13:11:57.404 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #248229025
+13:11:57.407 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+13:11:57.412 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @44145921 for 'SELECT * FROM `companies`'
+13:11:57.418 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @44145921 after 4 rows
+13:11:57.418 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 4 results
+13:12:20.807 [JavaFX Application Thread] ERROR p.b.c.ImportOptionsController - CSV Processing Error: Unable to read the selected file
+production.bussines_contacts.exceptions.FileNotWorkingException: Unable to read the selected file
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleOpeningCSV(ImportOptionsController.java:154)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleImport(ImportOptionsController.java:53)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleImportCompanies(ImportOptionsController.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at javafx.base@21/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+	at javafx.fxml@21/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@21/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1855)
+	at javafx.fxml@21/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1726)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.controls@21/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@21/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@21/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+	at javafx.graphics@21/javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+	at javafx.graphics@21/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@21/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@21/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+13:12:28.577 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+13:12:28.580 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+13:12:28.660 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #1623770861
+13:12:28.665 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+13:12:28.673 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @872979220 for 'SELECT * FROM `companies`'
+13:12:28.680 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @872979220 after 4 rows
+13:12:28.680 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 4 results
+13:12:52.180 [JavaFX Application Thread] ERROR p.b.c.ImportOptionsController - AI request error, try importing without AI precheck: Error reading API key from config.properties
+production.bussines_contacts.exceptions.ChatGPTRequestException: Error reading API key from config.properties
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.getApiKey(ImportOptionsController.java:102)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.callAI(ImportOptionsController.java:87)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.validateCSVWithAI(ImportOptionsController.java:77)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleImport(ImportOptionsController.java:54)
+	at production.bussines_contacts/production.bussines_contacts.controllers.ImportOptionsController.handleImportCompanies(ImportOptionsController.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.sun.javafx.reflect.Trampoline.invoke(MethodUtil.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at javafx.base@21/com.sun.javafx.reflect.MethodUtil.invoke(MethodUtil.java:270)
+	at javafx.fxml@21/com.sun.javafx.fxml.MethodHelper.invoke(MethodHelper.java:84)
+	at javafx.fxml@21/javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1855)
+	at javafx.fxml@21/javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1726)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Node.fireEvent(Node.java:8875)
+	at javafx.controls@21/javafx.scene.control.Button.fire(Button.java:203)
+	at javafx.controls@21/com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:207)
+	at javafx.controls@21/com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:232)
+	at javafx.base@21/com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:189)
+	at javafx.base@21/com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at javafx.base@21/com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at javafx.base@21/com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.base@21/javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.graphics@21/javafx.scene.Scene$MouseHandler.process(Scene.java:3984)
+	at javafx.graphics@21/javafx.scene.Scene.processMouseEvent(Scene.java:1890)
+	at javafx.graphics@21/javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2708)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:424)
+	at javafx.graphics@21/com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)
+	at javafx.graphics@21/com.sun.glass.ui.View.handleMouseEvent(View.java:551)
+	at javafx.graphics@21/com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics@21/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+13:13:05.252 [JavaFX Application Thread] DEBUG com.j256.ormlite.dao.DaoManager - created dao for class class production.bussines_contacts.models.Company with reflection
+13:13:05.256 [JavaFX Application Thread] DEBUG c.j256.ormlite.stmt.StatementBuilder - built statement SELECT * FROM `companies`
+13:13:05.342 [JavaFX Application Thread] DEBUG c.j.o.jdbc.BaseJdbcConnectionSource - opened connection to jdbc:h2:tcp://localhost/~/business_contacts got #248229025
+13:13:05.350 [JavaFX Application Thread] DEBUG c.j.o.s.mapped.BaseMappedStatement - prepared statement 'SELECT * FROM `companies`' with 0 args
+13:13:05.358 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - starting iterator @44145921 for 'SELECT * FROM `companies`'
+13:13:05.366 [JavaFX Application Thread] DEBUG com.j256.ormlite.stmt.SelectIterator - closed iterator @44145921 after 4 rows
+13:13:05.366 [JavaFX Application Thread] DEBUG c.j.ormlite.stmt.StatementExecutor - query of 'SELECT * FROM `companies`' with 0 args returned 4 results

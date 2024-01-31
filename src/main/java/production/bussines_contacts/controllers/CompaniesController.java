@@ -10,11 +10,12 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import production.bussines_contacts.database.DB;
 import production.bussines_contacts.models.Company;
+import production.bussines_contacts.models.Contact;
 import production.bussines_contacts.partials.DeletableCell;
 import production.bussines_contacts.partials.EditableCell;
 import production.bussines_contacts.utils.FunctionUtils;
-
 import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Predicate;
 
 public class CompaniesController {
@@ -104,5 +105,10 @@ public class CompaniesController {
 
         ObservableList<Company> observableItemList = FXCollections.observableArrayList(companies);
         companiesTableView.setItems(observableItemList);
+    }
+
+    private static List<Contact> fetchContactsByCompanyId(Long companyId) {
+        // Implement fetching logic in DB class
+        return new ArrayList<>();
     }
 }

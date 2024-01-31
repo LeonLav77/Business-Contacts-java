@@ -23,6 +23,7 @@ import production.bussines_contacts.utils.FunctionUtils;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 import java.util.function.Function;
 
 public final class ImportOptionsController implements Loggable {
@@ -83,10 +84,24 @@ public final class ImportOptionsController implements Loggable {
     }
 
     private ChatGPTResponse callAI(File file, String CSVHeader) throws IOException, InterruptedException, ChatGPTRequestException {
+        String apiKey = getApiKey();
+
         String fileContent = readFileAsString(file);
         String requestBody = buildJsonPayload(fileContent, CSVHeader);
-        ChatGPTHandler chatGPTHandler = new ChatGPTHandler("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");
+        ChatGPTHandler chatGPTHandler = new ChatGPTHandler(apiKey);
         return chatGPTHandler.simpleRequest(requestBody);
+    }
+
+    private static String getApiKey() throws ChatGPTRequestException {
+        Properties prop = new Properties();
+        String apiKey;
+        try (FileInputStream fis = new FileInputStream("conf/config.properties")) {
+            prop.load(fis);
+            apiKey = prop.getProperty("chatGPTApiKey");
+        } catch (IOException e) {
+            throw new ChatGPTRequestException("Error reading API key from config.properties");
+        }
+        return apiKey;
     }
 
     private String buildJsonPayload(String fileContent, String CSVHeader) {
